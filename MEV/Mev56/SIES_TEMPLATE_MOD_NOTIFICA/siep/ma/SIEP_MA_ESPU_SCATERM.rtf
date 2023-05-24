@@ -1,0 +1,87 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fnil\fprq2\fcharset2 Wingdings;}{\f3\fswiss\fprq2\fcharset0 Tahoma;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\f0\fs24 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;"/><wr:import inline='true' url="$\{INTESTAZIONE\}"/>\par
+\pard\b\fs22\par
+\pard\qc COMUNICAZIONE\par
+SCADENZA TERMINI ESPULSIONE \par
+\fs24 Art. 16 comma 5 D.Lvo 286/1998 e succ. mod.\fs22\par
+\pard\fs18\par
+\pard\qc\lang1033\fs22 <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\pard\b0\fs18\par
+\pard\qj\fs22 <wr:out value="$\{PremessaSoggettoB\}" />\par
+\par
+\pard\ul\b <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\qj\ulnone\b0\par
+<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">condannato <wr:else/>condannata </wr:if>con \fs24 <wr:import inline='true' url="$\{SENTENZA\}" />\fs22 <wr:if select="/X/FascicoloSiep[FlagCumulante=&apos;S&apos;]">\par
+\fs24 <wr:import inline='true' url="$\{CUMULOB\}" />\fs22 </wr:if>\par
+\pard\fs18\par
+\pard\qj\cf1\lang1040\fs22 Facendo seguito a Nota n. \cf0 <wr:out select="/X/Evento/Verbale/NumeroProtocollo"/> \cf1 del \cf0 <wr:out select="/X/Evento/Verbale/DataEmissione"/>\cf1  di \cf0 <wr:out \cf1 select="/X/Evento/Verbale/DescrTipoUfficioFirmatario"/> di \cf0 <wr:out \cf1 select="/X/Evento/Verbale/DescrLuogoUfficioFirmatario"/> con la quale si dava notizia dell'avvenuta espulsione dal territorio dello Stato italiano \cf0 <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">\cf1 del cittadino straniero sopra indicato\cf0 <wr:else/>\cf1 della cittadina straniera sopra indicata\cf0 </wr:if>\cf1 , in esecuzione del provvedimento che sospendeva in data <wr:forEach select="/X/Evento/MisuraAlternativa[CodTipoMisura=&apos;2140&apos;]" varStatus=\rdblquote status\rdblquote ><wr:if test=\rdblquote $\{status.last\}\rdblquote > </wr:if></wr:forEach> \cf0 <wr:out select="/X/FascicoloSiep/PenaResidua/Sospensione/DataInizio\b "/> \cf1\b0 i termini dell'esecuzione della pena ai sensi dell'art. 16 Legge 30 Luglio 2002, n.189 \cf0\b <wr:forEach select="/X/Evento/MisuraAlternativa[CodTipoMisura=&apos;2140&apos;]" varStatus=\rdblquote status\rdblquote ><wr:if test=\rdblquote $\{status.last\}\rdblquote ><wr:if select=".[StringaMisura=&apos;Anni 10&apos;]"> per anni 10<wr:else/> per un periodo pari a<wr:out select="./StringaMisura"/></wr:if></wr:if></wr:forEach> <wr:out select="/X/Evento/Verbale/StringaEspulsione"/>\par
+\par
+\lang2057\b0\fs24 <wr:import inline='true' url="$\{AVVOCATI\}"/>\par
+\pard\sb120\sa120\qc\lang1040\b\fs22 COMUNICA\par
+\pard\qj\b0 che qualora <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">lo stesso<wr:else/>la stessa</wr:if> rientri illegittimamente nel territorio dello Stato, prima del termine di <wr:out select="/X/Evento/Verbale/StringaEspulsione"/> dall'esecuzione dell'espulsione, termine fissato al \b <wr:out select="/X/FascicoloSiep/PenaResidua/Sospensione/DataFine"/>\b0 , deve esser data immediata notizia a questo ufficio, per il ripristino dello stato di detenzione, dovendo riprendere l'esecuzione della residua pena (ex art. 16 L. 189/2002) determinata alla data di espulsione in:\par
+\pard\lang1033 <wr:import inline='true' url\b ="\lang1040 $\{SOLO\fs24 PENARESIDUA\fs22\}\lang1033 "\b0  />\par
+\pard\sb120\sa120\qc\lang1040\b TRASMETTE\par
+\pard\b0 <wr:if select="/X/FascicoloSiep/PenaResidua[ImportoMulta!=0] or /X/FascicoloSiep/PenaResidua[ImportoAmmenda!=0]">\b\par
+\pard\fi-357\li357\sb120\sa120\qj\tx360\b0\f1\'b7\tab\f0 All\ul\b\rquote Ufficio Recupero Crediti\ulnone\b0 , copia del provvedimento per quanto di competenza in merito alla pena pecuniaria residua di:<wr:if select="/X/FascicoloSiep/PenaResidua[ImportoMulta!=0]"> \caps\'80 \caps0 <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoMulta"/> di multa </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[ImportoAmmenda!=0]">\'80 <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoAmmenda"/> di ammenda</wr:if><wr:if select="/X/Sentenza/DescrNumCampionePenale"> iscritta alla partita di credito n. <wr:out select="/X/Sentenza/ DescrNumCampionePenale"/></wr:if></wr:if>\par
+\pard\sb120\sa120\qj Al \ul\b Magistrato di Sorveglianza\ulnone\b0 , copia del provvedimento per quanto di competenza<wr:forEach select="/X/Evento/Notifica"><wr:if select="./Ufficio"><wr:if select="./Ufficio[(CodTipoUfficio !=\rquote TDS\rquote ) and (CodTipoUfficio !=\rquote UDS\rquote )]"><wr:if select="./Note"> in riferimento alla procedura di conversione iscritta al n. <wr:out select="./Note"/> relativa alla pena pecuniaria di <wr:if select="/X/FascicoloSiep/PenaResidua[ImportoMulta!=0]"> \caps\'80 \caps0 <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoMulta"/> di multa</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[ImportoAmmenda!=0]"> \'80 <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoAmmenda"/> di ammenda</wr:if></wr:if></wr:if></wr:if></wr:forEach>\par
+\pard\sb120\sa120\qc\b RISERVA\par
+\pard\qj\b0 L'emissione di ulteriori provvedimenti fino alla data di scadenza dei termini per la dichiarazione dell'estinzione della pena fissata al \b <wr:out select="/X/FascicoloSiep/PenaResidua/Sospensione/DataFine"/>\par
+\par
+\lang2057\b0\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\lang1040\fs22\par
+\pard\sb120\sa120\qc\b MANDA\par
+\pard\b0 alla Segreteria, in sede, perch\'e9 provveda all\rquote invio del presente provvedimento:\par
+\pard\fi-340\li340\qj\tx284\f2\'a7\tab\f0 all'Autorit\'e0 di Polizia;\par
+\pard\fi-340\li340\tx284\f2\'a7\tab\f0 a Ufficiali Giudiziari per la notifica, nei termini di legge, al difensore;\b  \par
+\pard\fi-340\li340\b0\f2\'a7\tab\f0 all\rquote ufficio Recupero Crediti<wr:forEach select="/X/Evento/Notifica"><wr:if select="./Ufficio"><wr:if select="./Ufficio[(CodTipoUfficio !=\rquote TDS\rquote ) and (CodTipoUfficio !=\rquote UDS\rquote )]"> presso <wr:out select="./Ufficio/DescrTipoUfficio"/></wr:if></wr:if></wr:forEach>;\b\par
+\pard\fi-340\li340\qj\tx284\b0\f2\'a7\tab\f0 al Magistrato di Sorveglianza;\par
+\pard\fi-340\li340\qj\f2\'a7\tab\f0 al Tribunale di Sorveglianza\par
+\pard\qj\tx284\f2\par
+\lang2057\f0\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\lang1040\fs18\par
+\pard\par
+\lang2057\fs24 <wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\qj <wr:import inline='true' url="$\{NOTIFICAAVVOCATI\}" />\par
+\page\par
+\pard\qc <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\b\fs22\par
+\pard\nowidctlpar\qj\lang1040\b0 Oggetto: esecuzione penale contro <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il <wr:else/> la </wr:if><wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> condannato<wr:else/> condannata</wr:if>:\par
+\par
+\pard\qj\lang2057\ul\b\fs24 <wr:import inline='true' url="$\{SOGGETTO\}" />\fs22\par
+\pard\ulnone\par
+\pard\li708\fs24\par
+\pard\fi708\fs22 <wr:forEach select="/X/Evento/Notifica">\par
+\pard\li708\lang3082 <wr:if select=".[CodTipoNotifica=&apos;E&apos;]">\par
+\lang2057 <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/> <wr:if select="./Note"> <wr:out select="./Note"/></wr:if></wr:if>\par
+\pard\fi708 <wr:if select="./Ufficio">\par
+\pard\li708 <wr:if select="./Ufficio[(CodTipoUfficio !=\rquote TDS\rquote ) and (CodTipoUfficio !=\rquote UDS\rquote )]">Ufficio Recupero Crediti c/o </wr:if><wr:out select="./Ufficio/DescrTipoUfficio"/> di <wr:out      select="./Ufficio/DescrComune"/></wr:if>\par
+\pard\fi708\lang1040 </wr:forEach>\par
+\pard\li708\par
+\pard\b0\par
+\pard\qj Si trasmette, per quanto di competenza o notizia, copia del provvedimento emesso da questo Ufficio in data <wr:out select="/X/Evento/DataInserimento"/> \par
+\f3\fs24\par
+\pard\qc\fs22\page\fs24 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\pard\b\fs22\par
+\pard\qc UFFICIO LOCALE DEL CASELLARIO GIUDIZIALE<wr:forEach select="/X/Evento/Notifica/AutoritaEsterna[CodTipoAutorita=&apos;24&apos;][1]"> di <wr:out select="./DescrSede"/></wr:forEach>\par
+\pard\par
+\pard\qc FOGLIO COMPLEMENTARE\par
+Iscrizioni nel casellario giudiziale\par
+\lang1036 - ex art.3 d.p.r 14 novembre 2002 n.313 -\par
+\pard\b0\par
+\lang1040 Esecuzione penale \fs24 <wr:out value="$\{PremessaSoggettoA\}" />\par
+\fs22\par
+\ul\b\fs24 <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\ulnone\b0\fs22\par
+\pard\qj <wr:import inline='true' url="$\{PremessaSentenzaB\}" /> <wr:import inline='true' url="$\{SENTENZA\}" /><wr:if select="/X/FascicoloSiep[FlagCumulante=&apos;S&apos;]">\par
+\pard\par
+\pard\qj\lang1033\fs24 <wr:import inline='true' url="$\{PENACCUMULO\}" /></wr:if>\par
+\pard\fs22\par
+\lang1040 Visti gli artt. artt. 686 c.p.p. e ex art.3 d.p.r. 14 novembre 2002 , n. 313\par
+\pard\qj\par
+\pard\qc\b SI COMUNICA\par
+\par
+\pard\qj\b0 In relazione alla condanna riportata con la sentenza sopra indicata, ai fini dell\rquote iscrizione al casellario giudiziale, che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato<wr:else/>la condannata</wr:if>, ha espiato la pena detentiva <wr:if select="/X/FascicoloSiep/PenaPrecedente/DataInizio">dal <wr:out select="/X/FascicoloSiep/PenaPrecedente/DataInizio"/> al <wr:out select="/X/FascicoloSiep/PenaResidua/Sospensione/DataInizio"/> pari a <wr:if select="/X/FascicoloSiep/ PenaResidua/Sospensione/NumAnniPenaEspiata!=0">Anni <wr:out select="/X/FascicoloSiep/PenaResidua/Sospensione/NumAnniPenaEspiata "/> </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/Sospensione/NumMesiPenaEspiata!=0">Mesi <wr:out select="/X/FascicoloSiep/PenaResidua/Sospensione/NumMesiPenaEspiata "/> </wr:if><wr:if select="/X/FascicoloSiep/ PenaResidua/Sospensione/NumGiorniPenaEspiata!=0">Giorni <wr:out select="/X/FascicoloSiep/PenaResidua/Sospensione/NumGiorniPenaEspiata "/></wr:if></wr:if>\par
+\pard\par
+\lang2057\fs24 <wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\qj\fs22\par
+}
+ 

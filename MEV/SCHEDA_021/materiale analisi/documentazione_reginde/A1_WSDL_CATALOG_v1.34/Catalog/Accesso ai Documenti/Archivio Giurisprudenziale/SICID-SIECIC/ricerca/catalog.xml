@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+
+    <class name="giurisprudenza_r">
+		<property name="IDATTO" type="string"/>
+		<property name="IDFASC" type="string"/>
+		<property name="ROOTELEMENT" type="string"/>
+		<property name="ATTESTAZIONE" type="date"/>
+		<property name="SENDERID" type="string"/>
+		<property name="ANNORUOLO" type="integer"/>
+		<property name="NUMERORUOLO" type="integer"/>
+		<property name="SUBPROCEDIMENTO" type="string"/>
+		<property name="CODICEUFFICIO" type="string"/>
+		<property name="CODICESEZIONE" type="string"/>
+		<property name="ANNOSENTENZA" type="integer"/>
+		<property name="NUMEROSENTENZA" type="integer"/>
+		<property name="CODICEOGGETTO" type="string"/>
+		<property name="CODICESTATO" type="string"/>
+		<property name="NOMEGIUDICE" type="string"/>
+		<property name="PARTE" type="string"/>
+		<property name="CONTROPARTE" type="string"/>
+		<property name="DATAULTIMAMODIFICA" type="date"/>
+		<property name="CODICERUOLO" type="string"/>
+		<property name="CF_GIUDICE" type="string"/>
+		<property name="GRADOGIUDIZIO" type="string"/>
+		<property name="TIPODOCUMENTO" type="string"/>
+		<property name="TIPOCONTENUTO" type="string"/>
+		<property name="SENDER_NAME" type="string"/>
+		<property name="IDFASCPREC" type="string"/>
+		<property name="NUMFASCPREC" type="string"/>
+		<property name="ANNFASCPREC" type="string"/>
+		<property name="NUMPROVVPREC" type="string"/>
+		<property name="ANNPROVVPREC" type="string"/>
+		<property name="UFFICIOPREC" type="string"/>
+		<property name="REGISTROPREC" type="string"/>
+    </class>
+         
+</catalog>

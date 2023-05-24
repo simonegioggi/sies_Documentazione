@@ -1,0 +1,216 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green176\blue80;\red0\green0\blue0;}
+{\stylesheet{ Normal;}{\s1 heading 1;}{\s2 heading 2;}{\s3 heading 3;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\b\fs16\par
+\fs22 ESPIAZIONE DI PENA IN REGIME ALTERNATIVO ALLA DETENZIONE\par
+Nuova scadenza pena a seguito concessione Liberazione Anticipata\par
+\par
+<wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\b0\par
+\pard <wr:out value="$\{PremessaSentenzaA\}" /> <wr:import inline='true' url="$\{SENTENZA\}" /> <wr:out value="$\{PremessaSoggettoA\}" />\par
+\pard\sb120\qj <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+<wr:import inline='true' url="$\{CUMULOB\}" />\par
+\pard\sb140\qj Vista l'ordinanza N. <wr:out select="/X/FascicoloSiep/LicenzaLibAnticipata/NumeroOrdinanza"/>/<wr:out select="/X/FascicoloSiep/LicenzaLibAnticipata/AnnoOrdinanza"/> emessa in data <wr:out select="/X/FascicoloSiep/LicenzaLibAnticipata/DataEmissioneOrdinanza"/> da <wr:out select="/X/FascicoloSiep/LicenzaLibAnticipata/DescrUfficioEmittente"/> di <wr:out select="/X/FascicoloSiep/LicenzaLibAnticipata/DescrLuogoEmittente"/> che ha \b concesso\b0  <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">al condannato<wr:else/>alla condannata</wr:if><wr:forEach select="/X/Evento/MisuraAlternativa[CodNaturaDecisione = 'CO' or CodNaturaDecisione = 'ED' or CodNaturaDecisione = 'PP']" var="item" varStatus="status"><wr:if test="$\{status.last\}">, in espiazione di pena in regime alternativo alla detenzione (<wr:out select="$\{item\}/DescrTipoMisura"/> disposta con ordinanza N. <wr:out select="$\{item\}/NumeroRegistro"/>/<wr:out select="$\{item\}/AnnoRegistro"/> emessa in data <wr:out select="$\{item\}/DataDecisione"/> da <wr:out select="$\{item\}/DescrChiaveUfficioFascicoloSius"/>),</wr:if></wr:forEach> giorni\b  \b0 totali \b <wr:function select="/X/FascicoloSiep/LicenzaLibAnticipata\lang3082 [FlagConcesso='C']\lang1040 /NumeroGiorni" function=\ldblquote SUM\rdblquote  />\b0  \lang3082 di liberazione anticipata \cf1 <wr:if\cf0  select=" /X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='C']"><wr:if select="count(/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='C'])&gt;1">\lang1040 (di cui<wr:else/>(</wr:if><wr:forEach select="/X/FascicoloSiep/LicenzaLibAnticipata[FlagConcesso='C']"> n.ro giorni \b <wr:out select="./NumeroGiorni"/><wr:if select=".[DescrStatoPermesso\b0 =&apos;LI&apos;]"\b > di Integrazione Liberazione Anticipata<wr:else/><wr:if select=".[DescrStatoPermesso\b0 =&apos;LS&apos;]"\b > di Liberazione Anticipata Speciale<wr:else/><wr:if select=".[DescrStatoPermesso\b0 =&apos;LA&apos;]"\b > di Liberazione Anticipata<wr:else/> di Liberazione Anticipata</wr:if></wr:if></wr:if>\b0 <wr:if select="./PeriodoLibAnticipata"><wr:if select="count(./PeriodoLibAnticipata[FlagConcesso='C'])&gt;1"> in riferimento ai periodi<wr:else/> in riferimento al periodo</wr:if><wr:forEach select="./PeriodoLibAnticipata">, dal <wr:out select="./DataInizio"/> al <wr:out select="./DataFine"/>\lang2057 </wr:forEach></wr:if>\lang1040 </wr:forEach>)\cf1\lang3082 </wr:if>\cf0 <wr:if select="/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='R']">\par
+\pard\sb120\qj\b rigetta\b0 <wr:if select="count(/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='R']) &gt;1"> periodi<wr:forEach select="/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='R']" varStatus="stat"><wr:if test="$\{stat.index\}&gt;0">,</wr:if> dal <wr:out select="./DataInizio"/> al <wr:out select="./DataFine"/></wr:forEach><wr:else/><wr:forEach select="/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='R']"> periodo dal <wr:out select="./DataInizio"/> al <wr:out select="./DataFine"/></wr:forEach></wr:if></wr:if><wr:if select="/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='I']"> \par
+\pard\qj\b dichiara inammissibile\b0 <wr:if select="count(/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='I']) &gt;1"> periodi<wr:forEach select="/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='I']" varStatus="stat"><wr:if test="$\{stat.index\}&gt;0">,</wr:if> dal <wr:out select="./DataInizio"/> al <wr:out select="./DataFine"/></wr:forEach><wr:else/><wr:forEach select="/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='I']"> periodo dal <wr:out select="./DataInizio"/> al <wr:out select="./DataFine"/></wr:forEach></wr:if></wr:if><wr:if select="/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='N']"> \par
+\b N.L.P./N.D.P\b0 .<wr:if select="count(/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='N']) &gt;1"> periodi<wr:forEach select="/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='N']" varStatus="stat"><wr:if test="$\{stat.index\}&gt;0">,</wr:if> dal <wr:out select="./DataInizio"/> al <wr:out select="./DataFine"/></wr:forEach><wr:else/><wr:forEach select="/X/FascicoloSiep/LicenzaLibAnticipata/PeriodoLibAnticipata[FlagConcesso='N']"> periodo dal <wr:out select="./DataInizio"/> al <wr:out select="./DataFine"/></wr:forEach></wr:if></wr:if>\par
+<wr:query select="/X/Evento[EventoCorrente=&apos;S&apos;]" var="EveCorr"/><wr:if select="$\{EveCorr\}/Fungibilita">\par
+\pard\sb120\sa120\qc\b RILEVATO\par
+\pard\qj\lang1040\b0 che il fine pena \'e8 anticipato al \b <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/>\b0 <wr:if select="/X/FascicoloSiep/PenaResidua/DataFineReclusione">(*)</wr:if>, calcolato detraendo l\rquote intero periodo di liberazione anticipata\par
+\pard\sb120\qj <wr:if select="/X/FascicoloSiep/PenaResidua/DataFineReclusione">\par
+\pard (*) Scadenza reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"><wr:if select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"> - <wr:else/>\par
+\pard\sb120 (*) </wr:if>Decorrenza arresto <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"/></wr:if>\par
+\pard\sb120\sa120\qc\b ORDINA\par
+\pard\qj\b0 <wr:if select="$\{EveCorr\}/Fungibilita[DataOdierna=&apos;S&apos;]">L\rquote immediata scarcerazione <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">del condannato<wr:else/>della condannata</wr:if><wr:else/>La scarcerazione alla data \b <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/>\b0 </wr:if> se non<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> detenuto <wr:else/> detenuta </wr:if>per altra causa\par
+<wr:import inline='true' url="$\{ESECUZIONEMISURASICUREZZA\}" />\par
+\pard\sb120\sa120\qc\b COMUNICA\par
+\pard\qj\b0 che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato<wr:else/>la condannata</wr:if> ha espiato un periodo di pena in eccesso pari a<wr:if select="$\{EveCorr\}/Fungibilita/StringaFungibilita">\b <wr:out select="$\{EveCorr\}/Fungibilita/StringaFungibilita"/>\b0 </wr:if><wr:else/>\par
+\pard\sb120\sa120\qc\b COMUNICA\par
+\pard\qj\b0 che la data di fine pena, gi\'e0 fissata al <wr:if select="/X/FascicoloSiep/PenaPrecedente[FlagErgastolo=&apos;S&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaPrecedente[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaPrecedente[FlagErgastolo=&apos;N&apos;]"><wr:out select="/X/FascicoloSiep/PenaPrecedente/DataFine"/></wr:if> \'e8 anticipata<wr:if select="/X[W-Fungibilita=&apos;S&apos;]"> \b in data odierna\b0 , data in cui dovr\'e0 essere scarcerato se non detenuto per altra causa; <wr:else/> al <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;N&apos;]">\b <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/>\b0 </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataFineReclusione">(*)</wr:if></wr:if>, data in cui dovr\'e0 cessare l'espiazione della pena in misura alternativa<wr:if select="/X/FascicoloSiep/MisuraSicurezza">\par
+\pard\sb120\qj\b in pari data dovr\'e0 inoltre trovare applicazione la misura di sicurezza:\b0 <wr:forEach select="/X/FascicoloSiep/MisuraSicurezza">\par
+\pard\qj <wr:out select="./DescrTipo"/><wr:if select=".[NumAnni!=0]"> Anni <wr:out select="./NumAnni"/></wr:if><wr:if select=".[NumMesi!=0]"> Mesi <wr:out select="./NumMesi"/></wr:if><wr:if select=".[NumGiorni!=0]"> Giorni <wr:out select="./NumGiorni"/></wr:if></wr:forEach>\par
+(previo accertamento della persistenza della pericolosit\'e0 sociale da parte del Magistrato di Sorveglianza competente, se non gi\'e0 accertata);</wr:if>\par
+<wr:if select="/X/FascicoloSiep/PenaResidua/DataFineReclusione">\par
+\pard\b\par
+(*) \b0 Scadenza reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"><wr:if select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"\b >\b0  - <wr:else/>\par
+\b\par
+(*) \b0 </wr:if\b >\b0 Decorrenza arresto <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"/></wr:if></wr:if>\par
+\pard\keepn\s1\sb120\sa200\qc\b MANDA\par
+\pard\b0 alla Segreteria, in sede, perch\'e9 provveda all\rquote invio del presente ordine:\par
+\lang2057 <wr:forEach select="/X/Evento/Notifica" \cf2 varStatus="status" var="item"\cf0 >\par
+\lang1040 <wr:if select="./Ufficio"><wr:if select="./Ufficio[CodTipoUfficio=\rquote UDS\rquote ]">\par
+\pard\fi-170\li170\tx57\f1\'b7\tab\f0 al Magistrato di Sorveglianza<wr:else/>\par
+\f1\'b7\tab\f0 al <wr:out select="./Ufficio/DescrTipoUfficio"/></wr:if><wr:if select=".[CodTipoNotifica=\rquote N\rquote ]"> preposto alla vigilanza</wr:if></wr:if><wr:if select="./CSSA">\par
+\f1\'b7\tab\f0 all\rquote U.E.P.E. (Ufficio Esecuzione Penale Esterna) competente\cf2\b\par
+\pard\cf0\b0 </wr:if>\par
+<wr:if select="\lang2057 .\lang1040 /IstDetIdIstitutoDetenzione">\par
+\pard\fi-170\li170\tx57\f1\'b7\tab\f0 all\rquote Istituto di Detenzione<wr:else/><wr:if select="./AutoritaEsterna">\par
+\f1\'b7\tab\f0 all'Autorit\'e0 di Polizia competente per territorio</wr:if></wr:if><wr:if test="$\{status.last\}">.<wr:else/>;</wr:if>\par
+\pard\lang2057 </wr:forEach>\par
+\par
+\par
+\par
+<wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\qj <wr:set var=\rquote dest\rquote  value=\rquote 8\rquote  />\par
+\par
+\lang1040 <wr:import inline='true' url="$\{NOTIFICACOMUNICAZIONE\}" />\par
+\par
+\lang2057 <wr:if select="/X[W-Fungibilita=&apos;S&apos;]">\par
+\pard\qc\lang1040\page <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\pard\b\par
+\b0\par
+\pard\keepn\s1 Destinazione: <wr:out select="/X/FascicoloSiep/LuogoDetenzione/DescrTipoIstituto"/> di <wr:out select="/X/FascicoloSiep/LuogoDetenzione/DescrLuogo"/> <wr:out select="/X/FascicoloSiep/LuogoDetenzione/Indirizzo"/>\par
+\pard\b\par
+\pard\keepn\s3\qc\lang2057 <wr:out select="/X/Firmatario"/>\par
+\pard\b0\par
+<wr:out value="$\{PremessaSentenzaA\}" /> <wr:import inline='true' url="$\{SENTENZA\}" /> <wr:out value="$\{PremessaSoggettoA\}" />\par
+\pard\qj\par
+\lang1040 <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\par
+\pard comunica, per quanto eventualmente di competenza, che il condannato indicato in oggetto \'e8 stato scarcerato in data <wr:out select="/X/Evento/PenaResidua/DataFine"/>\b  \b0 anzich\'e9 in data <wr:out select="/X/Evento/PenaResidua/DataFinePresunta"/>, per un totale di <wr:if select="/X/Evento/Fungibilita/NumAnni">anni <wr:out select="/X/Evento/Fungibilita/NumAnni"/></wr:if> <wr:if select="/X/Evento/Fungibilita/NumMesi">mesi <wr:out select="/X/Evento/Fungibilita/NumMesi"/></wr:if> <wr:if select="/X/Evento/Fungibilita/NumGiorni">giorni <wr:out select="/X/Evento/Fungibilita/NumGiorni"/></wr:if> di pena espiata in eccesso.\par
+\par
+Qualora il condannato risultasse detenuto per altro fatto, codesto ufficio \'e8 pregato di darne immediata comunicazione a questa Procura.\par
+\b\par
+\par
+\lang2057\b0 <wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\qr\par
+\pard\qc\b <wr:forEach select="/X/Evento/Notifica"><wr:if select=".[CodTipoNotifica=&apos;C&apos;]">\par
+\lang1040 <wr:if select="./AutoritaEsterna[CodTipoAutorita!=&apos;X/FascicoloSiep/LuogoDetenzione/CodTipoIstituto&apos;]">\par
+\page\lang16\b0\f2{\pict\wmetafile8\picw3969\pich4366\picwgoal675\pichgoal742 
+010009000003c006000000009706000000000400000003010800050000000b0200000000050000
+000c02a6009700030000001e000400000007010400040000000701040097060000410b2000cc00
+a500960000000000a5009600000000002800000096000000a50000000100010000000000000000
+000000000000000000000000000000000000000000ffffff00ffffffffffffffffffffffffffff
+fffffffffc01fffffffffffffffffffffffffffffffffffffc01ffffffffffffffffffffffffff
+fffffffffffc01fffffffffffffffffffffffffffffffffffffc01fffffffffff80ffffffffff0
+fffffffffffffc01fffffffffff00fffffffffe03ffffffffffffc01ffffffffffe007ffffffff
+c01ffffffffffffc01ffffffffff8703ffffffff8007fffffffffffc01ffffffffff0000ffffff
+fe0003fffffffffffc01ffffffffff02007ffffffc0003fffffffffffc01ffffffffff81c07fff
+fff80007fffffffffffc01ffffffffffe0e01ffffff0307ffffffffffffc01fffffffffff8780f
+fffff070ffff9ffffffffc01ffffffe003fc0c03ffffc0e1f80003fffffffc01ffffff80000e0f
+01ffff8180000000fffffffc01ffffff0380000781ffff0200007ff07ffffffc01fffffc0fff00
+0080fc3e00001e00381ffffffc01fffff83fdfff80003000000ff000320ffffffc01ffffe0ff83
+fffc00000001fcf01c7107fffffc01ffffc1ff8187ff80018007c8611c6183fffffc01ffff078f
+81020ffc00f031c4031c63e07ffffc01fffe1f8f812201ff807821c6031c61187ffffc01fff83f
+8781000103e01c01c3031c600c1ffffc01ffe0ef8191047000f01f81c3871c400307fffc01ffc1
+c7888104727c601f90e3871c00c383fffc01ff0743cc0204707c023f18e0871c0187e0fffc01ff
+0c200e4604f0fe063f184047ffc70f307ffc01fe383007ffc8e07e4e3f1800ff807f182c3ffc01
+fc30f1040ff8e07e0e3e1803fc003e00061ffc01f8c09800003ff2661e7c387fc0001e00471ffc
+01f8c818200007ff071e7c3fff00ff0e004f8ffc01e18c1c03fc0007073c787ff001ff82708e0f
+fc01e00e2107fe20000038f0700001ffc1e08007fc00e007021fff00300000c0000003fff06180
+07fc01e3030c3fff00f0000000000003fff833808ffc01e301987fff01e0e18007860001fffc1f
+030ffc01f181e1fffe07c7e7fe0fc70c007ffe0f0f0ffc01f981c3fffc1c47c7ff9fc38e003fff
+079f1ffc00f9c383fff0380f0fffffe0860003ff01ff1ffc01fce613ffc0601c1fe01ff8001801
+ff007e1ffc01fcf833ff808000ffc01ffe001e007f1c3e3ffc01fc60f3fe0100007fc00ff38007
+807f9e0e3ffc01fc03f3f80400003f8ecfe07001c03f9f803ffc01fc0ff3f01c70e01f9b8fc01c
+00e03f9fc07ffc01fc0ff3e0f8ffc08f8ecfc60ff8403f8f007ffc01fc0001e381ffc3861b818b
+8ffe001f00007ffc01ff0001c603ffc6e00ee00ecfff020f0000fffc01ffff018007ffc3a03bb8
+1b8fff11070bfffffc00ffff8300471fc6eeeeeeee8fc380010bfffffc01ffff80008e0f83bbbb
+bbbb87c1c00083fffffc01ffffc0001c060eeeeeeeeec180400001fffffc01ffffe04010a03bbb
+bbbbbbb81a230600fffffc01ffffc0c000e0eeeeeeeeeeee2e0386003ffffc01ffff80c333bbbb
+bbbbbbbbbbba2384000ffffc01ffff000630eeeee800006eeeee33c00107fffc01fffe000439bb
+bb00000003bbb860410087fffc01fffc000c3ceeee03bbbb02eeec20400007fffc01fff8400878
+bbb83fffffe0bbba10204003fffc00fff0c01060eee8eeeeeeec6eee08100320fffc01fff0cc30
+63bbb8fffffffc3bbb801807307ffc01ffe1cc200eeeec3bbbbbb86eeee00c03187ffc01ff8180
+411bba3a3ffffff0b8bbb00400003ffc01ff838080eeee0e0eeeeee0e8eeee0200401ffc00ff03
+8180bbba0b0fffffc3a0bbbb0103c01ffc01ff070000eeee0283bbbb86c0e6ee8080e61ffc01fe
+270024bb9b0387ffff8b81b3bb00c0661ffc01fc0e00246e0e1060eeee0e08e0ee0c40701ffc01
+fc0e00243a0b9831fffe381180ba1801e10ffc01f89e00266c068e08bbba2832c0ec7001e1cffc
+01f89e002638438f047ffc30638c384001e3c7fc01f13c102628e087822ee8c1e60e288463c1c3
+fc00f13c122639f187e11ff183c31f119c61c863fc01e2381a6621b0c3f08ba007ce3b001c2008
+03fc00e278196613f883f807c01fca3f8138001803fc01e070082702ec63fe02807f8c6ec1f080
+18f1fc01c4700c2707fe21ff0180ff98ffc0f1c038f1fc00c4f0042703ba11ff8001ff08bba031
+c138e1fc01cde0062707ff10ffc007ff11fff0038180407c0189e0033706ee80fff01fff22eee0
+030006407c0189c3033707ff80fff81ffe23fff0020007c47c0189c6203703bb80fffe7ffe03bb
+b8823001c87c008b82783707ffe07ffffffe4ffff8e23880487c0183807c3306eee07ffffffe0e
+eee8e21980003c0183007c1327fff03ffffffc1ffff8f31800003c018f107c1323bbb83ffffffc
+1bbbb8e108001c3c019f307c1207fff83ffffff83ffff9e100001e3c009e20780206eeec3fffff
+f82eeee90000001c3c019e6031023ffffe1ffffff07ffff8041800dc3c008c60000f3bbbba1fff
+fff03bbbb8460c00cc3c0188e03b8f3ffffc1ffffff07ffff8463800c43c0181c06e872eeee81f
+fffff80eeeec4e2c00643c0181803b873fffe03ffffff807fffc3838007e3c01c3002ec23bba00
+fffffffe00bbbb006c04007c01e6003ba03ff001ffffffff801fff03b000007c00fe000ee0eec1
+87ffffffffc006ee2ee000007c01fe0003b0fc020ffffffffff001ff3b804c3cfc00fc0400ecb0
+2c1ffffffffff8201b2e80c03ffc01fc0419b840b07ffffffffffe1a0e3b81c01ffc01fc04d8ee
+02e0ffffffffffff02002e80001ffc01fc00c9ba1b81ffffffffffff81a03b00000ffc01fc0040
+eeee07ffffffffffffe0ec6e00000ffc01f82063bbb80ffffffffffffff03abb06000ffc01f820
+20eee83ffffffffffffffc0eee0e0247fc00f82030bbb07fffffffffffffff0bba0e0607fc00f9
+20386ec0ffffffffffffffff02ec000e03fc01f930183b800000007ffe00000001b8000601fc01
+f9319c0e800000007ffe00000000e8000471fc01f9319c0b000000007ffe00000000b00000e1fc
+00f9300e0eeee01bb83ffe3800eeeee03c0041fc00f9b80f03bba0fffc3ffc3fe03bbb803c6041
+fc01f9b80702ee02eeec3ffc2eec06ee80304003fc00f99c0781b81ffffc1ffc3fff803a0020c8
+01fc00f99c03c0e03bbbb81ff83bbbb00c1810f891fc01f89c03c0b1fffffe1ff83ffffe083018
+38f1fc00f89c01c0e0eeeeee0ff02eeeee8800983111fc01f88c01e439fffffe0ff03fffff1881
+cc2103fc00f8ce20f22cbbbbba07f03bbbbb08f9cc0103fc00fc4e00f2387ffffe47e03ffffe38
+71840183fc01fc4e00790e2eeeee47e22eeeec6060003187fc00fc6f00399b3ffffe43e27ffff8
+30810470c7fc00fc67003c8e0bbbba03c23bbbb0e00100e0cffc01fc67001c8387fffe23c27fff
+e1a060c0e60ffc01fe27800ec6c2eeee21c46eeec2e0e4c0c60ffc00fe33800fc3a1fffe31807f
+ff83a04643061ffc00ff338007c6e0bbbb208c3bbb0ee044420f1ffc01ff338803e3b87fff3008
+fffe1bb84c420f1ffc00ff118801e2ec0eee280ceee82eec4c0f8e1ffc00ff89c600e3bb07ff18
+18ffe0bbb8780f8c1ffc01ff8cc20072eec3bb080cbb80eee8781f883ffc01ff84c30001bba0ff
+9818ff03bbb8601f087ffc01ffc7c18400eee80e8c08e80eee80011c20fffc01ffe7c18638bbba
+079838e03bbb00038861fffc00ffe1e0c238eeee800e2800eeee001f0861fffc00fff1e0e13c3b
+bbb01a381bbbba40f80e61fffc01fff8e0609c6eeeeeee6eeeeeee43800e03fffc01fffc60709e
+3bbbbbbbbbbbbbba4c060f03fffc01fffc20304e2eeeeeeeeeeeeeee003e4707fffc01fffe0038
+07300bbbbbbbbba03a01fc403ffffc00ffff001c370106eeeeeeeec00e01f0007ffffc01ffff84
+1c1383c3bbbbbbbb879801c1007ffffc00ffffc60e0187f0eeeeeeee8f80000307fffffc00ffff
+ff0f0583f9b81bb83b9fc0100707fffffc00ffffff070081f8e006e00e9fc333870ffffffc00ff
+ffff8383c033b1c3831b8fc63f0f0ffffffc01ffffff81c1c412e7e2cfcecf861f0c1ffffffc01
+ffffffc1c0e100a7f38fc20f060e081ffffffc01ffffffe0c000c007f2cfe03c030c481ffffffc
+01ffffffe2e002380ff00ff1e0030cc03ffffffc01fffffff1e0101e3ff00fff000208c0ffffff
+fc00fffffff1f018870ffffffe06678ce1fffffffc00fffffff8f30e3183fffffe07e70f03ffff
+fffc01fffffffc7b871861fffff800c00007fffffffc00fffffffe198186307fffc07c00800fff
+fffffc00ffffffff0de0e38c7fff81fc1f819ffffffffc01ffffffff81e030ce3fff00f01e0fff
+fffffffc01ffffffffc1f0883f1fff1c01a03ffffffffffc00fffffffffffc02071ffe1f07007f
+fffffffffc00fffffffffffe11c01ffe380e01fffffffffffc01ffffffffffff04303ffc200c07
+fffffffffffc01ffffffffffffc03c7ffc771c0ffffffffffffc01ffffffffffffe03e7ffc3f60
+3ffffffffffffc00fffffffffffff8007ffc0300fffffffffffffc00ffffffffffffff007fff80
+01fffffffffffffc00ffffffffffffffffffffe01ffffffffffffffc01ffffffffffffffffffff
+fffffffffffffffffc01040000002701ffff030000000000
+}\lang1040\f0\par
+\lang2057\b\fs28 <wr:out select="/X/TipoUfficioT1"/>\par
+<wr:out select="/X/TipoUfficioT2"/>\par
+di <wr:out select="/X/Ufficio"/>\par
+\fs24 Ufficio Esecuzioni Penali\par
+\pard\nowidctlpar\qc\b0\fs14\par
+<wr:out select="/X/Indirizzo"/> - <wr:out select="/X/Cap"/> - <wr:out select="/X/Ufficio"/> \par
+\pard\qc\fs22 _____________________________________\par
+\pard\nowidctlpar\qc\fs14\par
+<wr:if select="/X/Utente/Telefono"> Tel. <wr:out select="/X/Utente/Telefono"/> - Fax - <wr:out select="/X/Utente/Fax"/> - Email : <wr:out select="/X/Utente/Email"/><wr:else/>Tel. <wr:out select="/X/Telefono"/> - Fax - <wr:out select="/X/Fax"/></wr:if> \par
+\pard\qc\fs22\par
+\pard\qr <wr:out select="/X/Ufficio"/>,<wr:out select="/X/Evento/DataEmissione"/> \par
+\pard\b N. SIEP <wr:if select="/X/FascicoloSiep/FlagUfficioAccorpato = &apos;S&apos;"><wr:out select="/X/FascicoloSiep/ChiaveProgrOrig"/><wr:else/><wr:out select="/X/FascicoloSiep/ChiaveProgr"/></wr:if>/<wr:out select="/X/FascicoloSiep/ChiaveAnno"/><wr:if select="/X/FascicoloSiep/FlagUfficioAccorpato = &apos;S&apos;"> (Ex <wr:out select="/X/FascicoloSiep/DescrTipoUfficioInserimento"/> <wr:out select="/X/FascicoloSiep/DescrComuneUfficioInserimento"/>)</wr:if>\par
+\b0\par
+\pard\keepn\s1 Destinazione: <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> <wr:out select="./AutoritaEsterna/DescrSede"/>\par
+\pard\b\par
+\pard\keepn\s3\qc <wr:out select="/X/Firmatario"/>\par
+\pard\b0\par
+Poich\'e8 \'e8 in esecuzione<wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;05&apos;]"> la sentenza</wr:if><wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;01&apos;]"> la <wr:out select="/X/Sentenza/DescrTipoProvvedimento"/> </wr:if><wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;02&apos;]"> il <wr:out select="/X/Sentenza/DescrTipoProvvedimento"/></wr:if> N. <wr:out select="/X/Sentenza/NumeroSentenza"/>/<wr:out select="/X/Sentenza/AnnoSentenza"/> <wr:if select="/X/Sentenza/AnnoRegeGip">( n. <wr:out select="/X/Sentenza/NumeroRegeGip"/>/<wr:out select="/X/Sentenza/AnnoRegeGip"/> Reg. Gen.)</wr:if> <wr:if select="/X/Sentenza/AnnoRegeDib">( n. <wr:out select="/X/Sentenza/NumeroRegeDib"/>/<wr:out select="/X/Sentenza/AnnoRegeDib"/> Reg. Gen.)</wr:if><wr:if select="/X/Sentenza/AnnoRegeCasap">( n. <wr:out select="/X/Sentenza/NumeroRegeCasap"/>/<wr:out select="/X/Sentenza/AnnoRegeCasap"/> Reg. Gen.)</wr:if> <wr:if select="/X/Sentenza/AnnoRegeCap">( n. <wr:out select="/X/Sentenza/NumeroRegeCap"/>/<wr:out select="/X/Sentenza/AnnoRegeCap"/> Reg.  Gen.)</wr:if><wr:if select="/Sentenza/AnnoRegeCas">( n. <wr:out select="/X/Sentenza/NumeroRegeCas"/>/<wr:out select="/X/Sentenza/AnnoRegeCas"/> Reg. Gen.)</wr:if><wr:if select="/X/Sentenza/NumeroRegePm"> - R.G.N.R. N. <wr:out select="/X/Sentenza/NumeroRegePm"/>/<wr:out select="/X/Sentenza/AnnoRegePm"/> </wr:if>, <wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;01&apos;]"> emessa</wr:if> <wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;02&apos;]"> emesso</wr:if> in data <wr:out select="/X/Sentenza/DataProvvedimento"/> da <wr:out select="/X/Sentenza/DescrTipoAutoritaEmittente"/> <wr:out select="/X/Sentenza/DescrLuogoEmittente"/><wr:if select="/X/Sentenza/SezioneAutoritaEmittente"> sez. <wr:out select="/X/Sentenza/SezioneAutoritaEmittente"/></wr:if><wr:if select="/X/Sentenza/DataProvvRif">,  <wr:if select="/X/Sentenza[CodTipoProvvRif=&apos;01&apos;]"><wr:out select="/X/Sentenza/DescrTipoProvvRif"/></wr:if> <wr:if select="/X/Sentenza[CodTipoProvvRif=&apos;02&apos;]">riformata</wr:if> in data <wr:out select="/X/Sentenza/DataProvvRif"/> <wr:if select="/X/Sentenza/DescrTipoAutoritaProvvRif"> da <wr:out select="/X/Sentenza/ DescrTipoAutoritaProvvRif"/></wr:if><wr:if select="/X/Sentenza/CodLuogoProvvRif"> <wr:out select="/X/Sentenza/DescrLuogoProvvRif"/></wr:if></wr:if><wr:if select="/X/Sentenza[DescrTipoDecisioneCassazione!=&apos;-&apos;]">, la Cassazione in data  <wr:out select="/X/FascicoloSiep/DataIrrevocabilita"/> <wr:out select="/X/Sentenza/DescrTipoDecisioneCassazione"/> con decisione  n.<wr:out select="/X/Sentenza/Note1DecisioneCassazione"/>/<wr:out select="/X/Sentenza/Note2DecisioneCassazione"/><wr:if select="/X/Sentenza/AnnoRaccoltaGenerale"> (n. Racc.Gen. <wr:out select="/X/Sentenza/AnnoRaccoltaGenerale"/>/<wr:out select="/X/Sentenza/NumeroRaccoltaGenerale"/> )</wr:if><wr:if select="/X/Sentenza/AnnoSentenzaCassazione"> (n. Sentenza <wr:out select="/X/Sentenza/AnnoSentenzaCassazione"/>/<wr:out select="/X/Sentenza/NumeroSentenzaCassazione"/>)</wr:if></wr:if>,<wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;01&apos;]"> definitiva </wr:if><wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;05&apos;]"> definitiva </wr:if> <wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;02&apos;]"> definitivo </wr:if> il <wr:out select="/X/FascicoloSiep/DataIrrevocabilita"/><wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;05&apos;]"> (di riconoscimento di <wr:out select="/X/Sentenza/Note"/>)</wr:if>, a carico di\par
+\par
+\ul\b <wr:out select="/X/Soggetto/Cognome"/>/<wr:out select="/X/Soggetto/Nome"/>\par
+\par
+\pard\qj\ulnone\b0 <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">nato<wr:else/>nata</wr:if><wr:if select="/X/Soggetto[DescrComuneNascita !=&apos;-&apos;]"> a <wr:out select="/X/Soggetto/DescrComuneNascita"/></wr:if><wr:if select="/X/Soggetto[CodProvinciaNascita!=&apos;-&apos;]"><wr:if select="/X/Soggetto[CodProvinciaNascita!=&apos;ES&apos;]"> (Prov. <wr:out select="/X/Soggetto/CodProvinciaNascita"/>)</wr:if></wr:if><wr:if select="/X/Soggetto/DescrStatoNascita"><wr:if select="/X/Soggetto/DescComuneNascitaEstero"> in <wr:out select="/X/Soggetto/DescComuneNascitaEstero"/></wr:if><wr:if select="/X/Soggetto[CodStatoNascita!=&apos;039&apos;]"> (<wr:out select="/X/Soggetto/DescrStatoNascita"/>)</wr:if></wr:if> il <wr:if select="/X/Soggetto/DataNascita"><wr:out select="/X/Soggetto/DataNascita"/><wr:else/><wr:out select="/X/Soggetto/AnnoNascita"/></wr:if><wr:forEach select="/X/Soggetto/Alias">\par
+alias <wr:out select="./Cognome"/>/<wr:out select="./Nome"/>\par
+<wr:if select="./.[Sesso=&apos;M&apos;]">nato <wr:else/>nata </wr:if> <wr:if select=".[DescrComuneNascita !=&apos;-&apos;]">a <wr:out select="./DescrComuneNascita"/> (Prov. <wr:out select=". /DescrProvinciaNascita"/>)</wr:if> <wr:if select="./DescrStatoNascita"><wr:if select="./DescComuneNascitaEstero"> in <wr:out select="./DescComuneNascitaEstero"/></wr:if><wr:if select=".[CodStatoNascita!=&apos;039&apos;]"> (<wr:out select="./DescrStatoNascita"/>)</wr:if></wr:if> il <wr:if select="./DataNascita"> <wr:out select="./DataNascita"/><wr:else/><wr:out select="./AnnoNascita"/></wr:if></wr:forEach> <wr:forEach select="/X/Soggetto/Residenza"><wr:if select=".[CodTipoResidenza=&apos;R&apos;]">\par
+residente </wr:if> <wr:if select=".[CodTipoResidenza=&apos;D&apos;]"> <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">\par
+domiciliato <wr:else/>\par
+domiciliata </wr:if></wr:if><wr:if select=".[DescrComune!=&apos;-&apos;]">a <wr:out select="./DescrComune"/><wr:if select=".[CodProvincia!=&apos;-&apos;]"> (Prov. <wr:out select="./CodProvincia"/>)</wr:if></wr:if><wr:if select=".[CodStato!=&apos;039&apos;]"><wr:if select=".[DescrStato!=&apos;-&apos;]">in <wr:out select="./DescComuneEstero"/> (<wr:out select="./DescrStato"/>) </wr:if></wr:if> <wr:out select="./Indirizzo"/></wr:forEach>\par
+\pard\par
+\lang1040 <wr:out select="./Note"/>\par
+\pard\qj Dall\rquote esame della posizione giuridica il condannato risulta detenuto anche per <wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;01&apos;]"> la <wr:else/> il </wr:if><wr:out select="/X/Sentenza/DescrTipoProvvedimento"/><wr:if select="/X/FascicoloSiep/AltraCausa"> N. <wr:if select="/X/FascicoloSiep/AltraCausa/Numero"><wr:out select="/X/FascicoloSiep/AltraCausa/Numero"/></wr:if>/<wr:if select="/X/FascicoloSiep/AltraCausa/Anno"><wr:out select="/X/FascicoloSiep/AltraCausa/Anno"/></wr:if> del <wr:if select="/X/FascicoloSiep/AltraCausa/Data"><wr:out select="/X/FascicoloSiep/AltraCausa/Data"/></wr:if> da <wr:if select="/X/FascicoloSiep/AltraCausa/DescrAutorita"><wr:out select="/X/FascicoloSiep/AltraCausa/DescrAutorita"/></wr:if> di <wr:if select="/X/FascicoloSiep/AltraCausa/DescrLuogo"><wr:out select="/X/FascicoloSiep/AltraCausa/DescrLuogo"/></wr:if> del <wr:if select="/X/FascicoloSiep/AltraCausa/DataIrrevocabilita"><wr:out select="/X/FascicoloSiep/AltraCausa/DataIrrevocabilita"/></wr:if> </wr:if> , per cui si comunica, per  quanto  eventualmente  di  competenza,  che \'e8 stato scarcerato  in  data <wr:out select="/X/Evento/DataEmissione"/>   anzich\'e8 in  data <wr:if select="/X/FascicoloSiep/PenaResidua/DataFine"><wr:out select="./DataFine"/></wr:if>, <wr:if select="/X/Evento/DataEmissione/Fungibilita"> ( per un totale\par
+\lang2057 di anni <wr:if select=".[NumAnni!=0]"><wr:out select="./ NumAnni"/> <wr:else/>0 </wr:if> mesi  <wr:if select=".[NumMesi!=0]"><wr:out select="./ NumMesi"/> <wr:else/>0 </wr:if>  giorni <wr:if select=".[NumGiorni!=0]"><wr:out select="./ \lang1040 NumGiorni"/> <wr:else/>0 </wr:if>  di periodo fungibile). </wr:if>\par
+\pard\b\par
+\par
+Si resta in attesa dell'eventuale provvedimento di fungibilit\'e0.\par
+\par
+\pard\qr\lang2057\b0 <wr:out select="/X/Firmatario"/>\par
+ <wr:out select="/X/Evento/Magistrato/Nome"/> <wr:out select="/X/Evento/Magistrato/Cognome"/>\par
+\pard\b </wr:if></wr:if></wr:forEach></wr:if>\par
+\par
+\b0\par
+<wr:if select="/X[W-Fungibilita=&apos;S&apos;]">\par
+<wr:import inline='true' url="$\{BLOCCOFUNGIBILITA\}" />\par
+</wr:if>\lang1040\par
+\b\par
+}
+ 

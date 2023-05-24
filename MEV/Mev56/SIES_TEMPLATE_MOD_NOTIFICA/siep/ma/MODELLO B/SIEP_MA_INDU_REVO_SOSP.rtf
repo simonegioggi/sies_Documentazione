@@ -1,0 +1,693 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue0;}
+{\stylesheet{ Normal;}{\s1 heading 1;}{\s2 heading 2;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\par
+\b ORDINE DI ESECUZIONE PER ESPIAZIONE DI PENA DETENTIVA\par
+A SEGUITO REVOCA DELLA SOSPENSIONE CONDIZIONATA DELL\rquote ESECUZIONE\par
+DELLA PARTE FINALE DELLA PENA DETENTIVA\par
+(condannato detenuto per decreto del Magistrato di Sorveglianza\par
+di sospensione provvisoria della misura alternativa alla detenzione)\par
+\pard\lang2057\b0\par
+\pard\qc\b <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\pard\par
+\pard\nowidctlpar\qj\lang1040\b0 <wr:out value="$\{PremessaSoggettoB\}" />\par
+\par
+\lang2057\ul\b <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\par
+\ulnone\b0 <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">condannato <wr:else/>condannata </wr:if>con <wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;01&apos;]"> la <wr:else/> il </wr:if><wr:out select="/X/Sentenza/DescrTipoProvvedimento"/> N. <wr:out select="/X/Sentenza/NumeroSentenza"/>/<wr:out select="/X/Sentenza/AnnoSentenza"/> <wr:if select="/X/Sentenza/AnnoRegeGip">(n. <wr:out select="/X/Sentenza/NumeroRegeGip"/>/<wr:out select="/X/Sentenza/AnnoRegeGip"/> Reg. Gen.)</wr:if> <wr:if select="/X/Sentenza/AnnoRegeDib">(n. <wr:out select="/X/Sentenza/NumeroRegeDib"/>/<wr:out select="/X/Sentenza/AnnoRegeDib"/> Reg. Gen.)</wr:if><wr:if select="/X/Sentenza/AnnoRegeCasap">(n. <wr:out select="/X/Sentenza/NumeroRegeCasap"/>/<wr:out select="/X/Sentenza/AnnoRegeCasap"/> Reg. Gen.)</wr:if> <wr:if select="/X/Sentenza/AnnoRegeCap">(n. <wr:out select="/X/Sentenza/NumeroRegeCap"/>/<wr:out select="/X/Sentenza/AnnoRegeCap"/> Reg. Gen.)</wr:if><wr:if select="/Sentenza/AnnoRegeCas">(n. <wr:out select="/X/Sentenza/NumeroRegeCas"/>/<wr:out select="/X/Sentenza/AnnoRegeCas"/> Reg. Gen.)</wr:if><wr:if select="/X/Sentenza/NumeroRegePm"> - R.G.N.R. N. <wr:out select="/X/Sentenza/NumeroRegePm"/>/<wr:out select="/X/Sentenza/AnnoRegePm"/></wr:if>, <wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;01&apos;]">emessa</wr:if><wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;02&apos;]">emesso</wr:if> in data <wr:out select="/X/Sentenza/DataProvvedimento"/> da <wr:out select="/X/Sentenza/DescrTipoAutoritaEmittente"/> di <wr:out select="/X/Sentenza/DescrLuogoEmittente"/><wr:if select="/X/Sentenza/NumSezioneAutoritaEmittente"> sez. <wr:out select="/X/Sentenza/NumSezioneAutoritaEmittente"/></wr:if><wr:if select="/X/Sentenza/DataProvvRif">, <wr:if select="/X/Sentenza[CodTipoProvvRif!=&apos;01&apos;]"><wr:if select="/X/Sentenza[CodTipoProvvRif!=&apos;02&apos;]"> <wr:out select="/X/Sentenza/DescrTipoProvvRif"/> sentenza emessa  in data <wr:out select="/X/Sentenza/DataProvvRif"/></wr:if></wr:if><wr:if select="/X/Sentenza[CodTipoProvvRif!=&apos;03&apos;]"><wr:if select="/X/Sentenza[CodTipoProvvRif!=&apos;04&apos;]"> <wr:out select="/X/Sentenza/DescrTipoProvvRif"/> in data <wr:out select="/X/Sentenza/DataProvvRif"/></wr:if></wr:if> da <wr:if select="/X/Sentenza/DescrTipoAutoritaProvvRif"><wr:out select="/X/Sentenza/DescrTipoAutoritaProvvRif"/></wr:if><wr:if select="/X/Sentenza/CodLuogoProvvRif"> <wr:out select="/X/Sentenza/DescrLuogoProvvRif"/></wr:if><wr:if select="/X/Sentenza/NumSezioneAutoritaProvvRif"> sez. <wr:out select="/X/Sentenza/NumSezioneAutoritaProvvRif"/></wr:if></wr:if><wr:if select="/X/Sentenza[DescrTipoDecisioneCassazione!=&apos;-&apos;]">, la Cassazione in data  <wr:out select="/X/FascicoloSiep/DataIrrevocabilita"/> <wr:out select="/X/Sentenza/DescrTipoDecisioneCassazione"/> con decisione  n.<wr:out select="/X/Sentenza/Note1DecisioneCassazione"/>/<wr:out select="/X/Sentenza/Note2DecisioneCassazione"/><wr:if select="/X/Sentenza/AnnoRaccoltaGenerale"> (n. Racc.Gen. <wr:out select="/X/Sentenza/AnnoRaccoltaGenerale"/>/<wr:out select="/X/Sentenza/NumeroRaccoltaGenerale"/> )</wr:if><wr:if select="/X/Sentenza/AnnoSentenzaCassazione"> (n. Sentenza <wr:out select="/X/Sentenza/AnnoSentenzaCassazione"/>/<wr:out select="/X/Sentenza/NumeroSentenzaCassazione"/>)</wr:if></wr:if>,<wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;01&apos;]"> definitiva </wr:if><wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;05&apos;]"> definitiva </wr:if><wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;02&apos;]"> definitivo </wr:if>il <wr:out select="/X/Sentenza/DataIrrevocabilita"/><wr:if select="/X/FascicoloSiep[FlagCumulante=&apos;S&apos;]">\par
+\par
+\lang1040 <wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;01&apos;]">assorbita<wr:else/>assorbito</wr:if> nel provvedimento di determinazione delle pene concorrenti emesso da questo ufficio in data <wr:out select="/X/PenaCumulo/DataEmissione"/>, che rideterminava la pena complessiva in: <wr:if select="/X/PenaCumulo[FlagErgastolo=&apos;S&apos;]">Ergastolo</wr:if> <wr:if select="/X/PenaCumulo[FlagErgastolo=&apos;D&apos;]">Ergastolo con isolamento diurno <wr:if select="/X/PenaCumulo/StringaIsolamentoDiurno"> di <wr:out select="X/PenaCumulo/StringaIsolamentoDiurno"/></wr:if></wr:if> \par
+<wr:if select="/X/PenaCumulo/StringaReclusione"><wr:out select="/X/PenaCumulo/StringaReclusione"/> di Reclusione </wr:if><wr:if select="/X/PenaCumulo[ImportoMulta!=0]">Euro <wr:out select="/X/PenaCumulo/ImportoMulta"/> di Multa </wr:if><wr:if select="/X/PenaCumulo/StringaArresto"><wr:out select="/X/PenaCumulo/StringaArresto"/> di Arresto </wr:if><wr:if select="/X/PenaCumulo[ImportoAmmenda!=0]">Euro <wr:out select="/X/PenaCumulo/ImportoAmmenda"/> di Ammenda</wr:if><wr:if select="/X/PenaCumulo/NumGiorniLibAnticipata">\par
+<wr:if select="/X/PenaCumulo/NumGiorniLibAnticipata!=0"> meno giorni <wr:out select="/X/PenaCumulo/NumGiorniLibAnticipata"/> di liberazione anticipata</wr:if></wr:if></wr:if>\par
+\par
+e <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">condannato<wr:else/>condannata</wr:if> a \par
+Pena principale:<wr:if select="/X/FascicoloSiep/PenaComplessiva/StringaReclusione">\par
+RECLUSIONE <wr:out select="/X/FascicoloSiep/PenaComplessiva/StringaReclusione"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaComplessiva[ImportoMulta!=0]">Multa Euro <wr:out select="/X/FascicoloSiep/PenaComplessiva/ImportoMulta"/>\par
+</wr:if><wr:if select="/X/FascicoloSiep/PenaComplessiva/StringaArresto">\par
+ARRESTO <wr:out select="/X/FascicoloSiep/PenaComplessiva/StringaArresto"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaComplessiva[ImportoAmmenda!=0]">Ammenda Euro <wr:out select="/X/FascicoloSiep/PenaComplessiva/ImportoAmmenda"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaComplessiva[CodTipoPenaDetentiva=&apos;03&apos;]">\par
+Ergastolo</wr:if> <wr:if select="/X/FascicoloSiep/PenaComplessiva[CodTipoPenaDetentiva=&apos;04&apos;]">\par
+Ergastolo con isolamento diurno <wr:if select="/X/FascicoloSiep/PenaComplessiva/StringaIsolamentoDiurno"><wr:out select="/X/FascicoloSiep/PenaComplessiva/StringaIsolamentoDiurno"/></wr:if></wr:if>\par
+<wr:if select="/X/FascicoloSiep/SanzioneSostitutiva">\par
+SanzioneSostitutiva:\par
+<wr:out select="/X/FascicoloSiep/SanzioneSostitutiva/StringaSanzione"/></wr:if><wr:if select="/X/FascicoloSiep/PenaAccessoria">\par
+Pene accessorie:</wr:if><wr:forEach select="/X/FascicoloSiep/PenaAccessoria">\par
+<wr:out select="./DescrTipoPenaAccessoria"/> <wr:if select=".[Durata!=&apos;-&apos;]"><wr:out select="./DescrDurata"/> <wr:else/><wr:if select="./NumAnni">Anni <wr:out select="./NumAnni"/> </wr:if><wr:if select=".[NumMesi!=0]">Mesi <wr:out select="./NumMesi"/> </wr:if><wr:if select=".[NumGiorni!=0]">Giorni <wr:out select="./NumGiorni"/></wr:if></wr:if><wr:if select=".[FlagCondonata=&apos;S&apos;]"> condonata Ex DPR <wr:out select="./NumDpr"/> del <wr:out select="./DataDpr"/></wr:if><wr:if select="./Note"> <wr:out select="./Note"/></wr:if>\par
+\lang3082 </wr:forEach><wr:if select="/X/FascicoloSiep/Beneficio[CodNaturaBeneficio=&apos;C&apos;]">\par
+\lang1040 Benefici concessi in sentenza:<wr:forEach select="/X/FascicoloSiep/Beneficio[CodNaturaBeneficio=&apos;C&apos;]">\par
+\lang2057 <wr:out select="./DescrTipoBeneficio"/><wr:if select=". \lang3082 [DescrTipoSospSubordinata!=&apos;-&apos;]"> subordinata <wr:out select="./ DescrTipoSospSubordinata"/></wr:if>  <wr:if select=".[CodDpr!=&apos;-&apos;]"> <wr:out select="./DescrDpr"/> </wr:if><wr:if select=".[CodDpr=&apos;-&apos;]"> <wr:out select="./Note"/></wr:if><wr:if select="./StringaReclusione">Reclusione <wr:out select="./StringaReclusione"/> </wr:if><wr:if select=".[ImportoMulta!=0]">Multa Euro <wr:out select="./ImportoMulta"/> </wr:if><wr:if select="./StringaArresto">Arresto <wr:out select="./StringaArresto"/> </wr:if><wr:if select=".[ImportoAmmenda!=0]">Ammenda Euro <wr:out select="./ImportoAmmenda"/></wr:if></wr:forEach>\par
+</wr:if><wr:if select="/X/FascicoloSiep/Beneficio[CodNaturaBeneficio=&apos;R&apos;]">\par
+Benefici revocati in sentenza: <wr:forEach select="/X/FascicoloSiep/Beneficio[CodNaturaBeneficio=&apos;R&apos;]">\par
+<wr:out select="./DescrTipoBeneficio"/><wr:if select=". [DescrTipoSospSubordinata!=&apos;-&apos;]"> subordinata <wr:out select="./ DescrTipoSospSubordinata"/></wr:if>  <wr:if select=".[CodDpr!=&apos;-&apos;]"> <wr:out select="./DescrDpr"/> </wr:if><wr:if select=".[CodDpr=&apos;-&apos;]"> <wr:out select="./Note"/></wr:if><wr:if select="./StringaReclusione">Reclusione <wr:out select="./StringaReclusione"/> </wr:if><wr:if select=".[ImportoMulta!=0]">Multa Euro <wr:out select="./ImportoMulta"/> </wr:if><wr:if select="./StringaArresto">Arresto <wr:out select="./StringaArresto"/> </wr:if><wr:if select=".[ImportoAmmenda!=0]">Ammenda Euro <wr:out select="./ImportoAmmenda"/>\par
+\pard\nowidctlpar\lang2057 </wr:if></wr:forEach></wr:if> \par
+\pard\nowidctlpar\qj\lang1040 <wr:if select="/X/FascicoloSiep/MisuraSicurezza">\par
+Misura di sicurezza :<wr:forEach select="/X/FascicoloSiep/MisuraSicurezza">\par
+<wr:out select="./DescrTipo"/> <wr:if select="./NumAnni"> Anni <wr:out select="./NumAnni"/> </wr:if> <wr:if select=".[NumMesi!=0]"> Mesi <wr:out select="./NumMesi"/> </wr:if> <wr:if select=".[NumGiorni!=0]"> Giorni <wr:out select="./NumGiorni"/>\par
+\pard\nowidctlpar\lang2057 </wr:if></wr:forEach></wr:if>\par
+\pard\nowidctlpar\qj\lang1040 <wr:if select="/X/FascicoloSiep/MisuraSicurezza">\par
+Misura di sicurezza :<wr:forEach select="/X/FascicoloSiep/MisuraSicurezza">\par
+<wr:out select="./DescrTipo"/> <wr:if select="./NumAnni"> Anni <wr:out select="./NumAnni"/> </wr:if> <wr:if select=".[NumMesi!=0]"> Mesi <wr:out select="./NumMesi"/> </wr:if> <wr:if select=".[NumGiorni!=0]"> Giorni <wr:out select="./NumGiorni"/>\par
+\pard\nowidctlpar </wr:if></wr:forEach></wr:if><wr:if select="/X/FascicoloSiep/MisuraCautelare/CodTipoMisura"> \par
+da cui vanno detratti i seguenti periodi di presofferto:<wr:forEach select="/X/FascicoloSiep/MisuraCautelare">\par
+\cf1\lang3082 <wr:if select=".[CodTipoMisura=&apos;AD&apos;]">\par
+custodia cautelare in arresti domicilari dal <wr:out select="./DataInizio"/> al <wr:out select="./DataFine"/> (<wr:if select=".[NumAnni!=0]">anni <wr:out select="./NumAnni"/> </wr:if><wr:if select=".[NumMesi !=0]">mesi <wr:out select="./NumMesi"/> </wr:if><wr:if select=".[NumGiorni!=0]">giorni <wr:out select="./NumGiorni"/></wr:if>)</wr:if><wr:if select=".[CodTipoMisura=&apos;CA&apos;]">\par
+\pard\nowidctlpar\qj\cf0 custodia cautelare in carcere dal <wr:out select="./DataInizio"/> al <wr:out select="./DataFine"/> (<wr:if select=".[NumAnni!=0]">anni <wr:out select="./NumAnni"/> </wr:if><wr:if select=".[NumMesi !=0]">mesi <wr:out select="./NumMesi"/> </wr:if><wr:if select=".[NumGiorni!=0]">giorni <wr:out select="./NumGiorni"/></wr:if>)</wr:if></wr:forEach>\par
+\pard\qj per un totale di <wr:if select="/X/FascicoloSiep/TotaleMisure[TotaleAnni!=0]"> anni <wr:out select="/X/FascicoloSiep/TotaleMisure/TotaleAnni"/></wr:if><wr:if select="/X/FascicoloSiep/TotaleMisure[TotaleMesi!=0]"> mesi <wr:out select="/X/FascicoloSiep/TotaleMisure/TotaleMesi"/></wr:if><wr:if select="/X/FascicoloSiep/TotaleMisure[TotaleGiorni!=0]"> giorni <wr:out select="/X/FascicoloSiep/TotaleMisure/TotaleGiorni"/></wr:if></wr:if>\par
+\par
+\pard\nowidctlpar\li708\qj <wr:if select="/X/Evento[EventoCorrente!=&apos;S&apos;]">\b Stato di Esecuzione:\b0 <wr:forEach select="/X/Evento[EventoCorrente!=&apos;S&apos;]">\par
+\par
+<wr:out select="./DescrTipoProvvedimento"/> <wr:if select=".[CodTipoProvvedimento!=&apos;03&apos;]"> <wr:out select="./DescrMotivo"/></wr:if> <wr:out select="./DescrizioneData"/> <wr:out select="./Data"/> <wr:if select="./Ufficio/DescrTipoUfficio">da <wr:out select="./Ufficio/DescrTipoUfficio"/> di <wr:out select="./Ufficio/DescrComune"/></wr:if><wr:if select="./TotalePeriodo/TotaleGiorni"> concede giorni <wr:out select="./TotalePeriodo/TotaleGiorni"/></wr:if><wr:if select="./LicenzaLibAnticipata/PeriodoLibAnticipata"><wr:forEach select="./LicenzaLibAnticipata/PeriodoLibAnticipata">\par
+\lang2057 periodo dal <wr:out select="./DataInizio"/> al <wr:out select="./DataFine"/> </wr:forEach></wr:if> <wr:if select="./AnnotazioneManuale[Beneficio=&apos;S&apos;]"><wr:forEach select="./AnnotazioneManuale">\par
+<wr:if select=".[FlagPiuMeno=&apos;-&apos;]">concede<wr:else/>revoca</wr:if><wr:if select=".[StringaReclusione!=&apos;&apos;]"> <wr:out select="./StringaReclusione"/> di reclusione </wr:if><wr:if select=".[ImportoMulta!=&apos;&apos;]">\'80 <wr:out select="./ImportoMulta"/> di multa</wr:if><wr:if select=".[StringaArresto!=&apos;&apos;]"> <wr:out select="./StringaArresto"/> di arresto </wr:if><wr:if select=".[ImportoAmmenda!=&apos;&apos;]">\'80 <wr:out select="./ImportoAmmenda"/> di ammenda</wr:if></wr:forEach></wr:if><wr:forEach select="./AnnotazioneManuale[Beneficio=&apos;N&apos;]">\par
+periodo computato dal <wr:out select="./DataReclusioneDa"/> al <wr:out select="./DataReclusioneA"/> pari a <wr:out select="./StringaReclusione"/></wr:forEach><wr:if select=".[CodTipoProvvedimento=&apos;03&apos;]"><wr:forEach select="./Tenore[position()=1]"> <wr:out select="./DescrEsitoTenore"/> <wr:out select="./DescrOggettoTenore"/></wr:forEach><wr:forEach select="./Tenore[position()!=1]"> - <wr:out select="./DescrEsitoTenore"/> <wr:out select="./DescrOggettoTenore"/></wr:forEach></wr:if><wr:if select="./PenaResidua/DiesAQuo">\par
+Pena complessiva: </wr:if><wr:if select="./PenaResidua/StringaReclusione">Reclusione <wr:out select="./PenaResidua/StringaReclusione"/></wr:if><wr:if select="./PenaResidua[ImportoMulta!=0]"> Multa Euro <wr:out select="./PenaResidua/ImportoMulta"/></wr:if><wr:if select="./PenaResidua/StringaArresto"> Arresto <wr:out select="./PenaResidua/StringaArresto"/></wr:if> <wr:if select=". /PenaResidua[ImportoAmmenda!=0]"> Ammenda Euro <wr:out select="./PenaResidua/ImportoAmmenda"/></wr:if><wr:if select="./PenaResidua[FlagErgastolo=&apos;S&apos;]">Ergastolo</wr:if><wr:if select="./PenaResidua[FlagErgastolo=&apos;D&apos;]">Ergastolo con isolamento diurno <wr:if select="./PenaResidua/StringaIsolamentoDiurno">con <wr:out select="./PenaResidua/StringaIsolamentoDiurno"/></wr:if></wr:if><wr:if select="./MisuraAlternativa/DataInizioMisura">\par
+Decorrenza misura: <wr:out select="./MisuraAlternativa/DataInizioMisura"/></wr:if><wr:if select="./MisuraAlternativa/DataFineMisura"> Scadenza misura: <wr:out select="./MisuraAlternativa/DataFineMisura"/></wr:if><wr:if select="./PenaResidua/DataInizio">\par
+Decorrenza pena: <wr:out select="./PenaResidua/DataInizio"/></wr:if>  <wr:if select="./PenaResidua[FlagErgastolo=&apos;S&apos;]"> Scadenza pena: MAI</wr:if><wr:if select="./PenaResidua[FlagErgastolo=&apos;D&apos;]"> Scadenza pena: MAI</wr:if><wr:if select="./PenaResidua[FlagErgastolo=&apos;N&apos;]"><wr:if select="./PenaResidua/DataFine">Scadenza pena: <wr:out select="./PenaResidua/DataFine"/></wr:if>\par
+\pard\qj </wr:if></wr:forEach> </wr:if>\par
+\par
+\lang1040 Vista l\rquote ordinanza del \cf1 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrUfficioSorveglianza"/>\cf0  <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/NumeroRegistro"/>/<wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/AnnoRegistro"/> del <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataDecisione"/>, che ha  revocato il beneficio della \b sospensione condizionata della parte finale della pena detentiva\b0 , (gi\'e0 sospesa provvisoriamente dal Magistrato di Sorveglianza con il sopra descritto decreto), <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataInizioRevoca">\b dal <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataInizioRevoca"/>\b0 <wr:else/> determinando il residuo pena da espiare in:\par
+<wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/StringaRevocaReclusione">Reclusione \b <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/StringaRevocaReclusione"/>\b0  </wr:if> <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/StringaRevocaArresto">\par
+Arresto \b <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/StringaRevocaArresto"/> \b0 </wr:if></wr:if>\par
+\par
+per cui <wr:if select="./X/Soggetto[Sesso=&apos;M&apos;]">il condannato <wr:else/>la condannata </wr:if>deve espiare la residua pena di:\par
+<wr:if select="/X/FascicoloSiep/PenaResidua/StringaReclusione">RECLUSIONE <wr:out select="/X/FascicoloSiep/PenaResidua/StringaReclusione"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/StringaArresto">\par
+ARRESTO <wr:out select="/X/FascicoloSiep/PenaResidua/StringaArresto"/></wr:if> <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">Ergastolo</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">Ergastolo con isolamento diurno <wr:if select="/X/FascicoloSiep/PenaResidua/StringaIsolamentoDiurno">con <wr:out select="/X/FascicoloSiep/PenaResidua/StringaIsolamentoDiurno"/></wr:if></wr:if>\par
+in regime di detenzione;\par
+\par
+Poich\'e9 occorre dare esecuzione, ex art. 659 c.p.p., al citato provvedimento;\par
+\par
+\pard\nowidctlpar\qj\cf1 Rilevato che\cf0 <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato risulta assistito <wr:else/> \cf1 la condannata risulta assistita </wr:if>dal difensore: \cf0 <wr:forEach select="/X/FascicoloSiep/Avvocato"> \par
+\pard\qj Avvocato <wr:if select="./AvvocatoFascicoloSiep[CodTipoAvvocato=&apos;01&apos;]">di ufficio </wr:if><wr:if select="./AvvocatoFascicoloSiep[CodTipoAvvocato=&apos;02&apos;]">di fiducia </wr:if><wr:out select="./Cognome"/> <wr:out select="./Nome"/> del Foro di <wr:out select="./Foro"/><wr:if select="./AvvocatoFascicoloSiep[CodTipoAvvocato=&apos;03&apos;]"> che<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> lo ha assistito <wr:else/> la ha assistita </wr:if>nella fase di giudizio </wr:if> </wr:forEach>\par
+\par
+\pard\keepn\s1\qc\b DISPONE\par
+\pard\qj\b0\par
+Che il residuo pena, determinato a seguito della revoca del beneficio in corso di espiazione, decorra \b dal <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizio"/> e scada il  <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"> (*)</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto">\b0 , data in cui dovr\'e0 essere <wr:if select="./.[Sesso=&apos;M&apos;]">scarcerato se non detenuto <wr:else/>scarcerata se non detenuta </wr:if>per altra causa; \par
+\b\par
+(*) Scadenza reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"/> - Decorrenza arresto <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"/></wr:if>\b0 ;\par
+\par
+\lang2057\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\par
+\lang1040\fs22\par
+\pard\keepn\s2\qc\b MANDA\par
+\pard\b0\par
+alla Segreteria, in sede, perch\'e9 provveda all\rquote invio del presente provvedimento:\par
+\pard\fi-396\li680\tx680\f1\'b7\tab\f0 All\rquote Istituto di detenzione per la notifica<wr:if select="./.[Sesso=&apos;M&apos;]"> all\rquote interessato <wr:else/> all\rquote interessato </wr:if>e all\rquote annotazione in matricola;\par
+\pard\fi-396\li680\f1\'b7\tab\f0 al Tribunale di Sorveglianza \cf1 che ha emesso l\rquote ordinanza di revoca della misura alternativa\cf0 ;\lang2057\par
+\pard\qj\par
+\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\fs22\par
+\par
+\pard\par
+\pard\nowidctlpar\fi708\li5664\qr <wr:out select="/X/Firmatario"/>\par
+\pard\qr\lang1040 dott.<wr:out select="/X/Evento/Magistrato/Nome"/> <wr:out select="/X/Evento/Magistrato/Cognome"/>\par
+\pard\qc\page\lang16\f2{\pict\wmetafile8\picw3969\pich4366\picwgoal675\pichgoal742 
+0100090000033e1300000000720c00000000720c000026060f00da18574d464301000000000001
+0084220000000001000000b818000000000000b8180000010000006c0000000000000000000000
+95000000a400000000000000000000004f1200002314000020454d4600000100b81800000c0000
+0001000000000000000000000000000000000400000003000040010000f0000000000000000000
+00000000000000e2040080a90300460000002c00000020000000454d462b014001001c00000010
+0000000210c0db01000000600000006000000046000000f0090000e4090000454d462b22400400
+0c000000000000001e4009000c00000000000000244001000c0000000000000030400200100000
+00040000000000803f214007000c00000000000000084000053c090000300900000210c0db0100
+0000000000000000000000000000000000000100000089504e470d0a1a0a0000000d4948445200
+000096000000a50103000000842196a20000000467414d410000b1889598f4a600000006504c54
+45000000ffffffa5d99fdd000000097048597300000ec400000ec401952b0e1b000008a2494441
+54789c6d96cf4f1bd91dc0bfe3713d96706720b93861c498cd2ae41059663964127b19a7a9c21e
+a2ecbf60942a7b5951672fa5aa957913234c1484bb37a444819e7a65d58be5b98c3132b4a2e1da
+43a53ec38a50c99a8ec365908679fdbeb1c98f362381ed8fbeeffb7df3fd0decff1ff8f0956aff
+c3c06444f894f96006227ccae8ac19182523fa1e0c99533083dfa94af4fd7cc8e23923c8a4a48f
+e5c231470b757960241cb0202669a126a1f1f7365ade8aa13155d8343e308be6de180cbc09e503
+fb253d5a35991568d6c6050baf58cb3993391520ca050bfe504bcff3777140ba60fea93c5d4571
+e9ad225eb0be97aee1a130f1dd6af7e2ce7d3a3a61780a8358d2b9608734a62b9ed2a762ca3186
+67a9038ef4ee8016c4d437da50aee574e1cfa7f56d252127b5a19cd5dab9f4f6f0e0cdc1b296ba
+60d5aa33f353bb3a5eef188a32f48b04964f1354de68cff03b4572ca2faa678df1467ec31995a4
+01ebc842cd73f1a91310a581dd25f572b56de3535b175adcadc840bd2524b89c230b1e328c5108
+ba941be1729b7784a068701664720fb3eee081d93989df2528955fe7ede8693e48a0b7d0864f4b
+af165086ffdd23b2c86df469b790b7b7aeeae376b3e8cbf3fc6c976eebae4be41b80fab464c4de
+b69675bb29adeb346f83b832cfcfeeb696c03d91579327b24b0435c3d9521b047b93ada7996837
+4a5ad244bbabdbf083dbb693299bb8278bda0a26047bde81235b62e934a376635159d5f03dc656
+84c39eecde48b927d9de03654d43b99915f1a861b25c9285e38d07bf5234bccb0c913ad4b633ab
+795ba6bf461640384394f69f58384d4c56ddbc7f2f8167c3292277b65d777267c1dda63f3b1dcc
+87e03b50ab35165edb365977b3e41c2b216785b511bb296ea323a800f400e57e0bb75f1a2cbc77
+68323f67c5cbbbc81ec2ef65f4f3dc61d6ed954a305d3be7ec9d6eb2708ea2b0fe6449a89e83ff
+26f3ee26ba5df23000c9b37d410cc05f157ebe8d49a278987a696b7f5264e0bf121c8aa1503c54
+ba02ebd36328f74a747e4239cd477dc95c5aef0770860cbdded07cbc5f2a3deaffc89049564363
+8116188cdc81cc9e80ac21c5dc98db33826c2fe1925c51e44c11311c811118a882144a7791e564
+d9a5e30d23d431c0b4009c4dbf1a017ccc90ffdf02e8464c26efd909c49f9ce3d974fe3d131a90
+104238cbe80bce457b8af540e6ef96c9d95be6908d34e584847ec964dc93416f6081eccab139ce
+1ed98d416f60de1d3b013c4650745d69d8b57a0b30607f6d8e5b03666de6072cfe0f3746876621
+4b40e3ec4aa338301c5e95f3961331e86dddd4a2c69819cf12ac7e0841dc0a6291614f6079f2a0
+708e4ca66eab1635c6849ba500153886fca6e1459d8f684c44c798d086ec76be19b52db06df83e
+8ecc22f99ac13009982fb140d7e169012c67a196754fd0b02fbbbd8737e13706acd07cddc0b0a1
+594cacfb3aec18b05a02256f3739c328df4fc1be01af4bd331cc80a15c3c0dff4496598c2530bc
+a82febfe1bfdaf1ab091ab5c9298cf99c1ceba001306d4472b97afd90d64c1b8dde82641fd1aaa
+50b93cc578f2a16dff340d50802aa9cc245c8ace0a65f7e4f00a81afe1c5b3c55b128bd8b7cc3f
+d4c937263cef646e893661a119624d3fcb097b1578de16518e305f0baf312f06d20eca51f116e6
+1df334f6854b4548142bf0779a9892d828732436c63cd122c876bcf894d81ce3532b696f4eb774
+ccb59d726a4a0a279940d83a73fa8ede6740cbc9a958ef511823e6ea42cb2369ac85c3c52b8f2f
+fb555f72b4bf19960e69f11c0ef5ab8f27b7dade8b4de94d1ed44c1259bf70e9faed7eadabf5ab
+6d6decd5fcde23866cf4fa0d5a7b963d691dcb37961eb5da987fafe1ba7eaf1e3783dca355bd28
+1ced0611fb3eb196b49b37be727a65a1cbfb810c5fde19599fc6221f23cdb4d0e57d03d9823c5a
+725d3949dd54b18cbd299c822fed972226d10beb2f36388f790f9300eb2c56b5ed65e7d825e498
+337485dd1cc1046c6fdab620f23c65554250978c357982f250c4bec62c7277bc7907e3e635ecad
+3800ef9dddfd0c26143697c6824b53629af7586f3f8795c42b0bcb3c2de522e6e0e55095db5b70
+93a362269a01c5e462941bd46e8e668ad10c082055705dd1b6b179648a7cdaf23913bf8dc90dc0
+dbf85da845f30d1239d73d01c00132e30852b43390f68c3d9c33d796b02cf9dc721ca083719415
+97f1ca7cbed1e2e86634901a57af256030f31c501332176b91220883d948604da94673b0e54075
+c0aa30a775a279d926c2c860d60a4442dfe51be37536268d44fb0b081d9175a84ce5031653805f
+3800e1c862ede571eb453d040dcb1799724a7de6d4d70e3a8a5f34ea43e6a965aabdac3b2a5063
+c3e14c3cf5b9c7d70e6859708c0d82be0f4aa7a1805a1ce59448c47c2d73e6cf304280e1920413
+60aab39c1d5f664e49d5a8e6431a7bf3538cef59bbca3c9def0a7419442630ceac360bd4b95db6
+d15e4347491bc8fa5617379cddb7a1b29bc246abe0093812d64d26d02e9196d15181267226a6f8
+6ac59b33aaf367481d6b468aa1861ce0d284cc9b4727019527a53003a07b653cdba29c7557559c
+4a92545834b1bb3d2bafa13e7f2f9dc1e04b13159e64327c8bfa7c671d3df0eef14445371d7cbb
+39de4f73fdb8e2d3a7f26c1a75cc42346bf59cc4f6e8d387461a1831d337b98a5446be1ff7c284
+912eceb15d25ca49e9de7e2c5eaec48c34ada9428df258b67657acf80f9592f6c7a39a0ae8253c
+4bff63fd182f83a759ed9a5a14a39cf48d9a05824855a12daa25be88619e6a75eb0b8191c5c98e
+a8cea7cd28afa4ba155302f0a67744f5111dec522d66d5b0e510696f5e9daf0ef28fb22a7ee220
+0b3cf5c97037f38d7f610ea207150fbe1aee70017a0748308bed15f48bfd4f2420597cf280e999
+c3fd8f80ac601e5b7c445eec9d540c5258664ed787f73b2b9a5944dd5e99b18d0f8cf2dddecb0d
+c7e680599889b8034b1fb3185f0f8381b60b0683793460c3bdbd16fd229f9ca5d12f47fb9879d1
+1ca4c6c767fdc16c641fcb7df2049f619f93fbecd9ff023c6d34aa630395a20000000049454e44
+ae42608200000840010824000000180000000210c0db0100000003000000000000000000000000
+0000001b40000040000000340000000100000002000000000000bf000000bf0000164300002543
+03000000000000b3000000b3ffff1543000000b3000000b3ffff24432100000008000000620000
+000c00000001000000150000000c00000004000000150000000c0000000400000051000000640d
+0000000000000000000095000000a40000000000000000000000000000000000000096000000a5
+000000500000003000000080000000e40c0000000000002000cc0096000000a500000028000000
+96000000a500000001000100000000000000000000000000000000000200000000000000000000
+00ffffff00fffffffffffffffffffffffffffffffffffffc01ffffffffffffffffffffffffffff
+fffffffffc01fffffffffffffffffffffffffffffffffffffc01ffffffffffffffffffffffffff
+fffffffffffc01fffffffffff80ffffffffff0fffffffffffffc01fffffffffff00fffffffffe0
+3ffffffffffffc01ffffffffffe007ffffffffc01ffffffffffffc01ffffffffff8703ffffffff
+8007fffffffffffc01ffffffffff0000fffffffe0003fffffffffffc01ffffffffff02007fffff
+fc0003fffffffffffc01ffffffffff81c07ffffff80007fffffffffffc01ffffffffffe0e01fff
+fff0307ffffffffffffc01fffffffffff8780ffffff070ffff9ffffffffc01ffffffe003fc0c03
+ffffc0e1f80003fffffffc01ffffff80000e0f01ffff8180000000fffffffc01ffffff03800007
+81ffff0200007ff07ffffffc01fffffc0fff000080fc3e00001e00381ffffffc01fffff83fdfff
+80003000000ff000320ffffffc01ffffe0ff83fffc00000001fcf01c7107fffffc01ffffc1ff81
+87ff80018007c8611c6183fffffc01ffff078f81020ffc00f031c4031c63e07ffffc01fffe1f8f
+812201ff807821c6031c61187ffffc01fff83f8781000103e01c01c3031c600c1ffffc01ffe0ef
+8191047000f01f81c3871c400307fffc01ffc1c7888104727c601f90e3871c00c383fffc01ff07
+43cc0204707c023f18e0871c0187e0fffc01ff0c200e4604f0fe063f184047ffc70f307ffc01fe
+383007ffc8e07e4e3f1800ff807f182c3ffc01fc30f1040ff8e07e0e3e1803fc003e00061ffc01
+f8c09800003ff2661e7c387fc0001e00471ffc01f8c818200007ff071e7c3fff00ff0e004f8ffc
+01e18c1c03fc0007073c787ff001ff82708e0ffc01e00e2107fe20000038f0700001ffc1e08007
+fc00e007021fff00300000c0000003fff0618007fc01e3030c3fff00f0000000000003fff83380
+8ffc01e301987fff01e0e18007860001fffc1f030ffc01f181e1fffe07c7e7fe0fc70c007ffe0f
+0f0ffc01f981c3fffc1c47c7ff9fc38e003fff079f1ffcc6f9c383fff0380f0fffffe0860003ff
+01ff1ffc01fce613ffc0601c1fe01ff8001801ff007e1ffc01fcf833ff808000ffc01ffe001e00
+7f1c3e3ffc01fc60f3fe0100007fc00ff38007807f9e0e3ffc01fc03f3f80400003f8ecfe07001
+c03f9f803ffc01fc0ff3f01c70e01f9b8fc01c00e03f9fc07ffc01fc0ff3e0f8ffc08f8ecfc60f
+f8403f8f007ffc01fc0001e381ffc3861b818b8ffe001f00007ffc01ff0001c603ffc6e00ee00e
+cfff020f0000fffc01ffff018007ffc3a03bb81b8fff11070bfffffc00ffff8300471fc6eeeeee
+ee8fc380010bfffffc01ffff80008e0f83bbbbbbbb87c1c00083fffffc01ffffc0001c060eeeee
+eeeec180400001fffffc01ffffe04010a03bbbbbbbbbb81a230600fffffc01ffffc0c000e0eeee
+eeeeeeee2e0386003ffffc01ffff80c333bbbbbbbbbbbbbbba2384000ffffc01ffff000630eeee
+e800006eeeee33c00107fffc01fffe000439bbbb00000003bbb860410087fffc01fffc000c3cee
+ee03bbbb02eeec20400007fffc01fff8400878bbb83fffffe0bbba10204003fffc00fff0c01060
+eee8eeeeeeec6eee08100320fffc01fff0cc3063bbb8fffffffc3bbb801807307ffc01ffe1cc20
+0eeeec3bbbbbb86eeee00c03187ffc01ff8180411bba3a3ffffff0b8bbb00400003ffc01ff8380
+80eeee0e0eeeeee0e8eeee0200401ffc00ff038180bbba0b0fffffc3a0bbbb0103c01ffc01ff07
+0000eeee0283bbbb86c0e6ee8080e61ffc01fe270024bb9b0387ffff8b81b3bb00c0661ffc01fc
+0e00246e0e1060eeee0e08e0ee0c40701ffc01fc0e00243a0b9831fffe381180ba1801e10ffc01
+f89e00266c068e08bbba2832c0ec7001e1cffc01f89e002638438f047ffc30638c384001e3c7fc
+01f13c102628e087822ee8c1e60e288463c1c3fc00f13c122639f187e11ff183c31f119c61c863
+fc01e2381a6621b0c3f08ba007ce3b001c200803fc00e278196613f883f807c01fca3f81380018
+03fc01e070082702ec63fe02807f8c6ec1f08018f1fc01c4700c2707fe21ff0180ff98ffc0f1c0
+38f1fcb7c4f0042703ba11ff8001ff08bba031c138e1fc01cde0062707ff10ffc007ff11fff003
+8180407c0189e0033706ee80fff01fff22eee0030006407c0189c3033707ff80fff81ffe23fff0
+020007c47c0189c6203703bb80fffe7ffe03bbb8823001c87c008b82783707ffe07ffffffe4fff
+f8e23880487c0183807c3306eee07ffffffe0eeee8e21980003c0183007c1327fff03ffffffc1f
+fff8f31800003c018f107c1323bbb83ffffffc1bbbb8e108001c3c019f307c1207fff83ffffff8
+3ffff9e100001e3c009e20780206eeec3ffffff82eeee90000001c3c019e6031023ffffe1fffff
+f07ffff8041800dc3c008c60000f3bbbba1ffffff03bbbb8460c00cc3c0188e03b8f3ffffc1fff
+fff07ffff8463800c43c0181c06e872eeee81ffffff80eeeec4e2c00643c0181803b873fffe03f
+fffff807fffc3838007e3c01c3002ec23bba00fffffffe00bbbb006c04007c01e6003ba03ff001
+ffffffff801fff03b000007c00fe000ee0eec187ffffffffc006ee2ee000007c01fe0003b0fc02
+0ffffffffff001ff3b804c3cfc00fc0400ecb02c1ffffffffff8201b2e80c03ffc01fc0419b840
+b07ffffffffffe1a0e3b81c01ffc01fc04d8ee02e0ffffffffffff02002e80001ffc01fc00c9ba
+1b81ffffffffffff81a03b00000ffc01fc0040eeee07ffffffffffffe0ec6e00000ffc01f82063
+bbb80ffffffffffffff03abb06000ffc01f82020eee83ffffffffffffffc0eee0e0247fc00f820
+30bbb07fffffffffffffff0bba0e0607fc00f920386ec0ffffffffffffffff02ec000e03fc01f9
+30183b800000007ffe00000001b8000601fc01f9319c0e800000007ffe00000000e8000471fc01
+f9319c0b000000007ffe00000000b00000e1fc00f9300e0eeee01bb83ffe3800eeeee03c0041fc
+00f9b80f03bba0fffc3ffc3fe03bbb803c6041fc01f9b80702ee02eeec3ffc2eec06ee80304003
+fc00f99c0781b81ffffc1ffc3fff803a0020c801fc00f99c03c0e03bbbb81ff83bbbb00c1810f8
+91fc01f89c03c0b1fffffe1ff83ffffe08301838f1fc7ef89c01c0e0eeeeee0ff02eeeee880098
+3111fc01f88c01e439fffffe0ff03fffff1881cc2103fc00f8ce20f22cbbbbba07f03bbbbb08f9
+cc0103fc00fc4e00f2387ffffe47e03ffffe3871840183fc01fc4e00790e2eeeee47e22eeeec60
+60003187fc00fc6f00399b3ffffe43e27ffff830810470c7fc00fc67003c8e0bbbba03c23bbbb0
+e00100e0cffc01fc67001c8387fffe23c27fffe1a060c0e60ffc01fe27800ec6c2eeee21c46eee
+c2e0e4c0c60ffc00fe33800fc3a1fffe31807fff83a04643061ffc00ff338007c6e0bbbb208c3b
+bb0ee044420f1ffc01ff338803e3b87fff3008fffe1bb84c420f1ffc00ff118801e2ec0eee280c
+eee82eec4c0f8e1ffc00ff89c600e3bb07ff1818ffe0bbb8780f8c1ffc01ff8cc20072eec3bb08
+0cbb80eee8781f883ffc01ff84c30001bba0ff9818ff03bbb8601f087ffc01ffc7c18400eee80e
+8c08e80eee80011c20fffc01ffe7c18638bbba079838e03bbb00038861fffc00ffe1e0c238eeee
+800e2800eeee001f0861fffc00fff1e0e13c3bbbb01a381bbbba40f80e61fffc01fff8e0609c6e
+eeeeee6eeeeeee43800e03fffc01fffc60709e3bbbbbbbbbbbbbba4c060f03fffc01fffc20304e
+2eeeeeeeeeeeeeee003e4707fffc01fffe003807300bbbbbbbbba03a01fc403ffffc00ffff001c
+370106eeeeeeeec00e01f0007ffffc01ffff841c1383c3bbbbbbbb879801c1007ffffc00ffffc6
+0e0187f0eeeeeeee8f80000307fffffc00ffffff0f0583f9b81bb83b9fc0100707fffffc00ffff
+ff070081f8e006e00e9fc333870ffffffc00ffffff8383c033b1c3831b8fc63f0f0ffffffc01ff
+ffff81c1c412e7e2cfcecf861f0c1ffffffc01ffffffc1c0e100a7f38fc20f060e081ffffffc01
+ffffffe0c000c007f2cfe03c030c481ffffffc01ffffffe2e002380ff00ff1e0030cc03ffffffc
+01fffffff1e0101e3ff00fff000208c0fffffffc00fffffff1f018870ffffffe06678ce1ffffff
+fc00fffffff8f30e3183fffffe07e70f03fffffffc01fffffffc7b871861fffff800c00007ffff
+fffc00fffffffe198186307fffc07c00800ffffffffc00ffffffff0de0e38c7fff81fc1f819fff
+fffffc01ffffffff81e030ce3fff00f01e0ffffffffffc01ffffffffc1f0883f1fff1c01a03fff
+fffffffc00fffffffffffc02071ffe1f07007ffffffffffc00fffffffffffe11c01ffe380e01ff
+fffffffffc01ffffffffffff04303ffc200c07fffffffffffc01ffffffffffffc03c7ffc771c0f
+fffffffffffc01ffffffffffffe03e7ffc3f603ffffffffffffc00fffffffffffff8007ffc0300
+fffffffffffffc00ffffffffffffff007fff8001fffffffffffffc00ffffffffffffffffffffe0
+1ffffffffffffffc01fffffffffffffffffffffffffffffffffffffc014c000000640000000000
+00000000000095000000a4000000000000000000000096000000a50000002900aa000000000000
+0000000000803f00000000000000000000803f0000000000000000000000000000000000000000
+000000000000000000000000220000000c000000ffffffff460000001c00000010000000454d46
+2b024000000c000000000000000e00000014000000000000001000000014000000040000000301
+0800050000000b0200000000050000000c02a5009600030000001e000400000007010400040000
+000701040097060000410b2000cc00a500960000000000a5009600000000002800000096000000
+a50000000100010000000000000000000000000000000000020000000000000000000000ffffff
+00fffffffffffffffffffffffffffffffffffffc01ffffffffffffffffffffffffffffffffffff
+fc01fffffffffffffffffffffffffffffffffffffc01ffffffffffffffffffffffffffffffffff
+fffc01fffffffffff80ffffffffff0fffffffffffffc01fffffffffff00fffffffffe03fffffff
+fffffc01ffffffffffe007ffffffffc01ffffffffffffc01ffffffffff8703ffffffff8007ffff
+fffffffc01ffffffffff0000fffffffe0003fffffffffffc01ffffffffff02007ffffffc0003ff
+fffffffffc01ffffffffff81c07ffffff80007fffffffffffc01ffffffffffe0e01ffffff0307f
+fffffffffffc01fffffffffff8780ffffff070ffff9ffffffffc01ffffffe003fc0c03ffffc0e1
+f80003fffffffc01ffffff80000e0f01ffff8180000000fffffffc01ffffff0380000781ffff02
+00007ff07ffffffc01fffffc0fff000080fc3e00001e00381ffffffc01fffff83fdfff80003000
+000ff000320ffffffc01ffffe0ff83fffc00000001fcf01c7107fffffc01ffffc1ff8187ff8001
+8007c8611c6183fffffc01ffff078f81020ffc00f031c4031c63e07ffffc01fffe1f8f812201ff
+807821c6031c61187ffffc01fff83f8781000103e01c01c3031c600c1ffffc01ffe0ef81910470
+00f01f81c3871c400307fffc01ffc1c7888104727c601f90e3871c00c383fffc01ff0743cc0204
+707c023f18e0871c0187e0fffc01ff0c200e4604f0fe063f184047ffc70f307ffc01fe383007ff
+c8e07e4e3f1800ff807f182c3ffc01fc30f1040ff8e07e0e3e1803fc003e00061ffc01f8c09800
+003ff2661e7c387fc0001e00471ffc01f8c818200007ff071e7c3fff00ff0e004f8ffc01e18c1c
+03fc0007073c787ff001ff82708e0ffc01e00e2107fe20000038f0700001ffc1e08007fc00e007
+021fff00300000c0000003fff0618007fc01e3030c3fff00f0000000000003fff833808ffc01e3
+01987fff01e0e18007860001fffc1f030ffc01f181e1fffe07c7e7fe0fc70c007ffe0f0f0ffc01
+f981c3fffc1c47c7ff9fc38e003fff079f1ffcc6f9c383fff0380f0fffffe0860003ff01ff1ffc
+01fce613ffc0601c1fe01ff8001801ff007e1ffc01fcf833ff808000ffc01ffe001e007f1c3e3f
+fc01fc60f3fe0100007fc00ff38007807f9e0e3ffc01fc03f3f80400003f8ecfe07001c03f9f80
+3ffc01fc0ff3f01c70e01f9b8fc01c00e03f9fc07ffc01fc0ff3e0f8ffc08f8ecfc60ff8403f8f
+007ffc01fc0001e381ffc3861b818b8ffe001f00007ffc01ff0001c603ffc6e00ee00ecfff020f
+0000fffc01ffff018007ffc3a03bb81b8fff11070bfffffc00ffff8300471fc6eeeeeeee8fc380
+010bfffffc01ffff80008e0f83bbbbbbbb87c1c00083fffffc01ffffc0001c060eeeeeeeeec180
+400001fffffc01ffffe04010a03bbbbbbbbbb81a230600fffffc01ffffc0c000e0eeeeeeeeeeee
+2e0386003ffffc01ffff80c333bbbbbbbbbbbbbbba2384000ffffc01ffff000630eeeee800006e
+eeee33c00107fffc01fffe000439bbbb00000003bbb860410087fffc01fffc000c3ceeee03bbbb
+02eeec20400007fffc01fff8400878bbb83fffffe0bbba10204003fffc00fff0c01060eee8eeee
+eeec6eee08100320fffc01fff0cc3063bbb8fffffffc3bbb801807307ffc01ffe1cc200eeeec3b
+bbbbb86eeee00c03187ffc01ff8180411bba3a3ffffff0b8bbb00400003ffc01ff838080eeee0e
+0eeeeee0e8eeee0200401ffc00ff038180bbba0b0fffffc3a0bbbb0103c01ffc01ff070000eeee
+0283bbbb86c0e6ee8080e61ffc01fe270024bb9b0387ffff8b81b3bb00c0661ffc01fc0e00246e
+0e1060eeee0e08e0ee0c40701ffc01fc0e00243a0b9831fffe381180ba1801e10ffc01f89e0026
+6c068e08bbba2832c0ec7001e1cffc01f89e002638438f047ffc30638c384001e3c7fc01f13c10
+2628e087822ee8c1e60e288463c1c3fc00f13c122639f187e11ff183c31f119c61c863fc01e238
+1a6621b0c3f08ba007ce3b001c200803fc00e278196613f883f807c01fca3f8138001803fc01e0
+70082702ec63fe02807f8c6ec1f08018f1fc01c4700c2707fe21ff0180ff98ffc0f1c038f1fcb7
+c4f0042703ba11ff8001ff08bba031c138e1fc01cde0062707ff10ffc007ff11fff0038180407c
+0189e0033706ee80fff01fff22eee0030006407c0189c3033707ff80fff81ffe23fff0020007c4
+7c0189c6203703bb80fffe7ffe03bbb8823001c87c008b82783707ffe07ffffffe4ffff8e23880
+487c0183807c3306eee07ffffffe0eeee8e21980003c0183007c1327fff03ffffffc1ffff8f318
+00003c018f107c1323bbb83ffffffc1bbbb8e108001c3c019f307c1207fff83ffffff83ffff9e1
+00001e3c009e20780206eeec3ffffff82eeee90000001c3c019e6031023ffffe1ffffff07ffff8
+041800dc3c008c60000f3bbbba1ffffff03bbbb8460c00cc3c0188e03b8f3ffffc1ffffff07fff
+f8463800c43c0181c06e872eeee81ffffff80eeeec4e2c00643c0181803b873fffe03ffffff807
+fffc3838007e3c01c3002ec23bba00fffffffe00bbbb006c04007c01e6003ba03ff001ffffffff
+801fff03b000007c00fe000ee0eec187ffffffffc006ee2ee000007c01fe0003b0fc020fffffff
+fff001ff3b804c3cfc00fc0400ecb02c1ffffffffff8201b2e80c03ffc01fc0419b840b07fffff
+fffffe1a0e3b81c01ffc01fc04d8ee02e0ffffffffffff02002e80001ffc01fc00c9ba1b81ffff
+ffffffff81a03b00000ffc01fc0040eeee07ffffffffffffe0ec6e00000ffc01f82063bbb80fff
+fffffffffff03abb06000ffc01f82020eee83ffffffffffffffc0eee0e0247fc00f82030bbb07f
+ffffffffffffff0bba0e0607fc00f920386ec0ffffffffffffffff02ec000e03fc01f930183b80
+0000007ffe00000001b8000601fc01f9319c0e800000007ffe00000000e8000471fc01f9319c0b
+000000007ffe00000000b00000e1fc00f9300e0eeee01bb83ffe3800eeeee03c0041fc00f9b80f
+03bba0fffc3ffc3fe03bbb803c6041fc01f9b80702ee02eeec3ffc2eec06ee80304003fc00f99c
+0781b81ffffc1ffc3fff803a0020c801fc00f99c03c0e03bbbb81ff83bbbb00c1810f891fc01f8
+9c03c0b1fffffe1ff83ffffe08301838f1fc7ef89c01c0e0eeeeee0ff02eeeee8800983111fc01
+f88c01e439fffffe0ff03fffff1881cc2103fc00f8ce20f22cbbbbba07f03bbbbb08f9cc0103fc
+00fc4e00f2387ffffe47e03ffffe3871840183fc01fc4e00790e2eeeee47e22eeeec6060003187
+fc00fc6f00399b3ffffe43e27ffff830810470c7fc00fc67003c8e0bbbba03c23bbbb0e00100e0
+cffc01fc67001c8387fffe23c27fffe1a060c0e60ffc01fe27800ec6c2eeee21c46eeec2e0e4c0
+c60ffc00fe33800fc3a1fffe31807fff83a04643061ffc00ff338007c6e0bbbb208c3bbb0ee044
+420f1ffc01ff338803e3b87fff3008fffe1bb84c420f1ffc00ff118801e2ec0eee280ceee82eec
+4c0f8e1ffc00ff89c600e3bb07ff1818ffe0bbb8780f8c1ffc01ff8cc20072eec3bb080cbb80ee
+e8781f883ffc01ff84c30001bba0ff9818ff03bbb8601f087ffc01ffc7c18400eee80e8c08e80e
+ee80011c20fffc01ffe7c18638bbba079838e03bbb00038861fffc00ffe1e0c238eeee800e2800
+eeee001f0861fffc00fff1e0e13c3bbbb01a381bbbba40f80e61fffc01fff8e0609c6eeeeeee6e
+eeeeee43800e03fffc01fffc60709e3bbbbbbbbbbbbbba4c060f03fffc01fffc20304e2eeeeeee
+eeeeeeee003e4707fffc01fffe003807300bbbbbbbbba03a01fc403ffffc00ffff001c370106ee
+eeeeeec00e01f0007ffffc01ffff841c1383c3bbbbbbbb879801c1007ffffc00ffffc60e0187f0
+eeeeeeee8f80000307fffffc00ffffff0f0583f9b81bb83b9fc0100707fffffc00ffffff070081
+f8e006e00e9fc333870ffffffc00ffffff8383c033b1c3831b8fc63f0f0ffffffc01ffffff81c1
+c412e7e2cfcecf861f0c1ffffffc01ffffffc1c0e100a7f38fc20f060e081ffffffc01ffffffe0
+c000c007f2cfe03c030c481ffffffc01ffffffe2e002380ff00ff1e0030cc03ffffffc01ffffff
+f1e0101e3ff00fff000208c0fffffffc00fffffff1f018870ffffffe06678ce1fffffffc00ffff
+fff8f30e3183fffffe07e70f03fffffffc01fffffffc7b871861fffff800c00007fffffffc00ff
+fffffe198186307fffc07c00800ffffffffc00ffffffff0de0e38c7fff81fc1f819ffffffffc01
+ffffffff81e030ce3fff00f01e0ffffffffffc01ffffffffc1f0883f1fff1c01a03ffffffffffc
+00fffffffffffc02071ffe1f07007ffffffffffc00fffffffffffe11c01ffe380e01ffffffffff
+fc01ffffffffffff04303ffc200c07fffffffffffc01ffffffffffffc03c7ffc771c0fffffffff
+fffc01ffffffffffffe03e7ffc3f603ffffffffffffc00fffffffffffff8007ffc0300ffffffff
+fffffc00ffffffffffffff007fff8001fffffffffffffc00ffffffffffffffffffffe01fffffff
+fffffffc01fffffffffffffffffffffffffffffffffffffc010c00000040092900aa0000000000
+0000a500960000000000040000002701ffff030000000000
+}\lang1040\f0\par
+\lang2057\b\fs28 <wr:out select="/X/TipoUfficioT1"/>\par
+\pard\nowidctlpar\qc <wr:out select="/X/TipoUfficioT2"/>\par
+di <wr:out select="/X/Ufficio"/>\par
+\pard\keepn\nowidctlpar\s2\qc\fs24 Ufficio Esecuzioni Penali\par
+\pard\nowidctlpar\qc\b0\fs14\par
+<wr:out select="/X/Indirizzo"/> - <wr:out select="/X/Cap"/> - <wr:out select="/X/Ufficio"/> \par
+\pard\qc\fs20 _____________________________________\par
+\pard\nowidctlpar\qc\fs14\par
+<wr:if select="/X/Utente/Telefono"> Tel. <wr:out select="/X/Utente/Telefono"/> - Fax - <wr:out select="/X/Utente/Fax"/> - Email : <wr:out select="/X/Utente/Email"/><wr:else/>Tel. <wr:out select="/X/Telefono"/> - Fax - <wr:out select="/X/Fax"/></wr:if> \par
+\fs22\par
+\pard\nowidctlpar\qr <wr:out select="/X/Ufficio"/>, <wr:out select="/X/Evento/DataEmissione"/> \par
+\pard\nowidctlpar\b N. SIEP <wr:out select="/X/FascicoloSiep/ChiaveProgr"/>/<wr:out select="/X/FascicoloSiep/ChiaveAnno"/>\par
+\par
+\par
+\pard\nowidctlpar\qj\lang1040\b0 Oggetto: esecuzione penale contro <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato<wr:else/> la condannata</wr:if>:\par
+\par
+\pard\nowidctlpar\ul\b  \lang2057 <wr:out select="/X/Soggetto/Cognome"/>\cf1 /\cf0 <wr:out select="/X/Soggetto/Nome"/> \par
+\par
+\pard\nowidctlpar\qj\ulnone\b0 <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">nato<wr:else/>nata</wr:if><wr:if select="/X/Soggetto[DescrComuneNascita !=&apos;-&apos;]"> a <wr:out select="/X/Soggetto/DescrComuneNascita"/></wr:if><wr:if select="/X/Soggetto[CodProvinciaNascita!=&apos;-&apos;]"><wr:if select="/X/Soggetto[CodProvinciaNascita!=&apos;ES&apos;]"> (Prov. <wr:out select="/X/Soggetto/CodProvinciaNascita"/>)</wr:if></wr:if><wr:if select="/X/Soggetto/DescrStatoNascita"><wr:if select="/X/Soggetto/DescComuneNascitaEstero"> in <wr:out select="/X/Soggetto/DescComuneNascitaEstero"/></wr:if><wr:if select="/X/Soggetto[CodStatoNascita!=&apos;039&apos;]"> (<wr:out select="/X/Soggetto/DescrStatoNascita"/>)</wr:if></wr:if> il <wr:if select="/X/Soggetto/DataNascita"><wr:out select="/X/Soggetto/DataNascita"/><wr:else/><wr:out select="/X/Soggetto/AnnoNascita"/></wr:if><wr:forEach select="/X/Soggetto/Alias">\par
+\b alias <wr:out select="./Cognome"/>/<wr:out select="./Nome"/>\par
+\b0 <wr:if select="./.[Sesso=&apos;M&apos;]">nato <wr:else/>nata </wr:if> <wr:if select=".[DescrComuneNascita !=&apos;-&apos;]">a <wr:out select="./DescrComuneNascita"/> (Prov. <wr:out select=". /DescrProvinciaNascita"/>)</wr:if> <wr:if select="./DescrStatoNascita"><wr:if select="./DescComuneNascitaEstero"> in <wr:out select="./DescComuneNascitaEstero"/></wr:if><wr:if select=".[CodStatoNascita!=&apos;039&apos;]"> (<wr:out select="./DescrStatoNascita"/>)</wr:if></wr:if> il <wr:if select="./DataNascita"> <wr:out select="./DataNascita"/><wr:else/><wr:out select="./AnnoNascita"/></wr:if></wr:forEach> <wr:forEach select="/X/Soggetto/Residenza"><wr:if select=".[CodTipoResidenza=&apos;R&apos;]">\par
+residente </wr:if> <wr:if select=".[CodTipoResidenza=&apos;D&apos;]"> <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">\par
+domiciliato <wr:else/>\par
+domiciliata </wr:if></wr:if><wr:if select=".[DescrComune!=&apos;-&apos;]">a <wr:out select="./DescrComune"/><wr:if select=".[CodProvincia!=&apos;-&apos;]"> (Prov. <wr:out select="./CodProvincia"/>)</wr:if></wr:if><wr:if select=".[CodStato!=&apos;039&apos;]"><wr:if select=".[DescrStato!=&apos;-&apos;]">in <wr:out select="./DescComuneEstero"/> (<wr:out select="./DescrStato"/>) </wr:if></wr:if> <wr:out select="./Indirizzo"/></wr:forEach>\par
+\pard\nowidctlpar\b\par
+\par
+\par
+\pard\nowidctlpar\li708 <wr:forEach select="/X/Evento/Notifica">\par
+<wr:if select="./CSSA">\par
+UFFICIO ESECUZIONE PENALE ESTERNA di \cf1 <wr:out select="./CSSA/Comune"/>,  <wr:out select="./CSSA/Indirizzo"/></wr:if>\par
+\cf0 <wr:if select="./Ufficio">\par
+<wr:out select="./Ufficio/DescrTipoUfficio"/> di <wr:out select="./Ufficio/DescrComune"/></wr:if>\par
+<wr:if select="./AutoritaEsterna">\par
+<wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/></wr:if> <wr:if select="./Note"> <wr:out select="./Note"/></wr:if></wr:forEach>\par
+\pard\nowidctlpar\par
+\pard\keepn\s1\qc\b0\par
+\pard\nowidctlpar\b\par
+\pard\qj\lang1040\b0 Si trasmette, per quanto di competenza o notizia, copia del provvedimento emesso da questo Ufficio in data <wr:out select="/X/Evento/DataInserimento"/>.\par
+\pard\par
+\pard\nowidctlpar\lang2057 <wr:forEach select="/X/FascicoloSiep/Avvocato">\par
+\par
+\pard\nowidctlpar\qc\page\lang16\f2{\pict\wmetafile8\picw3969\pich4366\picwgoal675\pichgoal742 
+0100090000033e1300000000720c00000000720c000026060f00da18574d464301000000000001
+0084220000000001000000b818000000000000b8180000010000006c0000000000000000000000
+95000000a400000000000000000000004f1200002314000020454d4600000100b81800000c0000
+0001000000000000000000000000000000000400000003000040010000f0000000000000000000
+00000000000000e2040080a90300460000002c00000020000000454d462b014001001c00000010
+0000000210c0db01000000600000006000000046000000f0090000e4090000454d462b22400400
+0c000000000000001e4009000c00000000000000244001000c0000000000000030400200100000
+00040000000000803f214007000c00000000000000084000053c090000300900000210c0db0100
+0000000000000000000000000000000000000100000089504e470d0a1a0a0000000d4948445200
+000096000000a50103000000842196a20000000467414d410000b1889598f4a600000006504c54
+45000000ffffffa5d99fdd000000097048597300000ec400000ec401952b0e1b000008a2494441
+54789c6d96cf4f1bd91dc0bfe3713d96706720b93861c498cd2ae41059663964127b19a7a9c21e
+a2ecbf60942a7b5951672fa5aa957913234c1484bb37a444819e7a65d58be5b98c3132b4a2e1da
+43a53ec38a50c99a8ec365908679fdbeb1c98f362381ed8fbeeffb7df3fd0decff1ff8f0956aff
+c3c06444f894f96006227ccae8ac19182523fa1e0c99533083dfa94af4fd7cc8e23923c8a4a48f
+e5c231470b757960241cb0202669a126a1f1f7365ade8aa13155d8343e308be6de180cbc09e503
+fb253d5a35991568d6c6050baf58cb3993391520ca050bfe504bcff3777140ba60fea93c5d4571
+e9ad225eb0be97aee1a130f1dd6af7e2ce7d3a3a61780a8358d2b9608734a62b9ed2a762ca3186
+67a9038ef4ee8016c4d437da50aee574e1cfa7f56d252127b5a19cd5dab9f4f6f0e0cdc1b296ba
+60d5aa33f353bb3a5eef188a32f48b04964f1354de68cff03b4572ca2faa678df1467ec31995a4
+01ebc842cd73f1a91310a581dd25f572b56de3535b175adcadc840bd2524b89c230b1e328c5108
+ba941be1729b7784a068701664720fb3eee081d93989df2528955fe7ede8693e48a0b7d0864f4b
+af165086ffdd23b2c86df469b790b7b7aeeae376b3e8cbf3fc6c976eebae4be41b80fab464c4de
+b69675bb29adeb346f83b832cfcfeeb696c03d91579327b24b0435c3d9521b047b93ada7996837
+4a5ad244bbabdbf083dbb693299bb8278bda0a26047bde81235b62e934a376635159d5f03dc656
+84c39eecde48b927d9de03654d43b99915f1a861b25c9285e38d07bf5234bccb0c913ad4b633ab
+795ba6bf461640384394f69f58384d4c56ddbc7f2f8167c3292277b65d777267c1dda63f3b1dcc
+87e03b50ab35165edb365977b3e41c2b216785b511bb296ea323a800f400e57e0bb75f1a2cbc77
+68323f67c5cbbbc81ec2ef65f4f3dc61d6ed954a305d3be7ec9d6eb2708ea2b0fe6449a89e83ff
+26f3ee26ba5df23000c9b37d410cc05f157ebe8d49a278987a696b7f5264e0bf121c8aa1503c54
+ba02ebd36328f74a747e4239cd477dc95c5aef0770860cbdded07cbc5f2a3deaffc89049564363
+8116188cdc81cc9e80ac21c5dc98db33826c2fe1925c51e44c11311c811118a882144a7791e564
+d9a5e30d23d431c0b4009c4dbf1a017ccc90ffdf02e8464c26efd909c49f9ce3d974fe3d131a90
+104238cbe80bce457b8af540e6ef96c9d95be6908d34e584847ec964dc93416f6081eccab139ce
+1ed98d416f60de1d3b013c4650745d69d8b57a0b30607f6d8e5b03666de6072cfe0f3746876621
+4b40e3ec4aa338301c5e95f3961331e86dddd4a2c69819cf12ac7e0841dc0a6291614f6079f2a0
+708e4ca66eab1635c6849ba500153886fca6e1459d8f684c44c798d086ec76be19b52db06df83e
+8ecc22f99ac13009982fb140d7e169012c67a196754fd0b02fbbbd8737e13706acd07cddc0b0a1
+594cacfb3aec18b05a02256f3739c328df4fc1be01af4bd331cc80a15c3c0dff4496598c2530bc
+a82febfe1bfdaf1ab091ab5c9298cf99c1ceba001306d4472b97afd90d64c1b8dde82641fd1aaa
+50b93cc578f2a16dff340d50802aa9cc245c8ace0a65f7e4f00a81afe1c5b3c55b128bd8b7cc3f
+d4c937263cef646e893661a119624d3fcb097b1578de16518e305f0baf312f06d20eca51f116e6
+1df334f6854b4548142bf0779a9892d828732436c63cd122c876bcf894d81ce3532b696f4eb774
+ccb59d726a4a0a279940d83a73fa8ede6740cbc9a958ef511823e6ea42cb2369ac85c3c52b8f2f
+fb555f72b4bf19960e69f11c0ef5ab8f27b7dade8b4de94d1ed44c1259bf70e9faed7eadabf5ab
+6d6decd5fcde23866cf4fa0d5a7b963d691dcb37961eb5da987fafe1ba7eaf1e3783dca355bd28
+1ced0611fb3eb196b49b37be727a65a1cbfb810c5fde19599fc6221f23cdb4d0e57d03d9823c5a
+725d3949dd54b18cbd299c822fed972226d10beb2f36388f790f9300eb2c56b5ed65e7d825e498
+337485dd1cc1046c6fdab620f23c65554250978c357982f250c4bec62c7277bc7907e3e635ecad
+3800ef9dddfd0c26143697c6824b53629af7586f3f8795c42b0bcb3c2de522e6e0e55095db5b70
+93a362269a01c5e462941bd46e8e668ad10c082055705dd1b6b179648a7cdaf23913bf8dc90dc0
+dbf85da845f30d1239d73d01c00132e30852b43390f68c3d9c33d796b02cf9dc721ca083719415
+97f1ca7cbed1e2e86634901a57af256030f31c501332176b91220883d948604da94673b0e54075
+c0aa30a775a279d926c2c860d60a4442dfe51be37536268d44fb0b081d9175a84ce5031653805f
+3800e1c862ede571eb453d040dcb1799724a7de6d4d70e3a8a5f34ea43e6a965aabdac3b2a5063
+c3e14c3cf5b9c7d70e6859708c0d82be0f4aa7a1805a1ce59448c47c2d73e6cf304280e1920413
+60aab39c1d5f664e49d5a8e6431a7bf3538cef59bbca3c9def0a7419442630ceac360bd4b95db6
+d15e4347491bc8fa5617379cddb7a1b29bc246abe0093812d64d26d02e9196d15181267226a6f8
+6ac59b33aaf367481d6b468aa1861ce0d284cc9b4727019527a53003a07b653cdba29c7557559c
+4a92545834b1bb3d2bafa13e7f2f9dc1e04b13159e64327c8bfa7c671d3df0eef14445371d7cbb
+39de4f73fdb8e2d3a7f26c1a75cc42346bf59cc4f6e8d387461a1831d337b98a5446be1ff7c284
+912eceb15d25ca49e9de7e2c5eaec48c34ada9428df258b67657acf80f9592f6c7a39a0ae8253c
+4bff63fd182f83a759ed9a5a14a39cf48d9a05824855a12daa25be88619e6a75eb0b8191c5c98e
+a8cea7cd28afa4ba155302f0a67744f5111dec522d66d5b0e510696f5e9daf0ef28fb22a7ee220
+0b3cf5c97037f38d7f610ea207150fbe1aee70017a0748308bed15f48bfd4f2420597cf280e999
+c3fd8f80ac601e5b7c445eec9d540c5258664ed787f73b2b9a5944dd5e99b18d0f8cf2dddecb0d
+c7e680599889b8034b1fb3185f0f8381b60b0683793460c3bdbd16fd229f9ca5d12f47fb9879d1
+1ca4c6c767fdc16c641fcb7df2049f619f93fbecd9ff023c6d34aa630395a20000000049454e44
+ae42608200000840010824000000180000000210c0db0100000003000000000000000000000000
+0000001b40000040000000340000000100000002000000000000bf000000bf0000164300002543
+03000000000000b3000000b3ffff1543000000b3000000b3ffff24432100000008000000620000
+000c00000001000000150000000c00000004000000150000000c0000000400000051000000640d
+0000000000000000000095000000a40000000000000000000000000000000000000096000000a5
+000000500000003000000080000000e40c0000000000002000cc0096000000a500000028000000
+96000000a500000001000100000000000000000000000000000000000200000000000000000000
+00ffffff00fffffffffffffffffffffffffffffffffffffc01ffffffffffffffffffffffffffff
+fffffffffc01fffffffffffffffffffffffffffffffffffffc01ffffffffffffffffffffffffff
+fffffffffffc01fffffffffff80ffffffffff0fffffffffffffc01fffffffffff00fffffffffe0
+3ffffffffffffc01ffffffffffe007ffffffffc01ffffffffffffc01ffffffffff8703ffffffff
+8007fffffffffffc01ffffffffff0000fffffffe0003fffffffffffc01ffffffffff02007fffff
+fc0003fffffffffffc01ffffffffff81c07ffffff80007fffffffffffc01ffffffffffe0e01fff
+fff0307ffffffffffffc01fffffffffff8780ffffff070ffff9ffffffffc01ffffffe003fc0c03
+ffffc0e1f80003fffffffc01ffffff80000e0f01ffff8180000000fffffffc01ffffff03800007
+81ffff0200007ff07ffffffc01fffffc0fff000080fc3e00001e00381ffffffc01fffff83fdfff
+80003000000ff000320ffffffc01ffffe0ff83fffc00000001fcf01c7107fffffc01ffffc1ff81
+87ff80018007c8611c6183fffffc01ffff078f81020ffc00f031c4031c63e07ffffc01fffe1f8f
+812201ff807821c6031c61187ffffc01fff83f8781000103e01c01c3031c600c1ffffc01ffe0ef
+8191047000f01f81c3871c400307fffc01ffc1c7888104727c601f90e3871c00c383fffc01ff07
+43cc0204707c023f18e0871c0187e0fffc01ff0c200e4604f0fe063f184047ffc70f307ffc01fe
+383007ffc8e07e4e3f1800ff807f182c3ffc01fc30f1040ff8e07e0e3e1803fc003e00061ffc01
+f8c09800003ff2661e7c387fc0001e00471ffc01f8c818200007ff071e7c3fff00ff0e004f8ffc
+01e18c1c03fc0007073c787ff001ff82708e0ffc01e00e2107fe20000038f0700001ffc1e08007
+fc00e007021fff00300000c0000003fff0618007fc01e3030c3fff00f0000000000003fff83380
+8ffc01e301987fff01e0e18007860001fffc1f030ffc01f181e1fffe07c7e7fe0fc70c007ffe0f
+0f0ffc01f981c3fffc1c47c7ff9fc38e003fff079f1ffcc6f9c383fff0380f0fffffe0860003ff
+01ff1ffc01fce613ffc0601c1fe01ff8001801ff007e1ffc01fcf833ff808000ffc01ffe001e00
+7f1c3e3ffc01fc60f3fe0100007fc00ff38007807f9e0e3ffc01fc03f3f80400003f8ecfe07001
+c03f9f803ffc01fc0ff3f01c70e01f9b8fc01c00e03f9fc07ffc01fc0ff3e0f8ffc08f8ecfc60f
+f8403f8f007ffc01fc0001e381ffc3861b818b8ffe001f00007ffc01ff0001c603ffc6e00ee00e
+cfff020f0000fffc01ffff018007ffc3a03bb81b8fff11070bfffffc00ffff8300471fc6eeeeee
+ee8fc380010bfffffc01ffff80008e0f83bbbbbbbb87c1c00083fffffc01ffffc0001c060eeeee
+eeeec180400001fffffc01ffffe04010a03bbbbbbbbbb81a230600fffffc01ffffc0c000e0eeee
+eeeeeeee2e0386003ffffc01ffff80c333bbbbbbbbbbbbbbba2384000ffffc01ffff000630eeee
+e800006eeeee33c00107fffc01fffe000439bbbb00000003bbb860410087fffc01fffc000c3cee
+ee03bbbb02eeec20400007fffc01fff8400878bbb83fffffe0bbba10204003fffc00fff0c01060
+eee8eeeeeeec6eee08100320fffc01fff0cc3063bbb8fffffffc3bbb801807307ffc01ffe1cc20
+0eeeec3bbbbbb86eeee00c03187ffc01ff8180411bba3a3ffffff0b8bbb00400003ffc01ff8380
+80eeee0e0eeeeee0e8eeee0200401ffc00ff038180bbba0b0fffffc3a0bbbb0103c01ffc01ff07
+0000eeee0283bbbb86c0e6ee8080e61ffc01fe270024bb9b0387ffff8b81b3bb00c0661ffc01fc
+0e00246e0e1060eeee0e08e0ee0c40701ffc01fc0e00243a0b9831fffe381180ba1801e10ffc01
+f89e00266c068e08bbba2832c0ec7001e1cffc01f89e002638438f047ffc30638c384001e3c7fc
+01f13c102628e087822ee8c1e60e288463c1c3fc00f13c122639f187e11ff183c31f119c61c863
+fc01e2381a6621b0c3f08ba007ce3b001c200803fc00e278196613f883f807c01fca3f81380018
+03fc01e070082702ec63fe02807f8c6ec1f08018f1fc01c4700c2707fe21ff0180ff98ffc0f1c0
+38f1fcb7c4f0042703ba11ff8001ff08bba031c138e1fc01cde0062707ff10ffc007ff11fff003
+8180407c0189e0033706ee80fff01fff22eee0030006407c0189c3033707ff80fff81ffe23fff0
+020007c47c0189c6203703bb80fffe7ffe03bbb8823001c87c008b82783707ffe07ffffffe4fff
+f8e23880487c0183807c3306eee07ffffffe0eeee8e21980003c0183007c1327fff03ffffffc1f
+fff8f31800003c018f107c1323bbb83ffffffc1bbbb8e108001c3c019f307c1207fff83ffffff8
+3ffff9e100001e3c009e20780206eeec3ffffff82eeee90000001c3c019e6031023ffffe1fffff
+f07ffff8041800dc3c008c60000f3bbbba1ffffff03bbbb8460c00cc3c0188e03b8f3ffffc1fff
+fff07ffff8463800c43c0181c06e872eeee81ffffff80eeeec4e2c00643c0181803b873fffe03f
+fffff807fffc3838007e3c01c3002ec23bba00fffffffe00bbbb006c04007c01e6003ba03ff001
+ffffffff801fff03b000007c00fe000ee0eec187ffffffffc006ee2ee000007c01fe0003b0fc02
+0ffffffffff001ff3b804c3cfc00fc0400ecb02c1ffffffffff8201b2e80c03ffc01fc0419b840
+b07ffffffffffe1a0e3b81c01ffc01fc04d8ee02e0ffffffffffff02002e80001ffc01fc00c9ba
+1b81ffffffffffff81a03b00000ffc01fc0040eeee07ffffffffffffe0ec6e00000ffc01f82063
+bbb80ffffffffffffff03abb06000ffc01f82020eee83ffffffffffffffc0eee0e0247fc00f820
+30bbb07fffffffffffffff0bba0e0607fc00f920386ec0ffffffffffffffff02ec000e03fc01f9
+30183b800000007ffe00000001b8000601fc01f9319c0e800000007ffe00000000e8000471fc01
+f9319c0b000000007ffe00000000b00000e1fc00f9300e0eeee01bb83ffe3800eeeee03c0041fc
+00f9b80f03bba0fffc3ffc3fe03bbb803c6041fc01f9b80702ee02eeec3ffc2eec06ee80304003
+fc00f99c0781b81ffffc1ffc3fff803a0020c801fc00f99c03c0e03bbbb81ff83bbbb00c1810f8
+91fc01f89c03c0b1fffffe1ff83ffffe08301838f1fc7ef89c01c0e0eeeeee0ff02eeeee880098
+3111fc01f88c01e439fffffe0ff03fffff1881cc2103fc00f8ce20f22cbbbbba07f03bbbbb08f9
+cc0103fc00fc4e00f2387ffffe47e03ffffe3871840183fc01fc4e00790e2eeeee47e22eeeec60
+60003187fc00fc6f00399b3ffffe43e27ffff830810470c7fc00fc67003c8e0bbbba03c23bbbb0
+e00100e0cffc01fc67001c8387fffe23c27fffe1a060c0e60ffc01fe27800ec6c2eeee21c46eee
+c2e0e4c0c60ffc00fe33800fc3a1fffe31807fff83a04643061ffc00ff338007c6e0bbbb208c3b
+bb0ee044420f1ffc01ff338803e3b87fff3008fffe1bb84c420f1ffc00ff118801e2ec0eee280c
+eee82eec4c0f8e1ffc00ff89c600e3bb07ff1818ffe0bbb8780f8c1ffc01ff8cc20072eec3bb08
+0cbb80eee8781f883ffc01ff84c30001bba0ff9818ff03bbb8601f087ffc01ffc7c18400eee80e
+8c08e80eee80011c20fffc01ffe7c18638bbba079838e03bbb00038861fffc00ffe1e0c238eeee
+800e2800eeee001f0861fffc00fff1e0e13c3bbbb01a381bbbba40f80e61fffc01fff8e0609c6e
+eeeeee6eeeeeee43800e03fffc01fffc60709e3bbbbbbbbbbbbbba4c060f03fffc01fffc20304e
+2eeeeeeeeeeeeeee003e4707fffc01fffe003807300bbbbbbbbba03a01fc403ffffc00ffff001c
+370106eeeeeeeec00e01f0007ffffc01ffff841c1383c3bbbbbbbb879801c1007ffffc00ffffc6
+0e0187f0eeeeeeee8f80000307fffffc00ffffff0f0583f9b81bb83b9fc0100707fffffc00ffff
+ff070081f8e006e00e9fc333870ffffffc00ffffff8383c033b1c3831b8fc63f0f0ffffffc01ff
+ffff81c1c412e7e2cfcecf861f0c1ffffffc01ffffffc1c0e100a7f38fc20f060e081ffffffc01
+ffffffe0c000c007f2cfe03c030c481ffffffc01ffffffe2e002380ff00ff1e0030cc03ffffffc
+01fffffff1e0101e3ff00fff000208c0fffffffc00fffffff1f018870ffffffe06678ce1ffffff
+fc00fffffff8f30e3183fffffe07e70f03fffffffc01fffffffc7b871861fffff800c00007ffff
+fffc00fffffffe198186307fffc07c00800ffffffffc00ffffffff0de0e38c7fff81fc1f819fff
+fffffc01ffffffff81e030ce3fff00f01e0ffffffffffc01ffffffffc1f0883f1fff1c01a03fff
+fffffffc00fffffffffffc02071ffe1f07007ffffffffffc00fffffffffffe11c01ffe380e01ff
+fffffffffc01ffffffffffff04303ffc200c07fffffffffffc01ffffffffffffc03c7ffc771c0f
+fffffffffffc01ffffffffffffe03e7ffc3f603ffffffffffffc00fffffffffffff8007ffc0300
+fffffffffffffc00ffffffffffffff007fff8001fffffffffffffc00ffffffffffffffffffffe0
+1ffffffffffffffc01fffffffffffffffffffffffffffffffffffffc014c000000640000000000
+00000000000095000000a4000000000000000000000096000000a50000002900aa000000000000
+0000000000803f00000000000000000000803f0000000000000000000000000000000000000000
+000000000000000000000000220000000c000000ffffffff460000001c00000010000000454d46
+2b024000000c000000000000000e00000014000000000000001000000014000000040000000301
+0800050000000b0200000000050000000c02a5009600030000001e000400000007010400040000
+000701040097060000410b2000cc00a500960000000000a5009600000000002800000096000000
+a50000000100010000000000000000000000000000000000020000000000000000000000ffffff
+00fffffffffffffffffffffffffffffffffffffc01ffffffffffffffffffffffffffffffffffff
+fc01fffffffffffffffffffffffffffffffffffffc01ffffffffffffffffffffffffffffffffff
+fffc01fffffffffff80ffffffffff0fffffffffffffc01fffffffffff00fffffffffe03fffffff
+fffffc01ffffffffffe007ffffffffc01ffffffffffffc01ffffffffff8703ffffffff8007ffff
+fffffffc01ffffffffff0000fffffffe0003fffffffffffc01ffffffffff02007ffffffc0003ff
+fffffffffc01ffffffffff81c07ffffff80007fffffffffffc01ffffffffffe0e01ffffff0307f
+fffffffffffc01fffffffffff8780ffffff070ffff9ffffffffc01ffffffe003fc0c03ffffc0e1
+f80003fffffffc01ffffff80000e0f01ffff8180000000fffffffc01ffffff0380000781ffff02
+00007ff07ffffffc01fffffc0fff000080fc3e00001e00381ffffffc01fffff83fdfff80003000
+000ff000320ffffffc01ffffe0ff83fffc00000001fcf01c7107fffffc01ffffc1ff8187ff8001
+8007c8611c6183fffffc01ffff078f81020ffc00f031c4031c63e07ffffc01fffe1f8f812201ff
+807821c6031c61187ffffc01fff83f8781000103e01c01c3031c600c1ffffc01ffe0ef81910470
+00f01f81c3871c400307fffc01ffc1c7888104727c601f90e3871c00c383fffc01ff0743cc0204
+707c023f18e0871c0187e0fffc01ff0c200e4604f0fe063f184047ffc70f307ffc01fe383007ff
+c8e07e4e3f1800ff807f182c3ffc01fc30f1040ff8e07e0e3e1803fc003e00061ffc01f8c09800
+003ff2661e7c387fc0001e00471ffc01f8c818200007ff071e7c3fff00ff0e004f8ffc01e18c1c
+03fc0007073c787ff001ff82708e0ffc01e00e2107fe20000038f0700001ffc1e08007fc00e007
+021fff00300000c0000003fff0618007fc01e3030c3fff00f0000000000003fff833808ffc01e3
+01987fff01e0e18007860001fffc1f030ffc01f181e1fffe07c7e7fe0fc70c007ffe0f0f0ffc01
+f981c3fffc1c47c7ff9fc38e003fff079f1ffcc6f9c383fff0380f0fffffe0860003ff01ff1ffc
+01fce613ffc0601c1fe01ff8001801ff007e1ffc01fcf833ff808000ffc01ffe001e007f1c3e3f
+fc01fc60f3fe0100007fc00ff38007807f9e0e3ffc01fc03f3f80400003f8ecfe07001c03f9f80
+3ffc01fc0ff3f01c70e01f9b8fc01c00e03f9fc07ffc01fc0ff3e0f8ffc08f8ecfc60ff8403f8f
+007ffc01fc0001e381ffc3861b818b8ffe001f00007ffc01ff0001c603ffc6e00ee00ecfff020f
+0000fffc01ffff018007ffc3a03bb81b8fff11070bfffffc00ffff8300471fc6eeeeeeee8fc380
+010bfffffc01ffff80008e0f83bbbbbbbb87c1c00083fffffc01ffffc0001c060eeeeeeeeec180
+400001fffffc01ffffe04010a03bbbbbbbbbb81a230600fffffc01ffffc0c000e0eeeeeeeeeeee
+2e0386003ffffc01ffff80c333bbbbbbbbbbbbbbba2384000ffffc01ffff000630eeeee800006e
+eeee33c00107fffc01fffe000439bbbb00000003bbb860410087fffc01fffc000c3ceeee03bbbb
+02eeec20400007fffc01fff8400878bbb83fffffe0bbba10204003fffc00fff0c01060eee8eeee
+eeec6eee08100320fffc01fff0cc3063bbb8fffffffc3bbb801807307ffc01ffe1cc200eeeec3b
+bbbbb86eeee00c03187ffc01ff8180411bba3a3ffffff0b8bbb00400003ffc01ff838080eeee0e
+0eeeeee0e8eeee0200401ffc00ff038180bbba0b0fffffc3a0bbbb0103c01ffc01ff070000eeee
+0283bbbb86c0e6ee8080e61ffc01fe270024bb9b0387ffff8b81b3bb00c0661ffc01fc0e00246e
+0e1060eeee0e08e0ee0c40701ffc01fc0e00243a0b9831fffe381180ba1801e10ffc01f89e0026
+6c068e08bbba2832c0ec7001e1cffc01f89e002638438f047ffc30638c384001e3c7fc01f13c10
+2628e087822ee8c1e60e288463c1c3fc00f13c122639f187e11ff183c31f119c61c863fc01e238
+1a6621b0c3f08ba007ce3b001c200803fc00e278196613f883f807c01fca3f8138001803fc01e0
+70082702ec63fe02807f8c6ec1f08018f1fc01c4700c2707fe21ff0180ff98ffc0f1c038f1fcb7
+c4f0042703ba11ff8001ff08bba031c138e1fc01cde0062707ff10ffc007ff11fff0038180407c
+0189e0033706ee80fff01fff22eee0030006407c0189c3033707ff80fff81ffe23fff0020007c4
+7c0189c6203703bb80fffe7ffe03bbb8823001c87c008b82783707ffe07ffffffe4ffff8e23880
+487c0183807c3306eee07ffffffe0eeee8e21980003c0183007c1327fff03ffffffc1ffff8f318
+00003c018f107c1323bbb83ffffffc1bbbb8e108001c3c019f307c1207fff83ffffff83ffff9e1
+00001e3c009e20780206eeec3ffffff82eeee90000001c3c019e6031023ffffe1ffffff07ffff8
+041800dc3c008c60000f3bbbba1ffffff03bbbb8460c00cc3c0188e03b8f3ffffc1ffffff07fff
+f8463800c43c0181c06e872eeee81ffffff80eeeec4e2c00643c0181803b873fffe03ffffff807
+fffc3838007e3c01c3002ec23bba00fffffffe00bbbb006c04007c01e6003ba03ff001ffffffff
+801fff03b000007c00fe000ee0eec187ffffffffc006ee2ee000007c01fe0003b0fc020fffffff
+fff001ff3b804c3cfc00fc0400ecb02c1ffffffffff8201b2e80c03ffc01fc0419b840b07fffff
+fffffe1a0e3b81c01ffc01fc04d8ee02e0ffffffffffff02002e80001ffc01fc00c9ba1b81ffff
+ffffffff81a03b00000ffc01fc0040eeee07ffffffffffffe0ec6e00000ffc01f82063bbb80fff
+fffffffffff03abb06000ffc01f82020eee83ffffffffffffffc0eee0e0247fc00f82030bbb07f
+ffffffffffffff0bba0e0607fc00f920386ec0ffffffffffffffff02ec000e03fc01f930183b80
+0000007ffe00000001b8000601fc01f9319c0e800000007ffe00000000e8000471fc01f9319c0b
+000000007ffe00000000b00000e1fc00f9300e0eeee01bb83ffe3800eeeee03c0041fc00f9b80f
+03bba0fffc3ffc3fe03bbb803c6041fc01f9b80702ee02eeec3ffc2eec06ee80304003fc00f99c
+0781b81ffffc1ffc3fff803a0020c801fc00f99c03c0e03bbbb81ff83bbbb00c1810f891fc01f8
+9c03c0b1fffffe1ff83ffffe08301838f1fc7ef89c01c0e0eeeeee0ff02eeeee8800983111fc01
+f88c01e439fffffe0ff03fffff1881cc2103fc00f8ce20f22cbbbbba07f03bbbbb08f9cc0103fc
+00fc4e00f2387ffffe47e03ffffe3871840183fc01fc4e00790e2eeeee47e22eeeec6060003187
+fc00fc6f00399b3ffffe43e27ffff830810470c7fc00fc67003c8e0bbbba03c23bbbb0e00100e0
+cffc01fc67001c8387fffe23c27fffe1a060c0e60ffc01fe27800ec6c2eeee21c46eeec2e0e4c0
+c60ffc00fe33800fc3a1fffe31807fff83a04643061ffc00ff338007c6e0bbbb208c3bbb0ee044
+420f1ffc01ff338803e3b87fff3008fffe1bb84c420f1ffc00ff118801e2ec0eee280ceee82eec
+4c0f8e1ffc00ff89c600e3bb07ff1818ffe0bbb8780f8c1ffc01ff8cc20072eec3bb080cbb80ee
+e8781f883ffc01ff84c30001bba0ff9818ff03bbb8601f087ffc01ffc7c18400eee80e8c08e80e
+ee80011c20fffc01ffe7c18638bbba079838e03bbb00038861fffc00ffe1e0c238eeee800e2800
+eeee001f0861fffc00fff1e0e13c3bbbb01a381bbbba40f80e61fffc01fff8e0609c6eeeeeee6e
+eeeeee43800e03fffc01fffc60709e3bbbbbbbbbbbbbba4c060f03fffc01fffc20304e2eeeeeee
+eeeeeeee003e4707fffc01fffe003807300bbbbbbbbba03a01fc403ffffc00ffff001c370106ee
+eeeeeec00e01f0007ffffc01ffff841c1383c3bbbbbbbb879801c1007ffffc00ffffc60e0187f0
+eeeeeeee8f80000307fffffc00ffffff0f0583f9b81bb83b9fc0100707fffffc00ffffff070081
+f8e006e00e9fc333870ffffffc00ffffff8383c033b1c3831b8fc63f0f0ffffffc01ffffff81c1
+c412e7e2cfcecf861f0c1ffffffc01ffffffc1c0e100a7f38fc20f060e081ffffffc01ffffffe0
+c000c007f2cfe03c030c481ffffffc01ffffffe2e002380ff00ff1e0030cc03ffffffc01ffffff
+f1e0101e3ff00fff000208c0fffffffc00fffffff1f018870ffffffe06678ce1fffffffc00ffff
+fff8f30e3183fffffe07e70f03fffffffc01fffffffc7b871861fffff800c00007fffffffc00ff
+fffffe198186307fffc07c00800ffffffffc00ffffffff0de0e38c7fff81fc1f819ffffffffc01
+ffffffff81e030ce3fff00f01e0ffffffffffc01ffffffffc1f0883f1fff1c01a03ffffffffffc
+00fffffffffffc02071ffe1f07007ffffffffffc00fffffffffffe11c01ffe380e01ffffffffff
+fc01ffffffffffff04303ffc200c07fffffffffffc01ffffffffffffc03c7ffc771c0fffffffff
+fffc01ffffffffffffe03e7ffc3f603ffffffffffffc00fffffffffffff8007ffc0300ffffffff
+fffffc00ffffffffffffff007fff8001fffffffffffffc00ffffffffffffffffffffe01fffffff
+fffffffc01fffffffffffffffffffffffffffffffffffffc010c00000040092900aa0000000000
+0000a500960000000000040000002701ffff030000000000
+}\lang1040\f0\par
+\pard\qc\lang2057\b\fs28 <wr:out select="/X/TipoUfficioT1"/>\par
+\pard\nowidctlpar\qc <wr:out select="/X/TipoUfficioT2"/>\par
+di <wr:out select="/X/Ufficio"/>\par
+\fs24 Ufficio Esecuzioni Penali\par
+\b0\fs14\par
+<wr:out select="/X/Indirizzo"/> - <wr:out select="/X/Cap"/> - <wr:out select="/X/Ufficio"/> \par
+\pard\qc\fs20 _____________________________________\par
+\pard\nowidctlpar\qc\fs14\par
+<wr:if select="/X/Utente/Telefono"> Tel. <wr:out select="/X/Utente/Telefono"/> - Fax - <wr:out select="/X/Utente/Fax"/> - Email : <wr:out select="/X/Utente/Email"/><wr:else/>Tel. <wr:out select="/X/Telefono"/> - Fax - <wr:out select="/X/Fax"/></wr:if> \par
+\fs22\par
+\pard\nowidctlpar\qr <wr:out select="/X/Ufficio"/>, <wr:out select="/X/Evento/DataEmissione"/> \par
+\pard\nowidctlpar\b N. SIEP <wr:out select="/X/FascicoloSiep/ChiaveProgr"/>/<wr:out select="/X/FascicoloSiep/ChiaveAnno"/>\par
+\par
+\par
+\pard\keepn\s1\qr\b0 <wr:forEach select="/X/Evento/Notifica">\par
+\b\par
+\lang3082 <wr:if select=".[CodTipoNotifica=&apos;N&apos;]">\par
+\pard\nowidctlpar\qr\lang2057 <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> <wr:out select="./AutoritaEsterna/DescrSede"/></wr:if></wr:forEach>\par
+\pard\nowidctlpar\par
+\par
+\lang1040\b0 Oggetto : esecuzione penale contro <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il Condannato <wr:else/> la Condannata </wr:if>:\par
+\b\par
+\lang2057\ul <wr:out select="/X/Soggetto/Cognome"/>\cf1 /\cf0 <wr:out select="/X/Soggetto/Nome"/> \par
+\par
+\pard\nowidctlpar\qj\ulnone\b0 <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">nato<wr:else/>nata</wr:if><wr:if select="/X/Soggetto[DescrComuneNascita !=&apos;-&apos;]"> a <wr:out select="/X/Soggetto/DescrComuneNascita"/></wr:if><wr:if select="/X/Soggetto[CodProvinciaNascita!=&apos;-&apos;]"><wr:if select="/X/Soggetto[CodProvinciaNascita!=&apos;ES&apos;]"> (Prov. <wr:out select="/X/Soggetto/CodProvinciaNascita"/>)</wr:if></wr:if><wr:if select="/X/Soggetto/DescrStatoNascita"><wr:if select="/X/Soggetto/DescComuneNascitaEstero"> in <wr:out select="/X/Soggetto/DescComuneNascitaEstero"/></wr:if><wr:if select="/X/Soggetto[CodStatoNascita!=&apos;039&apos;]"> (<wr:out select="/X/Soggetto/DescrStatoNascita"/>)</wr:if></wr:if> il <wr:if select="/X/Soggetto/DataNascita"><wr:out select="/X/Soggetto/DataNascita"/><wr:else/><wr:out select="/X/Soggetto/AnnoNascita"/></wr:if><wr:forEach select="/X/Soggetto/Alias">\par
+\b alias <wr:out select="./Cognome"/>/<wr:out select="./Nome"/>\par
+\b0 <wr:if select="./.[Sesso=&apos;M&apos;]">nato <wr:else/>nata </wr:if> <wr:if select=".[DescrComuneNascita !=&apos;-&apos;]">a <wr:out select="./DescrComuneNascita"/> (Prov. <wr:out select=". /DescrProvinciaNascita"/>)</wr:if> <wr:if select="./DescrStatoNascita"><wr:if select="./DescComuneNascitaEstero"> in <wr:out select="./DescComuneNascitaEstero"/></wr:if><wr:if select=".[CodStatoNascita!=&apos;039&apos;]"> (<wr:out select="./DescrStatoNascita"/>)</wr:if></wr:if> il <wr:if select="./DataNascita"> <wr:out select="./DataNascita"/><wr:else/><wr:out select="./AnnoNascita"/></wr:if></wr:forEach> <wr:forEach select="/X/Soggetto/Residenza"><wr:if select=".[CodTipoResidenza=&apos;R&apos;]">\par
+residente </wr:if> <wr:if select=".[CodTipoResidenza=&apos;D&apos;]"> <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">\par
+domiciliato <wr:else/>\par
+domiciliata </wr:if></wr:if><wr:if select=".[DescrComune!=&apos;-&apos;]">a <wr:out select="./DescrComune"/><wr:if select=".[CodProvincia!=&apos;-&apos;]"> (Prov. <wr:out select="./CodProvincia"/>)</wr:if></wr:if><wr:if select=".[CodStato!=&apos;039&apos;]"><wr:if select=".[DescrStato!=&apos;-&apos;]">in <wr:out select="./DescComuneEstero"/> (<wr:out select="./DescrStato"/>) </wr:if></wr:if> <wr:out select="./Indirizzo"/></wr:forEach>\par
+\pard\nowidctlpar\fs20\par
+\par
+\pard\nowidctlpar\qj\fs22\par
+\lang1040 Si trasmette in duplice esemplare, copia del provvedimento emesso nei confronti <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> del nominato <wr:else/> della nominata </wr:if>in oggetto, per la notifica nei termini di legge (art. 655 c.5 cpp) al difensore\par
+ \par
+\pard\nowidctlpar\lang2057\b Avvocato <wr:out select="./Cognome"/> <wr:out select="./Nome"/> del Foro di <wr:out select="./Foro"/><wr:if select="./Indirizzo">\par
+Con studio in\b0  \b <wr:out select="./Indirizzo"/>, <wr:out select="./DescComuneResidenza"/> </wr:if>\par
+\pard\b0 </wr:forEach>\par
+\par
+<wr:if select="./Note"><wr:out select=".Note"/></wr:if>\fs20\par
+}
+ 

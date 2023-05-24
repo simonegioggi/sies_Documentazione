@@ -1,0 +1,132 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}}
+{\stylesheet{ Normal;}{\s1 heading 1;}{\s2 heading 2;}{\s3 heading 3;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\pard\lang2057\b\par
+\par
+\par
+\par
+\pard\qc\lang1040 ORDINE DI ESECUZIONE PER LA CARCERAZIONE\par
+E DECRETO DI SOSPENSIONE DEL MEDESIMO\par
+A SEGUITO CONVERSIONE DI SANZIONE SOSTITUTIVA\par
+Legge 24 novembre 1981 n. 689\par
+ex art. 656 c. 5 cpp\par
+(condannato libero)\par
+\par
+<wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\pard\b0\par
+Poich\'e8 \'e8 in esecuzione<wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;05&apos;]"> la sentenza</wr:if><wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;01&apos;]"> la <wr:out select="/X/Sentenza/DescrTipoProvvedimento"/> </wr:if><wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;02&apos;]"> il <wr:out select="/X/Sentenza/DescrTipoProvvedimento"/></wr:if> <wr:import inline='true' url="$\{SENTENZACOMUNE\}" />, <wr:out value="$\{PremessaSoggettoA\}" />\par
+\ul\b\par
+\lang2057\ulnone\b0 <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\qj\par
+<wr:import inline='true' url="$\{REATI\}" />\par
+\par
+<wr:import inline='true' url="$\{PENASENZAREATI\}" />\par
+\par
+\pard <wr:import inline='true' url="$\{STATOESECUZIONE\}" />\par
+\pard\qj\par
+\par
+<wr:import inline='true' url="$\{AVVOCATI\}" />\par
+\par
+\pard\qc\lang1040\b DISPONE\par
+\pard\b0\par
+\pard\qj La carcerazione <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> del condannato<wr:else/> della condannata</wr:if> per l\rquote espiazione della pena sopra indicata di :\par
+\pard\b <wr:if select="/X/FascicoloSiep/PenaResidua/StringaReclusione">Reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/StringaReclusione"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[ImportoMulta!=0]">Multa Euro <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoMulta"/>\par
+</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/StringaArresto">Arresto <wr:out select="/X/FascicoloSiep/PenaResidua/StringaArresto"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[ImportoAmmenda!=0]"> Ammenda Euro <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoAmmenda"/>\par
+\lang3082 </wr:if> <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">Ergastolo\par
+</wr:if> <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">Ergastolo con isolamento diurno <wr:if select="/X/FascicoloSiep/PenaResidua/StringaIsolamentoDiurno">con <wr:out select="/X/FascicoloSiep/PenaResidua/StringaIsolamentoDiurno"/></wr:if></wr:if><wr:if select="/X/FascicoloSiep/TotalePeriodoLicenzaAnticipata/TotaleGiorniDaConcedere">\par
+\lang1040 Da cui vanno detratti giorni <wr:out select="/X/FascicoloSiep/TotalePeriodoLicenzaAnticipata/TotaleGiorniDaConcedere"/> di liberazione anticipata</wr:if>\par
+\par
+\pard\qc RITENUTO\par
+\pard\b0\par
+\pard\qj\tx360 che ricorrono le condizioni di cui all\rquote art. 656, comma 5 c.p.p., modificato dall\rquote art.10 Decreto Legge 24 novembre 2000, n.341, convertito con modificazioni in Legge 19 gennaio 2001, n. 4;\par
+che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato<wr:else/> la condannata</wr:if> non si trova nelle condizioni di esclusione di cui ai commi 7 e 9 dell\rquote art. 656 c.p.p.;\par
+\pard\par
+\pard\keepn\s3\qc\b DISPONE\par
+\pard\par
+\pard\keepn\s3 SOSPENDERSI L\rquote ESECUZIONE DEL PRESENTE ORDINE DI ESECUZIONE\par
+\b0\par
+\pard\keepn\s3\qc\b ORDINA\par
+\pard\b0\par
+la \b NOTIFICA\b0  di copia del presente provvedimento <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> al condannato<wr:else/> alla condannata</wr:if> ed al difensore (le date di notifica dovranno essere prontamente comunicate a questo Ufficio);\par
+\par
+\lang2057\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\par
+\lang1040\fs22\par
+\pard\keepn\s1\qc\b MANDA\par
+\pard\b0\par
+alla Segreteria, in sede, perch\'e9 provveda all\rquote invio del presente provvedimento: \par
+\lang2057 <wr:forEach select="/X/Evento/Notifica"><wr:if select=".[CodTipoNotifica=\lquote E\rquote ]">\par
+\pard\qj\tx360\bullet\tab a <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/>, <wr:out select="./Note"/>, per l\rquote esecuzione, con facolt\'e0 di subdelega;\lang1040 </wr:if></wr:forEach>\par
+\par
+\lang2057\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\par
+\lang1040\fs22\par
+\pard\keepn\s3\qc\tx10037\b AVVISA\par
+\pard\qj\b0 che pu\'f2 essere presentata a questo Ufficio, tenuto conto di quanto disposto dall\rquote ex art.. 67 Legge 24 novembre 1981 n. 689  (Inapplicabilit\'e0 delle misure alternative alla detenzione).\b  \b0  \b L\rquote affidamento in prova al servizio sociale e l\rquote ammissione al regime di semilibert\'e0 sono esclusi per <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato<wr:else/> la condannata</wr:if> in espiazione di pena detentiva per conversione effettuata ai sensi del primo comma dell\rquote articolo 66 stessa legge,\par
+\b0 a cura del <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> condannato<wr:else/> condannata</wr:if> o del difensore ed ENTRO TRENTA GIORNI dalla notifica del presente atto, istanza \b (corredata dalle indicazioni e dalla documentazione necessaria), volta ad ottenere\b0 :\par
+\b\par
+\pard\b0  la concessione di una delle misure alternative alla detenzione di cui agli articoli 47 (affidamento in prova), 47 ter (detenzione domiciliare) e 50, comma 1 (semilibert\'e0) della L. 26 luglio 1975 n. 354 e successive modificazioni e di cui all\rquote articolo 94 T.U. approvato con D.P.R. 9  ottobre 1990, n. 309 e successive modificazioni (affidamento in prova in casi particolari);\par
+ovvero la sospensione dell\rquote esecuzione della pena di cui all\rquote art. 90 T.U. citato;\par
+\pard\qj CON L\rquote AVVERTENZA CHE, OVE NON SIA  PRESENTATA L\rquote ISTANZA NONCHE\rquote  LA CERTIFICAZIONE DA ALLEGARE, AI SENSI DEGLI ARTT. 91 COMMA 2 E 94 COMMA 1 DEL T.U. CITATO, L\rquote ESECUZIONE DELLA PENA AVRA\rquote  CORSO IMMEDIATO.\par
+\pard\par
+\pard\qj AVVISA inoltre <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato<wr:else/> la condannata</wr:if> dell\rquote obbligo, a pena di inammissibilit\'e0, di fare la dichiarazione o l\rquote elezione di domicilio con la domanda con la quale chiede una misura alternativa alla detenzione o altro provvedimento attribuito dalla legge alla Magistratura di Sorveglianza. Ha altres\'ec l\rquote obbligo di comunicare ogni mutamento del domicilio dichiarato o eletto.\par
+\b\par
+\b0 INFORMA\b  inoltre <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato<wr:else/> la condannata</wr:if> \b0 della possibilit\'e0 di rivolgersi a un Ufficio Esecuzione Penale Esterna per la corretta definizione della procedura da avviarsi per la presentazione di pi\'f9 appropriate e corrette istanze per l\rquote eventuale concessione di una delle misure alternative alla detenzione.\par
+\pard\tx10037\par
+\pard\par
+\par
+\lang2057 <wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\qc\lang1040\page <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\pard\b\par
+\pard\li708\qr <wr:forEach select="/X/Evento[EventoCorrente=&apos;S&apos;]"><wr:forEach select="./Notifica"><wr:if select="./..[EventoCorrente=&apos;S&apos;]"><wr:if select=".[CodTipoNotifica=&apos;E&apos;]"><wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/><wr:if select="./Note">, <wr:out select="./Note"/></wr:if></wr:if></wr:if></wr:forEach></wr:forEach>\par
+\pard\par
+\par
+\par
+\b0 Oggetto: esecuzione penale contro <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato<wr:else/>la condannata</wr:if>:\par
+\b\par
+\b0 <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\qc\b\par
+\pard\qj\b0\par
+\par
+Si trasmette, in triplice esemplare, copia dell\rquote ordine di esecuzione e contestuale decreto di sospensione emesso nei confronti <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> del nominato<wr:else/> della nominata</wr:if> in oggetto, per la notifica.\par
+\pard\par
+\b Si resta in attesa della comunicazione della data di avvenuta notifica.\par
+\pard\qj\b0\par
+\pard\lang2057 <wr:out select="/X/Ufficio"/>, <wr:out select="/X/Evento/DataEmissione"/>\lang1040\b\par
+\par
+\par
+\b0\par
+\page <wr:import inline='true' url="$\{NOTIFICAAVVOCATI\}" />\par
+\pard\qc\page <wr:import inline='true' url="$\{INTESTAZIONE\}" />\b\par
+\pard\par
+\par
+\par
+\par
+\pard\qc UFFICIO LOCALE DEL CASELLARIO GIUDIZIALE<wr:forEach select="/X/Evento/Notifica/AutoritaEsterna[CodTipoAutorita=&apos;24&apos;][1]"> di <wr:out select="./DescrSede"/></wr:forEach>\par
+\b0\par
+\b FOGLIO COMPLEMENTARE \par
+Iscrizioni nel casellario giudiziale\par
+\lang1036 - ex art.3 d.p.r 14 novembre 2002 n.313 -\par
+\par
+\lang1040 Notizie relative alla sospensione dell'esecuzione della pena\par
+\par
+\pard\b0\par
+a carico di\par
+\ul\b\par
+\ulnone\b0 <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\qj\par
+\par
+\pard <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">Condannato<wr:else/>Condannata</wr:if> con <wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;05&apos;]"> sentenza</wr:if><wr:import inline='true' url="$\{SENTENZACOMUNE\}" />\par
+\par
+\par
+Si comunica che, con decreto di <wr:out select="/X/TipoUfficioT1"/> <wr:out select="/X/TipoUfficioT2"/> di <wr:out select="/X/Ufficio"/> in data 16-12-2007, \'e8 stata disposta la sospensione dell'esecuzione dell\rquote Ordine di Esecuzione (art. 1 comma 5 L. 27-05-1998 N. 165)\par
+\par
+\par
+\lang2057 <wr:out select="/X/Ufficio"/>, <wr:out select="/X/Evento/DataEmissione"/>\par
+\pard\qr\lang1040 Firma ___________________________________\par
+\pard\par
+\par
+Ne fu presa nota nel Casellario del circondario di nascita\par
+\par
+Data _____________\par
+\pard\qr Firma ___________________________________\par
+}
+ 

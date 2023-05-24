@@ -1,0 +1,65 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1041\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}}
+{\stylesheet{ Normal;}{\s1 heading 1;}{\s2 heading 2;}{\s3 heading 3;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\pard\keepn\s3\qc\b\fs16\par
+\fs22 ORDINE DI ESECUZIONE PER LA CARCERAZIONE\par
+\pard\keepn\s3\sb40\qc ESECUZIONE PRESSO IL DOMICILIO \par
+\pard\keepn\s3\qc DELLE PENE DETENTIVE \par
+\pard\qc\fs20 legge 26.11.2010 n. 199 modificata\par
+con decreto-legge 22.12.2011 n. 211\b0\par
+\pard\keepn\s3\sb40\sa40\qc\b\fs22 E ORDINE DI SCARCERAZIONE\par
+\pard\qc\b0\fs20 (condannato detenuto per questa causa)\par
+\pard\fi708\b\fs22\par
+\pard\qc\b0 <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\pard\qj\b\par
+\b0 <wr:out value="$\{PremessaSentenzaA\}" /> <wr:import inline='true' url="$\{SENTENZA\}" /> <wr:out value="$\{PremessaSoggettoA\}" />\par
+\pard\sb120\qj\lang2057 <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\sb120 <wr:import inline='true' url="$\{PENA\}" />\par
+\pard\tx708\tqc\tx4819\tqr\tx9638\lang3082 <wr:if select="/X/Evento[EventoCorrente!=&apos;S&apos;]">\b\par
+\pard\qj\b0 <wr:import inline='true' url="$\{STATOESECUZIONE\}" /></wr:if> \par
+\pard\sb160 <wr:import inline='true' url="$\{PENARESIDUA\}" />\par
+\pard\sb180\sa100\lang2057 <wr:import inline='true' url="$\{AVVOCATI\}" />\par
+\pard\sb140\qj\lang1040 Rilevato che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato <wr:else/>la condannata </wr:if>\b  <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">\b0 si trova in custodia cautelare in regime di detenzione per il fatto oggetto della condanna da eseguire presso \b <wr:out select="/X/FascicoloSiep/LuogoDetenzione/DescrTipoIstituto"/> di <wr:out select="/X/FascicoloSiep/LuogoDetenzione/Descr"/>;<wr:else/>detenuta </wr:if> <wr:if select="/X/FascicoloSiep/LuogoDetenzione/AltroLuogo"> in <wr:out select="/X/FascicoloSiep/LuogoDetenzione/AltroLuogo"/></wr:if>\par
+\pard\keepn\s1\sb120\sa120\qc ORDINA\par
+\pard\qj\b0 la carcerazione per la pena di:\par
+\b <wr:import inline='true' url="$\{SOLOPENARESIDUADETENTIVA\}" />\b0  \par
+gia' in corso di espiazione in regime di custodia cautelare  con \b decorrenza dal <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizio"/> \b0 e fissa la   \b scadenza\b0  \b <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">MAI</wr:if> <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;N&apos;]">al <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"> (*)</wr:if>\b0 , data in cui dovr\'e0 essere <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> scarcerato se non detenuto <wr:else/> scarcerata se non detenuta </wr:if>per altra causa; </wr:if> \b <wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto">\par
+\pard\sb120\sa120\qj (*) Scadenza reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"/> - Decorrenza arresto <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"/></wr:if>\par
+\pard\keepn\s1\sb120\sa120\qc RILEVATO\par
+\pard\qj\b0 che ricorrono i presupposti per l\rquote applicazione della misura di cui all\rquote art. 1  comma  3  legge  26.11.2010 n. 199, modificata dall\rquote art. 3 comma 1 decreto-legge 22.12.2011 n. 211\b  (esecuzione presso il domicilio delle pene detentive)\b0  e che la residua pena da eseguire non \'e8 superiore a 18 mesi;\par
+\pard\sb60\sa60\qj che si trova in stato di custodia cautelare in carcere nel momento in cui la sentenza \'e8 diventata definitiva \b e che non \'e8 consentita la sospensione dell\rquote esecuzione della pena\b0  ex \b art. 656 \b0 c.p.p.;\par
+\pard\sb120\sa120\qc\b TRASMETTE\par
+\pard\qj\b0 gli atti al Magistrato di Sorveglianza, per la decisione in merito all\rquote applicazione della misura dell\rquote esecuzione della pena detentiva presso il domicilio;\par
+\pard\par
+<wr:if select="/X/FascicoloSiep/NuovaIstanza\rdblquote >\par
+l\rquote istanza per la concessione della misura <wr:if select="/X/FascicoloSiep/NuovaIstanza[FlagPresdep=&apos;P&apos;]"> fatta pervenire<wr:else/>depositata</wr:if> \lang3082 <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">dal condannato <wr:else/>dalla condannata </wr:if>\lang1040  in data <wr:out select="/X/FascicoloSiep/NuovaIstanza/DataIstanza"/>;</wr:if>\par
+\pard\sb120\sa120\qc\b RISERVA\par
+\pard\b0 l\rquote emissione di ulteriori provvedimenti alla decisione del Magistrato di Sorveglianza;\par
+\pard\sb120\sa120\qc\b INVITA\par
+\pard\qj\b0 il Direttore dell\rquote Istituto Penitenziario, anche a seguito di richiesta del detenuto o del suo difensore, di trasmettere al Magistrato di Sorveglianza una relazione sulla condotta tenuta durante la detenzione. La relazione \'e8 corredata di un verbale di accertamento dell\rquote idoneit\'e0 del domicilio, nonch\'e9, se il condannato \'e8 sottoposto ad un programma di recupero o intende sottoporsi ad esso, della documentazione di cui all\rquote articolo 94, comma 1 del testo unico di cui al decreto del Presidente della Repubblica 9 ottobre 1990 n. 309, e successive modificazioni;\par
+\pard\keepn\s3\sb180\sa180\qc\b COMUNICA\par
+\pard\qj\b0 che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato \b dovr\'e0 comunque essere scarcerato per fine pena, \b0 se non detenuto per altra causa,<wr:else/>la condannata \b dovr\'e0 comunque essere scarcerata per fine pena, \b0 se non detenuta per altra causa,</wr:if>\b  in data <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;N&apos;]"><wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"> (*)</wr:if>\b0 , data in cui dovr\'e0 essere <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> scarcerato se non detenuto <wr:else/> scarcerata se non detenuta </wr:if>per altra causa; </wr:if> \b <wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto">\par
+\pard\sb120\sa120\qj (*) Scadenza reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"/> - Decorrenza arresto <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"/></wr:if>\par
+\pard\qj\b0 <wr:import inline='true' url="$\{ESECUZIONEMISURASICUREZZA\}" />\par
+\par
+\lang2057\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\lang1040\fs22\par
+\pard\keepn\s1\sb120\sa120\qc\b MANDA\par
+\pard\qj\b0 alla Segreteria in sede, perch\'e9 provveda all\rquote invio del presente provvedimento:\par
+\pard\fi-360\li360\qj\tx360\f1\'b7\tab\f0 all'Istituto di Detenzione nel quale <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato \'e8 in atto ristretto perch\'e9 provveda alla notifica all\rquote interessato<wr:else/> la condannata \'e8 in atto ristretta perch\'e9 provveda alla notifica all\rquote interessata</wr:if>  e all\rquote annotazione in matricola del presente provvedimento; <wr:forEach select="/X/Evento/Notifica"><wr:if select=".[CodTipoNotifica=&apos;N&apos;]"> <wr:if select="./Avvocato"><wr:else/>\par
+\pard\fi-340\li340\lang2057\f1\'b7\tab\f0 a <wr:out select="./Ufficio/DescrTipoUfficio"/> <wr:out select="./Ufficio/DescrComune"/>. </wr:if></wr:if></wr:forEach>\par
+\pard\par
+\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\fs22\par
+\par
+<wr:import inline='true' url="$\{FIRMA\}" />\par
+\par
+\pard\qj <wr:import inline='true' url="$\{NOTIFICAAVVOCATI\}" />\par
+<wr:set var=\rquote dest\rquote  value=\rquote 1\rquote  />\par
+<wr:set var=\rquote numcopie\rquote  value=\rquote 4\rquote  />\par
+<wr:set var=\rquote dest\rquote  value=\rquote 2\rquote  />\par
+\par
+\lang1040 <wr:import inline='true' url="$\{NOTIFICACOMUNICAZIONE\}" />\par
+\par
+\pard\par
+\par
+}
+ 

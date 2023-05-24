@@ -1,0 +1,53 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fswiss\fprq2\fcharset0 Tahoma;}}
+{\colortbl ;\red0\green0\blue0;}
+{\stylesheet{ Normal;}{\s1 heading 1;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\keepn\s1\qc\cf1\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" /> \par
+\pard\cf0\f1\par
+\pard\qc\b COMUNICAZIONE\par
+PROSECUZIONE DELL\rquote ESPIAZIONE \par
+PRESSO IL DOMICILIO DELLA PENA DETENTIVA\par
+PER SOPRAVVENIENZA NUOVO TITOLO ESECUTIVO\par
+\pard\nowidctlpar\qc ex art. ex art. 51 bis Legge 26.7.1975 n. 354 \par
+modificato con Decreto-Legge 23 dicembre 2013, n. 146\par
+\pard\qc convertito in Legge 21 febbraio 2014, n. 10\par
+\b0  (<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">condannato<wr:else/>condannata</wr:if> in  <wr:import inline='true' url="$\{POSIZIONEGIURIDICATITOLO\}" />)\par
+\pard\sb60\qc\b\fs16\par
+\pard\sb100\qc\cf1\fs22 <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\pard\sb140\qj\cf0\b0 <wr:out value="$\{PremessaSentenzaA\}"/> <wr:import inline='true' url="$\{SENTENZA\}"/>, <wr:out value="$\{PremessaSoggettoA\}"/>\par
+\pard\sb100\lang2057 <wr:import inline='true' url="$\{SOGGETTO\}"/>\par
+\pard <wr:import inline='true' url="$\{PENA\}"/>\par
+\pard\fi709\sb100\b <wr:import inline='true' url="$\{STATOESECUZIONE\}"/>\par
+\pard\sb100\b0 <wr:import inline='true' url="$\{PENARESIDUA\}"/>\par
+\pard\fs16\par
+\fs22 <wr:import inline='true' url="$\{AVVOCATI\}"/>\par
+\pard\qj\fs16\par
+\lang1040\fs22 <wr:if select=\rdblquote /X/FascicoloSiep/PenaResidua/MisuraAlternativa[CodNaturaDecisione=\rquote ED\rquote ]\rdblquote >Rilevato che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato<wr:else/>la condannata</wr:if> attualmente sta espiando in regime di <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/CodTipoDecisioneMaAt"><wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrTipoMisuraMaAt"/><wr:else/>\b esecuzione presso il domicilio della pena detentiva\b0 </wr:if> per altra pena detentiva;<wr:else/><wr:if select=\rdblquote /X/FascicoloSiep/PenaResidua/MisuraAlternativa[CodNaturaDecisione=\rquote EC\rquote ]\rdblquote >Rilevato che la pena come sopra determinata \'e8 in corso di espiazione in regime di <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/CodTipoDecisioneMaAt"><wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrTipoMisuraMaAt"/><wr:else/> \b esecuzione presso il domicilio della pena detentiva\b0 </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataInizioMisura"> con decorrenza dal <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataInizioMisura"/></wr:if></wr:if></wr:if>\par
+\pard\sb160\sa160\qc <wr:if select="/X/\cf1 FascicoloSiep/PenaResidua/MisuraAlternativa\cf0 [CodTipoDecisione=&apos;03&apos;]"  >\b\caps Vista\b0\caps0 <wr:else/>\b\caps  VistO\b0\caps0 </wr:if>\b\caps\par
+\pard\qj\b0\caps0 <wr:if select="/X/\cf1 FascicoloSiep/PenaResidua/MisuraAlternativa\cf0 [CodTipoDecisione=&apos;03&apos;]"  >l\rquote ordinanza dell\rquote <wr:else/>il decreto dell\rquote </wr:if>\cf1 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrUfficioSorveglianza"/> \cf0 N. \cf1 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/NumeroRegistro"/>\cf0 /\cf1 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/AnnoRegistro"/> \cf0 del \cf1 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataDecisione"/>\cf0  che ha concesso <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> al condannato<wr:else/>alla condannata</wr:if>, tenuto conto del cumulo delle pene, \b la prosecuzione della misura in corso di esecuzione\b0  (<wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/CodTipoDecisioneMaAt"><wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrTipoMisuraMaAt"/> concessa con ordinanza N. <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/AnnoRegistroMaAt"/>/<wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/NumeroRegistroMaAt"/> dal <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrChiaveUfficioFascicoloSiusMaAt"/><wr:else/>\b esecuzione presso il domicilio della pena detentiva\b0 </wr:if>) di cui <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il medesimo<wr:else/>la medesima</wr:if> beneficia in relazione ad altro titolo esecutivo.\par
+\pard\par
+\pard\qj Poich\'e9 occorre dare esecuzione, ex. art. 659 c.p.p., al citato provvedimento;\par
+\pard\sb160\sa160\qc\b COMUNICA\par
+\pard\qj\b0 che la misura dell\rquote <wr:out select="/X/FascicoloSiep/PosizioneGiuridica/DescrPosizioneGiuridica"/> in corso di esecuzione di cui <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il medesimo<wr:else/>la medesima</wr:if> attualmente beneficia in relazione ad altro titolo esecutivo, <wr:if select=\rdblquote /X/FascicoloSiep/PenaResidua/MisuraAlternativa[CodNaturaDecisione=\rquote ED\rquote ]\rdblquote >\b prosegua\b0 ,\b  ex art. 51 bis Legge 26 Luglio 1975 N. 534, e successive modificazioni\b0   per il nuovo titolo, \b in regime di \b0 <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/CodTipoDecisioneMaAt">\b <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrTipoMisuraMaAt"/>\b0 <wr:else/>\b detenzione domiciliare\b0 </wr:if>\b  \b0 <wr:if select="/X/FascicoloSiep/PenaResidua/DataFine">\b  \b0 fino al \b <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/>\b0 </wr:if>; <wr:else/><wr:if select=\rdblquote /X/FascicoloSiep/PenaResidua/MisuraAlternativa[CodNaturaDecisione=\rquote EC\rquote ]\rdblquote >\b prosegua\b0 , \b ex art. 51 bis Legge 26 Luglio 1975 N. 534, e successive modificazioni\b0  \b in regime di <wr:out select="/X/FascicoloSiep/PosizioneGiuridica/DescrPosizioneGiuridica"/>;\b0 </wr:if></wr:if>\par
+\pard\sb160\sa160\qc\b DISPONE\par
+\pard\qj\b0 che le Autorit\'e0 preposte al controllo, vigilino sull\rquote osservanza delle prescrizioni dettate nel verbale di sottoposizione agli obblighi <wr:if select="/X/FascicoloSiep/PenaResidua/DataFine"> fino al \b <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/>\b0  data in cui <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato<wr:else/>la condannata</wr:if> dovr\'e0 essere posto in libert\'e0, se non in espiazione di pena per altra causa</wr:if>.\par
+\par
+\lang2057\f0\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\lang1040\f1\fs22\par
+\pard\sb160\sa160\qc\b MANDA\par
+\pard\qj\b0 alla Segreteria in sede, perch\'e9 provveda all\rquote invio del presente provvedimento:\par
+\pard\lang2057 <wr:forEach select="/X/Evento/Notifica/CSSA">\par
+\pard\sb20\lang1040 - A Ufficio Esecuzione Penale Esterna, <wr:out select=\rdblquote /X/Evento/Notifica/CSSA/Indirizzo\rdblquote />, <wr:out select=\rdblquote /X/Evento/Notifica/CSSA/Comune\rdblquote /></wr:forEach>\par
+\pard <wr:forEach select="/X/Evento/Notifica/Ufficio">\par
+\pard\sb20 - A <wr:out select=\rdblquote /X/Evento/Notifica/Ufficio/DescrTipoUfficio\rdblquote /> di <wr:out select=\rdblquote /X/Evento/Notifica/Ufficio/DescrComune\rdblquote /></wr:forEach>\par
+\pard\fi-360\li360 <wr:forEach select="/X/Evento/Notifica/AutoritaEsterna[DescrTipoAutorita!=\rquote UNEP\rquote ]">\par
+\pard\sb20 - A <wr:out select=\rdblquote /X/Evento/Notifica/AutoritaEsterna/DescrTipoAutorita\rdblquote /> di <wr:out select=\rdblquote /X/Evento/Notifica/AutoritaEsterna/DescrSede\rdblquote /> competente per territorio </wr:forEach>\par
+\pard\fi-360\li360\par
+\lang2057\f0\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\par
+\lang1040\f1\fs22\par
+\pard\lang2057 <wr:import inline='true' url="$\{FIRMA\}"/>\par
+\par
+\pard\qj <wr:set var=\rquote dest\rquote  value=\rquote 2\rquote  />\par
+\lang1040 <wr:import inline='true' url="$\{NOTIFICACOMUNICAZIONE\}" />\par
+\pard\par
+<wr:import inline='true' url="$\{NOTIFICAAVVOCATICOMU\}" />\par
+}
+ 

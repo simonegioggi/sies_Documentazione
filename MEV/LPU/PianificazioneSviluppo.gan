@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Forcina Filippo" company="Enginnering" webLink="" view-date="2013-10-14" view-index="0" gantt-divider-location="364" resource-divider-location="301" version="2.0">
+    <description/>
+    <view zooming-state="default:5" id="gantt-chart"/>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="55" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="44" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <calendar id="1" name="default">
+                <default-week sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+                <overriden-day-types/>
+                <days/>
+            </calendar>
+        </day-types>
+        <date year="" month="1" date="1"/>
+        <date year="" month="1" date="6"/>
+        <date year="" month="4" date="25"/>
+        <date year="" month="5" date="1"/>
+        <date year="" month="6" date="2"/>
+        <date year="" month="8" date="15"/>
+        <date year="" month="11" date="1"/>
+        <date year="" month="12" date="8"/>
+        <date year="" month="12" date="25"/>
+        <date year="" month="12" date="26"/>
+        <date year="2005" month="3" date="28"/>
+        <date year="2006" month="4" date="17"/>
+        <date year="2007" month="4" date="9"/>
+        <date year="2008" month="3" date="24"/>
+        <date year="2009" month="4" date="13"/>
+        <date year="2010" month="4" date="5"/>
+        <date year="2013" month="12" date="23"/>
+        <date year="2013" month="12" date="24"/>
+        <date year="2013" month="12" date="30"/>
+        <date year="2013" month="12" date="31"/>
+        <date year="2014" month="1" date="1"/>
+        <date year="2014" month="1" date="2"/>
+        <date year="2014" month="1" date="3"/>
+        <date year="2013" month="12" date="27"/>
+    </calendars>
+    <tasks color="#8cb6ce">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="13" name="FI1.1" color="#8cb6ce" meeting="false" start="2013-10-28" duration="20" complete="0" priority="1" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="14" name="FI1.9" color="#8cb6ce" meeting="false" start="2013-11-26" duration="4" complete="0" priority="1" expand="true">
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="15" name="FI1.10" color="#8cb6ce" meeting="false" start="2013-12-02" duration="4" complete="0" priority="1" expand="true">
+            <depend id="0" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="0" name="FI2 - FI2.7" color="#8cb6ce" meeting="false" start="2013-12-06" duration="8" complete="0" priority="1" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" name="FI3 - FI3.1 - FI3.6" color="#8cb6ce" meeting="false" start="2014-01-16" duration="3" complete="0" priority="1" expand="true"/>
+        <task id="2" name="FI4 - FI4.1 - FI4.2 - FI4.3" color="#8cb6ce" meeting="false" start="2013-12-18" duration="10" complete="0" priority="1" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="FI5" color="#8cb6ce" meeting="false" start="2014-01-14" duration="4" complete="0" priority="1" expand="true"/>
+        <task id="4" name="FI6.15 - FI6.18" color="#8cb6ce" meeting="false" start="2013-12-02" duration="4" complete="0" priority="1" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="FI6.11 - FI6.14" color="#8cb6ce" meeting="false" start="2013-12-06" duration="4" complete="0" priority="1" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" name="FI6.1 - FI6.4" color="#8cb6ce" meeting="false" start="2013-12-12" duration="4" complete="0" priority="1" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" name="FI6.6 - FI6.9" color="#8cb6ce" meeting="false" start="2013-12-18" duration="4" complete="0" priority="1" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" name="FI6.20 - FI6.21" color="#8cb6ce" meeting="false" start="2014-01-08" duration="4" complete="0" priority="1" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="FI7 - FI7.1" color="#8cb6ce" meeting="false" start="2013-12-02" duration="3" complete="0" priority="1" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="10" name="FI7.3 - FI7.4" color="#8cb6ce" meeting="false" start="2013-12-05" duration="3" complete="0" priority="1" expand="true">
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" name="FI7.6 - FI7.7" color="#8cb6ce" meeting="false" start="2013-12-10" duration="3" complete="0" priority="1" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" name="FI7.9 - FI7.10" color="#8cb6ce" meeting="false" start="2013-12-13" duration="3" complete="0" priority="1" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Filippo" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Carmela" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Fabrizio" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="13" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations>
+        <vacation start="2013-12-23" end="2014-01-06" resourceid="0"/>
+        <vacation start="2013-12-23" end="2014-01-06" resourceid="1"/>
+        <vacation start="2013-12-23" end="2014-01-06" resourceid="2"/>
+    </vacations>
+    <taskdisplaycolumns>
+        <displaycolumn property-id="tpd3" order="0" width="143"/>
+        <displaycolumn property-id="tpd4" order="1" width="42"/>
+        <displaycolumn property-id="tpd5" order="2" width="40"/>
+    </taskdisplaycolumns>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

@@ -1,0 +1,63 @@
+----userid,password,ChiaveSiepAnno,ChiaveSiepProgressivo,contenutoDescr,tipoAtto,sede
+(SELECT 'userid,password,ChiaveSiepAnno,ChiaveSiepProgressivo,contenutoDescr,tipoAtto,sede' AS A  FROM DUAL ) 
+UNION
+(
+SELECT '' || COD_OPERATORE_INSERIMENTO || ',' ||
+ 'password' || ',' ||
+ chiave_anno || ',' || 
+ chiave_progr || ',CONCESSIONE MISURE ALTERNATIVE ALLA DETENZIONE,' || 
+ -- CONTENUTO FASCICOLO SIUS DA ISCRIVERE
+ cod_tipo_ufficio|| ',Ordinanza,' || 
+ DESCR_COMUNE
+  from (
+SELECT FASC.COD_OPERATORE_INSERIMENTO,
+       SIEP.CHIAVE_ANNO,
+       SIEP.CHIAVE_PROGR,
+       uu.cod_tipo_ufficio, -- tipo ufficio che ha iscritto il siep
+       UD.DESCR_COMUNE,     -- SEDE ufficio che ha iscritto il siep
+       RANK() over(partition by FASC.cod_operatore_inserimento order by FASC.ID_FASCICOLO_SIUS) as rnk
+  FROM FASCICOLO_SIUS        FASC,
+       SOGGETTO              SOGG,
+       GENERALE_PROCEDIMENTO GP,
+       CG_REF_CODES          DESCR_OGGETTO_PROCEDIMENTO,
+       UFFICIO               UFF,
+       COMUNE                DESCR_COM_UFF,
+       COMUNE                DESCR_COM_NASCITA,
+       FASCICOLO_SIEP        SIEP,
+       ufficio               UU, -- UFFICIO UTENTE
+       UFFICIO_DESCR         UD
+ WHERE FASC.SOG_ID_SOGGETTO = SOGG.ID_SOGGETTO
+   AND FASC.ID_FASCICOLO_SIUS = GP.FAS_SIU_ID_FASCICOLO_SIUS
+   AND DESCR_OGGETTO_PROCEDIMENTO.RV_DOMAIN = 'OGGETTO_PROCEDIMENTO'
+   AND GP.COD_OGGETTO_PROCEDIMENTO =
+       DESCR_OGGETTO_PROCEDIMENTO.RV_LOW_VALUE
+   AND UFF.COD_UFFICIO = FASC.CHIAVE_UFFICIO
+   AND UFF.COD_COMUNE = DESCR_COM_UFF.COD_COMUNE
+   AND SOGG.COD_COMUNE_NASCITA = DESCR_COM_NASCITA.COD_COMUNE
+      -- AND UFF.COD_UFFICIO = nvl('00127201301', UFF.COD_UFFICIO)
+   AND TO_CHAR(FASC.DATA_ISCRIZIONE, 'YYYYMMDD') >= '20000101'
+   AND TO_CHAR(FASC.DATA_ISCRIZIONE, 'YYYYMMDD') <= '20200101'
+   AND (FASC.COD_STATO_FASCICOLO not in ('01', '05', '07'))
+   AND FASC.FAS_SIE_ID_FASCICOLO_SIEP IS NOT NULL
+   AND FASC.FAS_SIE_ID_FASCICOLO_SIEP = SIEP.ID_FASCICOLO_SIEP
+   AND SIEP.CHIAVE_PROGR BETWEEN 1 AND 19999
+   AND FASC.COD_OPERATORE_INSERIMENTO IN
+       (SELECT U.COD_UTENTE
+          FROM UTENTE_UFFICIO UF,
+               UTENTE U,
+               (SELECT *
+                  FROM UTENTE_PROFILO PR
+                 WHERE PR.PRF_COD_PROFILO <> '90'
+                   AND PR.PRF_COD_PROFILO <> '99'
+                   AND (PR.PRF_COD_PROFILO='14' /*OR PR.PRF_COD_PROFILO='24'*/ )) P
+         WHERE U.DATA_FINE_VALIDITA IS NULL
+           AND P.UTE_COD_UTENTE = U.COD_UTENTE
+           AND UF.UTE_COD_UTENTE = U.COD_UTENTE)
+      
+   AND ((SIEP.CHIAVE_PROGR BETWEEN 1 AND 19999))
+   AND UU.COD_UFFICIO = siep.chiave_ufficio
+   AND UD.COD_UFFICIO = siep.chiave_ufficio
+   AND UU.COD_DISTRETTO = '00127200602' -- TORINO
+   and ( FASC.COD_OPERATORE_INSERIMENTO like 'D%' OR  FASC.COD_OPERATORE_INSERIMENTO like 'E%' )
+     )WHERE RNK = 1  
+)ORDER BY A DESC

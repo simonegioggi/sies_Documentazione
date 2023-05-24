@@ -1,0 +1,128 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\fmodern\fprq1\fcharset0 Courier New;}{\f1\froman\fprq2\fcharset0 Times New Roman;}}
+{\colortbl ;\red255\green0\blue0;\red255\green255\blue0;\red0\green255\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\f0\fs20 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /><wr:import inline='true' url="$\{INTESTAZIONE-PROSPETTO-CUMULO\}"/>\par
+\par
+PROVVEDIMENTO DI ESECUZIONE DI PENE CONCORRENTI\par
+<wr:if select="/X/IstruttoriaCumulo/PosizioneGiuridicaCumulo[CodPosizioneGiuridica=&apos;76&apos;]">\par
+CONTESTUALE ORDINE DI ESECUZIONE\par
+CONDANNATO IN CUSTODIA CAUTELARE PER ALTRA CAUSA\par
+IN REGIME DI DETENZIONE\par
+<wr:else/>\par
+NEI CONFRONTI DI CONDANNATO GIA' DETENUTO\par
+E CONTESTUALE ORDINE DI ESECUZIONE E SCARCERAZIONE</wr:if>\par
+Artt. 663 - 656 comma 1 c.p.p. \par
+\par
+<wr:out select="/X/Firmatario"/>\par
+\par
+\pard\qj <wr:out value="$\{PremessaSoggettoB\}"/>\par
+\par
+<wr:import inline='true' url="$\{SOGGETTO-CUMULO\}"/>\par
+\par
+<wr:import inline='true' url="$\{CUMULO_DISPOSITIVO\}"/>\par
+\pard\par
+\par
+\pard\qc\b D E T E R M I N A\par
+\par
+\pard\qj\b0 la pena residua complessiva che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il suindicato condannato<wr:else/>la suindicata condannata</wr:if> deve espiare in forza dei provvedimenti di cui in premessa nella misura di:\b  \par
+<wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaErgastolo">\par
+- <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaErgastolo"/></wr:if><wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaReclusione">\par
+- Reclusione <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaReclusione"/></wr:if>\par
+<wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaArresto">\par
+- Arresto <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaArresto"/></wr:if>\par
+\pard\b0 <\highlight1 wr:if\highlight0  select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/DataInizio">\par
+\b\par
+\pard\qj\b0 con decorrenza della reclusione al \b <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/DataInizio"/>\b0  con scadenza <wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/CodTipoPenaDetentiva">MAI<wr:else/>al \b <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/DataFine"/></wr:if><wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/DataInizioArresto">\b0  \b (*)</wr:if><wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=\highlight2 &apos;N&apos;\highlight0 ]/TotLA">, \b0 tenuto conto di \b <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=\highlight2 &apos;N&apos;\highlight0 ]/TotLA"/>\b0  giorni complessivi di liberazione anticipata</wr:if>, data in cui <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato, se non detenuto per altra causa, dovr\'e0 essere posto in libert\'e0<wr:else/>la condannata, se non detenuta per altra causa, dovr\'e0 essere posta in libert\'e0 </wr:if> \par
+\pard\sb120\sa120\qj\b <wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/DataInizioArresto">\par
+\pard\qj\b0 (*) Scadenza reclusione \b <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/DataFineReclusione"/>\b0  - Decorrenza arresto \b <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/\b0\f1\fs24  \b\f0\fs20 DataInizioArresto"/>\b0 </wr:if>\par
+\par
+\f1\fs22 <wr:import inline='true' url="$\{ESECUZIONEMISURASICUREZZACUMULO\}"/>\f0\fs20\par
+</\highlight1 wr:if\highlight0 >\par
+\pard\par
+\pard\qj\b <wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;][\highlight2 StringaMulta\highlight0  OR \highlight2 StringaAmmenda\highlight0 ]">\par
+Oltre al recupero della pena pecuniaria:<wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/\highlight2 StringaMulta\highlight0 "> \par
+- <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaMulta"/></wr:if><wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/\highlight2 StringaAmmenda\highlight0 "> \par
+- <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaAmmenda"/></wr:if></\highlight1 wr:if\highlight0 >\b0\par
+\pard <wr:if select="/X/IstruttoriaCumulo/DatiFinaliUlterioriSanzioni[contains('01,02,07,12',CodTipoUlterioreSanzione)]">\par
+\par
+\pard\qj\b All\rquote esecuzione delle sanzioni sostitutive:\par
+\pard\li567\qj\b0 <\highlight2 wr:forEach\highlight0  select="/X/IstruttoriaCumulo/\highlight2 DatiFinaliUlterioriSanzioni\highlight0 [contains('01,02,07,12',CodTipoUlterioreSanzione)]">\par
+- <wr:out select="./DescrTipoUlterioreSanzioneXStampa" />: <wr:out select="./StringaDurata" /><wr:out select="./StringaImporti" /></wr:forEach></wr:if>\par
+\pard\qj\tx2385\tqc\tx4819 <wr:forEach select="/X/Evento/Notifica[AutEstIdAutoritaEsterna]/AutoritaEsterna"><wr:if select=".[contains('36,37,57',CodTipoAutorita)]">\par
+\pard <\highlight1 wr:if\highlight0  select="/X/IstruttoriaCumulo/PosizioneGiuridicaCumulo[\highlight2 CodPosizioneGiuridica=&apos;76&apos;\highlight0 ]">\par
+\par
+\pard\qc\b R I L E V A T O\par
+\highlight3\par
+\pard\qj\highlight0\b0 che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato risulta detenuto<wr:else/>la condannata risulta detenuta</wr:if> per altra causa \b in regime di detenzione\b0 <wr:if select="/X/IstruttoriaCumulo/PosizioneGiuridicaCumulo/DescrIstituto"> presso <wr:out select="/X/IstruttoriaCumulo/PosizioneGiuridicaCumulo/DescrIstituto"/></wr:if>\par
+\par
+\pard\qc\b E M E T T E\par
+\b0\par
+\pard\qj Ordine di esecuzione per la pena di\par
+\b <wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaErgastolo">\par
+- <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaErgastolo"/></wr:if><wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaReclusione">\par
+- Reclusione <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaReclusione"/></wr:if>\par
+<wr:if select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaArresto">\par
+- Arresto <wr:out select="/X/IstruttoriaCumulo/PenaRideterminataCumulo[FlagPenaResiduaCumulo=&apos;S&apos;]/StringaArresto"/></wr:if>\par
+\b0 <\highlight1 /wr:if\highlight0 >\par
+\par
+\pard\qc\tx2385\tqc\tx4819\b D I S P O N E\par
+\pard\qj\b0\par
+la trasmissione del presente provvedimento all\rquote <wr:out select="./DescrTipoAutorita"/> di <wr:out select="./DescrSede"/> per quanto di competenza in merito alla pena pecuniaria</wr:if></wr:forEach>\par
+\par
+\par
+\pard\qc\b D I C H I A R A\par
+\b0\par
+\pard\qj Il presente provvedimento revoca e sostituisce i precedenti atti restrittivi relativi alle condanne sopra elencate.\par
+\pard\par
+\par
+\pard\qc\b M A N D A\par
+\pard\fi-426\li426\sb60\qj\tx426\b0\f1 -\tab\f0 alla Direzione dell'Istituto nel quale <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato \'e8 in atto ristretto<wr:else/>la condannata \'e8 in atto ristretta</wr:if> perch\'e9 provveda alla notifica <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">all\rquote interessato<wr:else/>all\rquote interessata</wr:if> e all\rquote annotazione in matricola del presente provvedimento, dandone quindi sollecita assicurazione e confermando la data di scadenza pena. \par
+\pard\par
+\pard\fi-426\li426\sb60\qj\tx426\f1 -\tab\f0 alla Segreteria per gli avvisi agli uffici interessati e per gli adempimenti di legge, nonch\'e8 per la notifica al difensore, entro 30 giorni dalla data di emissione del provvedimento. \par
+\pard\par
+\par
+\par
+\par
+\pard\qj <wr:out select="/X/Ufficio"/>, <wr:out select="/X/Evento/DataEmissione"/>\par
+\pard\li6373\sb120\qr <wr:out select="/X/Firmatario"/>\par
+\pard\qr <wr:if select="/X/Evento/Magistrato/Cognome"> <wr:out select="/X/Evento/Magistrato/Nome"/> <wr:out select="/X/Evento/Magistrato/Cognome"/></wr:if>\par
+\pard\par
+\par
+\par
+\par
+\pard\qc <wr:import inline='true' url="$\{NOTIFICA_AVVOCATO_CUMULO\}" />\par
+\pard\qj\par
+\par
+\par
+\par
+\pard\qc\page <wr:import inline='true' url="$\{INTESTAZIONE-PROSPETTO-CUMULO\}"/>\par
+\par
+\pard\li1416\qr\b\fs18\par
+\fs20 <\highlight2 wr:forEach select="/X/Evento/Notifica"\highlight0 >\par
+<\highlight3 wr:if select="./AutoritaEsterna"\highlight0 >\par
+\par
+<wr:out select="./AutoritaEsterna/DescrTipoAutorita"/>  <wr:if select="./AutoritaEsterna/DescrSede ">di <wr:out select="./AutoritaEsterna/DescrSede"/></wr:if><\highlight3 /wr:if\highlight0 ><\highlight3 wr:if select="./Ufficio"\highlight0 >\par
+\par
+<wr:out select="./Ufficio/DescrTipoUfficio"/> di <wr:out select="./Ufficio/DescrComune"/><\highlight3 /wr:if\highlight0 ><\highlight3 wr:if select="./CSSA"\highlight0 >\par
+\par
+<wr:out select="./CSSA/TipoDescXStampe"/> \par
+<wr:out select="./CSSA/Indirizzo"/> \par
+<wr:if select="./CSSA/Comune ">di <wr:out select="./CSSA/Comune"/></wr:if><\highlight3 /wr:if\highlight0 ><wr:if select="./Note">\par
+<wr:out select="./Note"/></wr:if><\highlight2 /wr:forEach\highlight0 >\par
+\pard\b0\par
+\par
+\par
+\fs22 Oggetto : esecuzione penale a carico di\par
+\par
+\ul\b <wr:import inline='true' url="$\{SOGGETTO-CUMULO\}" />\par
+\ulnone\b0\par
+\pard\qj\par
+Si trasmette, per quanto di competenza, copia del provvedimento emesso in data \b <wr:out select="/X/Evento/DataEmissione"/>\b0  nei confronti <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">del nominato<wr:else/>della nominata</wr:if> in oggetto.\par
+\par
+\pard\par
+<wr:out select="/X/Ufficio"/>, <wr:out select="/X/Evento/DataEmissione"/>\par
+\fs20\par
+\pard\qc <wr:import inline='true' url="$\{NOTE_TRASMISSIONE_CUMULO\}" />\par
+\pard\par
+\par
+}
+ 

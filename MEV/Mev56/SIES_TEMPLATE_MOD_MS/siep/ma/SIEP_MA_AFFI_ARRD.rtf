@@ -1,0 +1,51 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green255\blue0;\red0\green0\blue0;}
+{\stylesheet{ Normal;}{\s1 heading 1;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\par
+\b ESPIAZIONE DI PENA DETENTIVA IN REGIME DI\par
+\pard\keepn\s1\qc AFFIDAMENTO IN PROVA ex <wr:out \highlight1 select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Legge"/>\par
+\pard\ri140\sb60\qc\tx1134\highlight0\b0 (<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">condannato<wr:else/>condannata</wr:if> in <wr:import inline='true'url="$\{POSIZIONEGIURIDICATITOLO\}" />)\par
+\pard\nowidctlpar\sb120\sa120\qc\b comunicazione decorrenza e scadenza\par
+\pard\qc <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\pard\par
+\pard\qj\b0 <wr:out value="$\{PremessaSentenzaA\}" /><wr:import inline='true' url="$\{SENTENZA\}" /><wr:out value="$\{PremessaSoggettoA\}" />\par
+\par
+\pard\lang2057\ul\b <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\ulnone\b0 <wr:import inline='true' url="$\{PENA\}" />\par
+\pard\li709\sa120\qj\cf2\lang1040 <wr:import inline='true' url="$\{STATOESECUZIONE\}" />\par
+\pard\qj\cf0 per cui \'e8 in corso d\rquote espiazione la pena di\cf2 :\b  \par
+\pard\nowidctlpar\qj\cf0\b0 <wr:if select="/X/FascicoloSiep/PenaResidua/StringaReclusione">Reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/StringaReclusione"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[ImportoMulta!=0]"> Multa Euro <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoMulta"/>\par
+\pard\qj </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/StringaArresto">Arresto <wr:out select="/X/FascicoloSiep/PenaResidua/StringaArresto"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[ImportoAmmenda!=0]"> Ammenda Euro <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoAmmenda"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">Ergastolo</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">Ergastolo con isolamento diurno <wr:if select="/X/FascicoloSiep/PenaResidua/StringaIsolamentoDiurno">con <wr:out select="/X/FascicoloSiep/PenaResidua/StringaIsolamentoDiurno"/></wr:if></wr:if>\par
+\pard\nowidctlpar\qj <wr:if select="/X/FascicoloSiep/MisuraSicurezza">\par
+Misura di sicurezza :<wr:forEach select="/X/FascicoloSiep/MisuraSicurezza">\par
+\lang2057 <wr:out select="./DescrTipo"/> <wr:if select=".[NumAnni!=0]"> Anni <wr:out select="./NumAnni"/> </wr:if> <wr:if select=".[NumMesi!=0]"> Mesi <wr:out select="./NumMesi"/> </wr:if> <wr:if select=".[NumGiorni!=0]"> Giorni <wr:out select="./NumGiorni"/>\par
+\pard\qj\lang1033 </wr:if></wr:forEach></wr:if>\par
+\lang2057\b <wr:if select="contains(/X/FascicoloSiep/PosizioneGiuridica/DescrPosizioneGiuridica, &quot;Espiazione Pena&quot;)">in <wr:out select="substring-after(/X/FascicoloSiep/PosizioneGiuridica/DescrPosizioneGiuridica,\rquote Espiazione Pena\rquote )\rdblquote /><wr:else/>\lang1033 in regime di\lang2057  <wr:out select="/X/FascicoloSiep/PosizioneGiuridica/DescrPosizioneGiuridica\rdblquote /></wr:if> con decorrenza <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizio"/> \lang1033 e scadenza pena al <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;N&apos;]"><wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"> </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto">\par
+\lang1040 (*) Scadenza reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"/> - Decorrenza arresto <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"/></wr:if>;\par
+\pard\sb120\sa120\qc VISTA\par
+\pard\qj\b0 l\rquote ordinanza del \cf2 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrUfficioSorveglianza"/> \cf0 N. \cf2 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/NumeroRegistro"/>\cf0 /\cf2 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/AnnoRegistro"/> \cf0 del \cf2 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataDecisione"/>\cf0  che ha concesso <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">al condannato<wr:else/>alla condannata</wr:if> la misura alternativa \b dell\rquote affidamento in prova al servizio sociale\b0  \b ex <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Legge"/> \b0 per l\rquote espiazione della residua pena<wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrLuogoProva">, presso la sua residenza in <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrLuogoProva"/></wr:if>.\par
+\par
+Poich\'e9 occorre dare urgente esecuzione, ex art. 659 c.p.p., al citato provvedimento e che effetto dello stesso deve essere disposta la sottoposizione agli obblighi <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> del condannato <wr:else/>della condannata</wr:if>;\par
+\pard\keepn\s1\sb120\sa120\qc\b DISPONE\par
+\pard\fi-340\li340\qj\tx360\b0 -\tab La \b liberazione \b0 <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">\b del condannato\b0  (se non in espiazione di pena per altra causa)<wr:else/>\b della condannata\b0  (se non in espiazione di pena per altra causa)</wr:if>, \b precisando\b0  \b che<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato<wr:else/> la condannata</wr:if> dovr\'e0 concordare, nei tempi stabiliti nel decreto\b0 , il giorno in cui si recher\'e0 davanti al Direttore del competente Ufficio Esecuzione Penale Esterna per la sottoscrizione del verbale contenente le prescrizioni, \b sino a quel giorno dovr\'e0 proseguire l\rquote espiazione della pena in <wr:if select="contains(/X/FascicoloSiep/PosizioneGiuridica/DescrPosizioneGiuridica, &quot;Espiazione Pena&quot;)"> <wr:out select="substring-after(/X/FascicoloSiep/PosizioneGiuridica/DescrPosizioneGiuridica,\rquote Espiazione Pena in\rquote )\rdblquote /><wr:else/> regime di <wr:out select="/X/FascicoloSiep/PosizioneGiuridica/DescrPosizioneGiuridica\rdblquote /></wr:if>\b0 ;\par
+\pard\fi-340\li340\sb120\qj\tx360 -\tab che le Autorit\'e0 preposte al controllo vigilino sull\rquote osservanza delle prescrizioni dettate nel verbale di sottoposizione agli obblighi fino al \b <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;N&apos;]"><wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/></wr:if>\b0  data in cui <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato dovr\'e0 essere posto in libert\'e0 se non in espiazione di pena per altra causa <wr:else/>la condannata dovr\'e0 essere posta in libert\'e0 se non in espiazione di pena per altra causa; </wr:if>\par
+\pard\qj\par
+<wr:import inline='true' url="$\{ESECUZIONEMISURASICUREZZA\}" />\par
+\pard\keepn\s1\sb120\sa120\qc\b AVVISA\par
+\pard\qj\b0 <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato<wr:else/>la condannata</wr:if> che qualora non si attenga alle prescrizioni dettate nel verbale di sottoposizione agli obblighi, \b il beneficio verr\'e0 revocato\b0 .\par
+\pard\keepn\s1\sb120\sa120\qc\b MANDA\par
+\pard\qj\b0 alla Segreteria, in sede, perch\'e9 provveda all\rquote invio della presente comunicazione:\par
+\pard\fi-340\li340\tx360\tx1080 -\tab <wr:forEach select="/X/Evento/Notifica"><wr:if select="./CSSA"><wr:if select="./CSSA[Tipo=&apos;USSM&apos; or Tipo=&apos;USSMSS&apos;]">All\rquote U.S.S.M. (Ufficio Servizi Sociali per i Minorenni);<wr:else/> All\rquote U.E.P.E. (Ufficio Esecuzione Penale Esterna); </wr:if></wr:if></wr:forEach>\par
+\pard\fi-340\li340\qj\tx360\tx720 -\tab all\rquote Autorit\'e0 di polizia competente per territorio;\par
+\pard\fi-340\li340\qj -\tab al Magistrato di Sorveglianza preposto alla vigilanza;\par
+-\tab al Tribunale di Sorveglianza che ha emesso l\rquote ordinanza.\par
+\pard\nowidctlpar\par
+\pard\lang2057 <wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\nowidctlpar\qj\par
+<wr:set var=\rquote dest\rquote  value=\rquote 2\rquote  />\par
+\par
+\lang1040 <wr:import inline='true' url="$\{NOTIFICACOMUNICAZIONE\}" />\par
+\pard\par
+}
+ 

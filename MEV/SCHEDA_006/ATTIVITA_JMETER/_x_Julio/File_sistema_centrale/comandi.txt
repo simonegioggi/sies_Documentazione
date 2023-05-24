@@ -1,0 +1,21 @@
+jmeter -n -t "C:\jmeter_SIES\SIUS_2_noGUI.jmx" -l "C:\jmeter_SIES\risultati\testPalermo.jtl" -Jprotocol=https -Jserver=10.6.202.158 -Jport=8443 -Jn_utenti_gener=50 -Jramp_up_gener=10 -Jduration_gener=120 -Jcsv_parametri="C:\jmeter_SIES\Query_Fascicoli_Avvocatura.csv" -e -o "C:\jmeter_SIES\risultati\testPalermo"
+
+
+Ultimo comando funzionante
+
+C:\jmeter_SIES\apache-jmeter-4.0\bin>
+jmeter -n -t "C:\jmeter_SIES\SIUS_2_noGUI.jmx" -l "C:\jmeter_SIES\risultati\testPalermo.jtl" -Jprotocol=https -Jserver=10.6.202.158 -Jport=8443 -Jn_utenti_gener=200 -Jramp_up_gener=10 -Jduration_gener=600 -Jcsv_parametri="C:\jmeter_SIES\Query_Fascicoli_Avvocatura.csv" -e -o "C:\jmeter_SIES\risultati\testPalermo"
+
+
+comando per test su napoli del 22/01/2019
+jmeter -n -t "C:\jmeter_SIES\SIUS_2_noGUI.jmx" -l "C:\jmeter_SIES\risultati_22012019\testNapoli.jtl" -Jn_utenti_gener=1000 -Jramp_up_gener=3600 -Jduration_gener=7200 -e -o "C:\jmeter_SIES\risultati_22012019\risultati"
+
+
+jmeter -n -t "D:\PROGETTI\AVVOCATURA\JMETER_SIES\TEST_JMETER_AVVOCATURA_23012019\SIUS_2_noGUI.jmx" -l "D:\PROGETTI\AVVOCATURA\JMETER_SIES\prova\testNapoli.jtl" -Jn_utenti_gener=1 -Jramp_up_gener=1 -Jduration_gener=120 -e -o "D:\PROGETTI\AVVOCATURA\JMETER_SIES\prova\risultati"
+
+-- COMANDO SUL MIO PC
+jmeter -n -t "D:\PROGETTI\AVVOCATURA\JMETER_SIES\TEST_JMETER_AVVOCATURA_23012019\SIUS_2_noGUI.jmx" -l "D:\PROGETTI\AVVOCATURA\JMETER_SIES\TEST_JMETER_AVVOCATURA_23012019\risultatiAvvocati\testNapoliAvvocati.jtl" -Jn_utenti_gener=1000 -Jramp_up_gener=3600 -Jduration_gener=7200 -e -o "D:\PROGETTI\AVVOCATURA\JMETER_SIES\TEST_JMETER_AVVOCATURA_23012019\risultatiAvvocati\risultatiHTML"
+
+
+
+

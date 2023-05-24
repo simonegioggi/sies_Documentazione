@@ -1,0 +1,18 @@
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('060536','001500','006192','002170','025507','014501','007503','018501','003809','017804','017805');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('015806','024124','048054','022010','004503','064540','014502','049503','003815','022238','022252');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('022239','020072','025074','028107','020071','020073','016567','048801','012143','055500','062500');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('027501','066502','001815','028509','018555','098062','004508','084502','019839','002171','015560');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('022829','012553','032802','007521','014507','007570','061805','016828','017557','030190','061806');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('028513','061513','083512','003508','019858','095805','003525','033507','007523','007524','022847');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('026536','066509','006193','024513','888888','777777','001832','024127','022858','030510','022861');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('079503','044512','063507','012557','026519','044805','031847','058801','043511','063999','056509');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('053500','022508','042514','010813','028520','019116','028522','007537','014515','013919','058502');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('057519','003514','051802','007538','066805','096087','005539','061531','022898','007541','007542');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('049021','035507','059509','024524','019895','007543','007544','007545','007546','007547','007549');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('007553','004541','080817','004544','071517','008516','999236','023536','013536','005541','013934');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('061537','029518','062522','076508','063810','095809','004555','030191','017546','015587','024123');
+delete CODICI_SIES_NSC where co_domain = 'COMUNE' and co_sies in ('001584','103079','011509','013953','015589','022937','060540','058540');
+commit;
+
+
+

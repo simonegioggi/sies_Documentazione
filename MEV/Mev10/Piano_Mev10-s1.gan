@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Mev 10" company="" webLink="" view-date="2014-10-14" view-index="0" gantt-divider-location="422" resource-divider-location="301" version="2.0">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart"/>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="55" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="44" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <calendar id="1" name="default">
+                <default-week sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+                <overriden-day-types/>
+                <days/>
+            </calendar>
+        </day-types>
+    </calendars>
+    <tasks color="#8cb6ce">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Iscrizione Soggetto Minorenne – età presunta" color="#8cb6ce" meeting="false" start="2014-10-16" duration="2" complete="0" priority="1" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" name="Riferimenti Dattiloscopici" color="#8cb6ce" meeting="false" start="2014-10-23" duration="1" complete="0" priority="1" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="Etichetta Minorenne" color="#8cb6ce" meeting="false" start="2014-10-24" duration="2" complete="0" priority="1" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="Ricerca procedimento – Numero SIEP" color="#8cb6ce" meeting="false" start="2014-10-28" duration="3" complete="0" priority="1" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" name="Ricerca procedimento – Soggetto – Procura Generale" color="#8cb6ce" meeting="false" start="2014-10-31" duration="3" complete="0" priority="1" expand="true">
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="Ricerca – Soggetto – Dati presenti nel procedimento" color="#8cb6ce" meeting="false" start="2014-11-06" duration="3" complete="0" priority="1" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" name="Ricerca procedimento – Soggetto - Codice CUI" color="#8cb6ce" meeting="false" start="2014-11-11" duration="2" complete="0" priority="1" expand="true"/>
+        <task id="7" name="Tabella tipologia misura cautelari" color="#8cb6ce" meeting="false" start="2014-11-03" duration="1" complete="0" priority="1" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" name="Iscrizione misura cautelare" color="#8cb6ce" meeting="false" start="2014-11-04" duration="1" complete="0" priority="1" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="Misure cessate al momento del passaggio – non computabili" color="#8cb6ce" meeting="false" start="2014-11-05" duration="1" complete="0" priority="1" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="10" name="Inserimento Misura – Detentiva/Non Detentiva - Computabile/Non Computabile" color="#8cb6ce" meeting="false" start="2014-11-06" duration="4" complete="0" priority="1" expand="true">
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" name="Tabella forze di Polizia" color="#8cb6ce" meeting="false" start="2014-11-12" duration="4" complete="0" priority="1" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" name="Modifica controlli calcolo custodia cautelare" color="#8cb6ce" meeting="false" start="2014-11-18" duration="1" complete="0" priority="1" expand="true">
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" name="Computo periodo trascorso di messa alla prova" color="#8cb6ce" meeting="false" start="2014-11-19" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="14" name="&lt;malattia&gt;" color="#8cb6ce" meeting="false" start="2014-10-20" duration="3" complete="0" priority="1" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="15" name="&lt;visita medica&gt;" color="#8cb6ce" meeting="false" start="2014-11-05" duration="1" complete="0" priority="1" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="3" name="Filippo" function="Default:0" contacts="" phone=""/>
+        <resource id="4" name="Alessandro" function="Default:0" contacts="" phone=""/>
+        <resource id="5" name="Carmela" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <taskdisplaycolumns>
+        <displaycolumn property-id="tpd3" order="0" width="195"/>
+        <displaycolumn property-id="tpd4" order="1" width="38"/>
+        <displaycolumn property-id="tpd5" order="2" width="36"/>
+    </taskdisplaycolumns>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

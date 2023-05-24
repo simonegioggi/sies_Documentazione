@@ -1,0 +1,99 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /><wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\lang2057\b\par
+\lang1040 RINVIO DELL\rquote ESECUZIONE\par
+PER DIFFERIMENTO PROVVISORIO DELLE PENE DETENTIVE\par
+ex art. 684 comma 2 c.p.p.\b0 <wr:if select="/X/FascicoloSiep/PosizioneGiuridica[(CodPosizioneGiuridica=\rquote 03\rquote )or(CodPosizioneGiuridica=\rquote 04\rquote )]">\par
+\b Ordine di scarcerazione\b0 </wr:if>\par
+(Condannato in <wr:out select="/X/FascicoloSiep/PosizioneGiuridica/DescrPosizioneGiuridica "/>)\par
+\pard\b\par
+\pard\qc\b0 <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\pard\b\par
+\b0 <wr:out value="$\{PremessaSoggettoB\}" />\par
+\pard\qj\par
+<wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\par
+\pard <wr:import inline='true' url="$\{PremessaSentenzaB\}"/><wr:import inline='true' url="$\{SENTENZA\}" /><wr:import inline='true' url="$\{CUMULOB\}" />\par
+\pard\qj\par
+Rilevato che \'e8 in corso di espiazione la residua pena di:\par
+\pard\fi708 <wr:import inline='true' url="$\{PENAPRECEDENTECONDATE\}" />\par
+\pard\qj\par
+\pard <wr:import inline='true' url="$\{AVVOCATI\}" />\par
+\pard\qj\cf1\b\par
+\pard\qc\cf0 <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa[CodTipoDecisione =\rquote 03\rquote ]"> V I S T A <wr:else/>V I S T O</wr:if>\par
+\pard\par
+\pard\qj\b0 <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa[CodTipoDecisione=\rquote 03\rquote ]">L'Ordinanza <wr:else/>Il Decreto </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/NumeroRegistro">N. <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/NumeroRegistro"/>/<wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/AnnoRegistro"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa[CodTipoDecisione=\rquote 03\rquote ]">\b  \b0 emessa<wr:else/> emesso</wr:if> in data <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataDecisione"/> dal <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrChiaveUfficioFascicoloSius"/> che ha disposto in via \b provvisoria \b0 il <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrTipoMisura"/>\par
+<wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/StringaReclusione">Per un periodo pari ad <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/StringaReclusione"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataFineMisura"> Fino al <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataFineMisura"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescTdsCompetente"><wr:if select =\rdblquote /X/FascicoloSiep/PenaResidua/MisuraAlternativa[DescTdsCompetente!=\rquote -\rquote ]\rdblquote >\par
+Con atti trasmessi al Tribunale di Sorveglianza di <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescSedeTdsCompetente"/></wr:if></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa[FlagDecisioneTribunale=\rquote S\rquote ]">\par
+Fino alla decisione del Tribunale di Sorveglianza</wr:if>\par
+\pard <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Note">\par
+\par
+\par
+\pard\qc\b M O T I V A Z I O N I\par
+\pard\b0\par
+<wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Note"/></wr:if>\par
+\par
+\par
+\pard\qc\b R I T E N U T O\par
+\pard\b0\par
+\pard\qj che occorre dare urgente esecuzione alla citata ordinanza ex art.659 cpp, che per l\rquote effetto deve essere disposta la scarcerazione della persona in oggetto indicata\par
+\pard\par
+\par
+\pard\qc\b O R D I N A\par
+\pard\b0\par
+\pard\qj <wr:if select="/X/FascicoloSiep/PosizioneGiuridica[(CodPosizioneGiuridica=\rquote 03\rquote )or(CodPosizioneGiuridica=\rquote 04\rquote )]">l\rquote immediata scarcerazione <wr:if select="/X/Soggetto[Sesso=\rquote M\rquote ]">del condannato, se non detenuto per altra causa<wr:else/>della condannata, se non detenuta per altra causa</wr:if>;</wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[(CodPosizioneGiuridica=\rquote 12\rquote )or(CodPosizioneGiuridica=\rquote 13\rquote )or(CodPosizioneGiuridica=\rquote 14\rquote )or(CodPosizioneGiuridica=\rquote 27\rquote )]">l\rquote interruzione dell\rquote esecuzione della misura alternativa;</wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[(CodPosizioneGiuridica=\rquote 29\rquote ) or(CodPosizioneGiuridica=\rquote 54\rquote )]">l\rquote immediata liberazione <wr:if select="/X/Soggetto[Sesso=\rquote M\rquote ]">del condannato<wr:else/>della condannata</wr:if>, se non in espiazione per altra causa;</wr:if>\par
+\pard <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataFineMisura" >\par
+\par
+\par
+\pard\qc\b C O M U N I C A\par
+\pard\b0\par
+\pard\qj che qualora non intervenga la decisione definitiva da parte del Tribunale di Sorveglianza a cui il Magistrato ha trasmesso immediatamente gli atti, il differimento provvisorio dell\rquote esecuzione della pena opera sino alla data del <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataFineMisura"/> stabilita nel Decreto di concessione;\par
+</wr:if>\par
+\pard <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa[FlagDecisioneTribunale=\rquote S\rquote ]" >\par
+\par
+\par
+\pard\qc\b C O M U N I C A\par
+\par
+\pard\qj\b0 <wr:if select="/X/Soggetto[Sesso=\rquote M\rquote ]">al condannato<wr:else/>alla condannata</wr:if> che il provvedimento di rinvio provvisorio dell'esecuzione della pena conserva effetto fino alla decisione del Tribunale, al quale il Magistrato di Sorveglianza ha trasmesso immediatamente gli atti. \par
+</wr:if>\par
+\pard\par
+\pard\qc\b R I S E R V A\par
+\pard\qj\b0\par
+L\rquote emissione di ulteriori provvedimenti esecutivi, qualora alla data stabilita non perverr\'e0 a questo ufficio un ulteriore provvedimento di rinvio in relazione alla residua pena di:\par
+\lang2057\b < wr:import inline='true' url="$\{SOLOPENARESIDUA\}" />\par
+\pard\b0\par
+\pard\qj\lang1040\b determinata alla data di sospensione dell\rquote esecuzione.\par
+\b0\par
+\lang2057\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\lang1040\fs22\par
+\par
+\pard\qc\b M A N D A\par
+\pard\b0\par
+alla Segreteria, in sede, perch\'e9 provveda all\rquote invio del presente provvedimento a:<wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=\rquote 03\rquote ]">\par
+\lang2057 <wr:forEach select="/X/Evento/Notifica"><wr:if select=".[CodTipoNotifica=\rquote TS\rquote ]">\par
+\pard\fi-340\li340\tx360\lang1040\f1\'b7\tab\f0 Tribunale di Sorveglianza competente a decidere;</wr:if><wr:if select=".[CodTipoNotifica=\rquote E\rquote ]">\par
+\pard\fi-340\li340\f1\'b7\tab\f0 Istituto di detenzione in cui <wr:if select="/X/Soggetto[Sesso=\rquote M\rquote ]">il condannato \'e8 ristretto<wr:else/>la condannata \'e8 ristretta</wr:if>;</wr:if>\par
+\pard </wr:forEach></wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=\rquote 04\rquote ]">\par
+\lang2057 <wr:forEach select="/X/Evento/Notifica"><wr:if select=".[CodTipoNotifica=\rquote TS\rquote ]">\par
+\pard\fi-340\li340\tx360\lang1040\f1\'b7\tab\f0 Tribunale di Sorveglianza competente a decidere;</wr:if><wr:if select=".[CodTipoNotifica=\rquote E\rquote ]">\par
+\pard\fi-340\li340\f1\'b7\tab\f0 Autorit\'e0 di polizia competente per la notifica <wr:if select="/X/Soggetto[Sesso=\rquote M\rquote ]">al condannato<wr:else/>alla condannata</wr:if>;</wr:if>\par
+\pard </wr:forEach></wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[(CodPosizioneGiuridica=\rquote 12\rquote )or(CodPosizioneGiuridica=\rquote 13\rquote )or(CodPosizioneGiuridica=\rquote 14\rquote )or(CodPosizioneGiuridica=\rquote 27\rquote )or(CodPosizioneGiuridica=\rquote 29\rquote ) or(CodPosizioneGiuridica=\rquote 54\rquote )]">\par
+\lang2057 <wr:forEach select="/X/Evento/Notifica"><wr:if select=".[CodTipoNotifica=\rquote TS\rquote ]">\par
+\pard\fi-340\li340\tx360\lang1040\f1\'b7\tab\f0 Tribunale di Sorveglianza competente a decidere;</wr:if><wr:if select=".[CodTipoNotifica=\rquote E\rquote  and IstDetIdIstitutoDetenzione]">\par
+\f1\'b7\tab\f0 Istituto di detenzione il cui <wr:if select="/X/Soggetto[Sesso=\rquote M\rquote ]">il condannato \'e8 ristretto<wr:else/>la condannata \'e8 ristretta</wr:if>;</wr:if><wr:if select=".[CodTipoNotifica=\rquote E\rquote  and AutEstIdAutoritaEsterna]">\par
+\pard\fi-340\li340\f1\'b7\tab\f0 Autorit\'e0 di polizia competente per la notifica <wr:if select="/X/Soggetto[Sesso=\rquote M\rquote ]">al condannato<wr:else/>alla condannata</wr:if>;</wr:if>\par
+\pard\lang2057 </wr:forEach></wr:if>\par
+\par
+\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\fs22\par
+\par
+\par
+<wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\tqc\tx4819\tqr\tx9638 <wr:import inline='true' url="$\{NOTIFICAAVVOCATI\}" />\par
+\pard\qj\par
+<wr:set var=\rquote dest\rquote  value=\rquote 2\rquote />\par
+\pard <wr:import inline='true' url="\lang1040 &apos;/var/SIES/template/import/Variabili.rtf&apos;\lang2057 " />\par
+<wr:import inline='true' url="$\{NOTIFICACOMUNICAZIONE\}" />\par
+\par
+\pard\tqc\tx4819\tqr\tx9638\par
+}
+ 

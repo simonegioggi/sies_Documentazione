@@ -1,0 +1,44 @@
+Ho preparato 3 file .7z per il rilascio delle procedure batch, inizio a mandarti 2, le cui istruzioni sono descritte nel file Istruzioni per Aggiornamento Tabelle SIES da Tabelle fisse DGSIA.doc, nelle ultime pagine c'è la parte che riguarda la messa in esercizio. Tutti gli script e le procedure sono in ambiente windows.
+
+Si, tieni conto che Aggiornamento Tabelle Fisse non dovrà essere distribuito ai Distretti, serve all'Amministrazione per capire quello che abbiamo realizzato per arrivare alla tabelle distribuite e per divertirsi per rifare il giro, le altre 2 saranno distribuite nei Distretti!!!
+
+In Bonifica.7z c'è pure la tabella AVVOCATO_REGINDE_18112020.dmp, che devono importare nel db dove devono operare.
+
+Nella cartella vi il file .dmp, che ho utilizzato anche nell'allineamento della tabella Comune e dominio Nazione, per ricercare i comuni privi di codici catastali, che servivano per risalire al comune di nascita dell'avvocato. La tabella è anche fondamentale per la procedura di Bonifica. Quindi va distribuita. Poi potrebbe darsi che dopo il collaudo e prima della distribuzione ufficiale, l'Amministrazione ci fornisca una estrazione aggiornata dei difensori ReGIndE e ci chieda di importarla al posto di quella attuale.
+
+...................................................................................................
+
+ALTER TABLE AVVOCATO ADD (
+	PEC VARCHAR2(200),
+	FLAG_REGINDE VARCHAR2(2),
+	DESCR_COMUNE_STUDIO VARCHAR2(200),
+	COD_STATO_NASCITA_AVV VARCHAR2(3),
+	DESC_LUOGO_NAS_REGINDE VARCHAR2(200),
+	ID_AVVOCATO_BONIFICATO NUMBER(38,0)
+);
+
+ALTER TABLE CODICI_SIES_NSC
+	DROP CONSTRAINT CODICI_SIES_NSC_PK;
+ALTER TABLE CODICI_SIES_NSC ADD (
+	CONSTRAINT CODICI_SIES_NSC_PK_1
+	PRIMARY KEY
+	(CO_DOMAIN, CO_CODCENTR,  CO_SIES)
+);
+
+ALTER TABLE COMUNE ADD (
+	COD_CATASTALE_COMUNE          VARCHAR2(4 BYTE),
+	DATA_AGGIORNAMENTO_COMUNE     DATE,
+	DATA_FINE_VALIDITA_COMUNE     DATE
+);
+
+ALTER TABLE COMUNI ADD (
+	COD_CATASTALE_COMUNE          VARCHAR2(4 BYTE),
+	DATA_AGGIORNAMENTO_COMUNE     DATE,
+	DATA_FINE_VALIDITA_COMUNE     DATE
+);
+
+ALTER TABLE STATI ADD (
+	COD_STATO_ISO                 VARCHAR2(4 BYTE),
+	COD_ISTAT_STATO               VARCHAR2(3 BYTE),
+	COD_CATASTALE                 VARCHAR2(4 BYTE),
+);

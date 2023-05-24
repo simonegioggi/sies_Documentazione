@@ -1,0 +1,98 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue0;\red255\green255\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /><wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\pard\nowidctlpar\qc\b\fs24 COMUNICAZIONE\par
+A SEGUITO RICONOSCIMENTO\par
+RISARCIMENTO DEL DANNO\par
+decreto-legge 26 giugno 2014, 92 convertito\par
+con modificazioni dalla L. 11 agosto 2014, n. 117\par
+<wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos; or FlagErgastolo=&apos;D&apos;] ">(condannato in ergastolo)<wr:else/>(condannato libero)</wr:if>\par
+\pard\nowidctlpar\b0\par
+\pard\par
+\pard\qc\fs22 <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\par
+\pard\qj <wr:out value="$\{PremessaSentenzaA\}" /><wr:import inline='true' url="$\{SENTENZA\}" />, <wr:out value="$\{PremessaSoggettoA\}" />\par
+\par
+\lang2057 <wr:import inline='true' url="$\{SOGGETTO\}" /><wr:if select="/X/FascicoloSiep[FlagCumulante=&apos;S&apos;]">\par
+\pard <wr:import inline='true' url="$\{PENACCUMULO\}" /></wr:if>\par
+\pard\qj\par
+\par
+\pard\qc\b COMUNICA\par
+\par
+\pard\qj\lang1040\b0 che con <wr:if select="/X/\cf1 Evento[EventoCorrente=\cf0 &apos;S&apos;]/Evento[\cf1 CodTipoProvvedimento\cf0 =&apos;03&apos;]">l\rquote ordinanza <wr:else/>il decreto </wr:if>N. <wr:out select="/X/Evento[EventoCorrente=&apos;S&apos;]/Evento/LicenzaLibAnticipata/NumeroOrdinanza"/>/<wr:out select="/X/Evento[EventoCorrente=&apos;S&apos;]/Evento/LicenzaLibAnticipata/AnnoOrdinanza"/>\cf1  \cf0 del <wr:out select="/X/Evento[EventoCorrente=&apos;S&apos;]/Evento/LicenzaLibAnticipata/DataEmissioneOrdinanza"/><wr:if select="/X/\cf1 Evento[EventoCorrente=\cf0 &apos;S&apos;]/Evento[\cf1 CodTipoProvvedimento\cf0 =&apos;03&apos;]"> emessa <wr:else/> emesso </wr:if>da\cf1  \cf0 <wr:out select="/X/Evento[EventoCorrente=&apos;S&apos;]/Evento/LicenzaLibAnticipata/DescrUfficioEmittente"/> di <wr:out select="/X/Evento[EventoCorrente=&apos;S&apos;]/Evento/LicenzaLibAnticipata/DescrLuogoEmittente"/> ha \b riconosciuto\b0  <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">al condannato <wr:else/>alla condannata </wr:if>una riduzione della pena detentiva ancora da espiare pari a giorni <wr:out select="/X/Evento[EventoCorrente=&apos;S&apos;]/Evento/LicenzaLibAnticipata[CodTipoLicenza=&apos;RD&apos; and FlagConcesso=&apos;C&apos;]/NumeroGiorni"/>, a titolo di risarcimento del danno subito (<wr:forEach select="/X/Evento[EventoCorrente=&apos;S&apos;]/Evento/LicenzaLibAnticipata[\highlight2 CodTipoLicenza=&apos;RD&apos; and FlagConcesso=&apos;C&apos;\highlight0 ]">in riferimento <wr:if select="count(./PeriodoLibAnticipata)&gt;1">ai periodi espiati<wr:else/>al periodo espiato</wr:if><wr:forEach select="./PeriodoLibAnticipata" varStatus="status"> dal <wr:out select="./DataInizio"/> al <wr:out select="./DataFine"/><wr:if test="$\{status.last\}"><wr:else/>,</wr:if></wr:forEach></wr:forEach>);\cf1\par
+\cf0 <wr:if select="/X/\cf1 Evento[EventoCorrente=&apos;S&apos;]/Evento/\cf0 LicenzaLibAnticipata\cf1 [\highlight2 CodTipoLicenza=\cf0 &apos;SL&apos;\highlight0 ]">\lang2057\par
+oltre al riconoscimento di una somma di denaro pari a euro <wr:out select="/X/Evento[EventoCorrente=&apos;S&apos;]/Evento/LicenzaLibAnticipata[CodTipoLicenza=&apos;SL&apos; and FlagConcesso=&apos;C&apos;]/SommaRisarcDanni"/> a titolo risarcitorio per ciascuna giornata relativa \lang1040 <wr:forEach select="/X/Evento[EventoCorrente=&apos;S&apos;]/Evento/LicenzaLibAnticipata[CodTipoLicenza=&apos;SL&apos; and FlagConcesso=&apos;C&apos;]"><wr:if select="count(./PeriodoLibAnticipata)&gt;1">ai periodi espiati<wr:else/>al periodo espiato</wr:if><wr:forEach select="./PeriodoLibAnticipata" varStatus="status"> dal <wr:out select="./DataInizio"/> al <wr:out select="./DataFine"/><wr:if test="$\{status.last\}"><wr:else/>,</wr:if></wr:forEach></wr:forEach>,\lang2057  nella quale ha subito il pregiudizio.</wr:if>\par
+\par
+<wr:if select=\lang1040 "commento"\lang2057 >\par
+\highlight2 Da visualizzare in caso di soggetto formalmente in espiazione ma con fine pena minore data sistema\highlight0 </wr:if>\par
+\lang1040 <wr:if select="/X/\cf1 Evento[EventoCorrente=\cf0 &apos;S&apos; and \cf1 CodMotivo\cf0 =&apos;5495&apos;]">\lang2057\par
+\pard\qc\lang1040\b COMUNICA\par
+\par
+\pard\qj\b0 che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato<wr:else/>la condannata</wr:if>\fs24  \fs22 non ha potuto fruire di giorni <wr:out select="/X/Evento[EventoCorrente=&apos;S&apos;]/Evento/LicenzaLibAnticipata[CodTipoLicenza=&apos;RD&apos; and FlagConcesso=&apos;C&apos;]/NumeroGiorni"/> di riduzione pena a titolo di risarcimento del danno (decreto-legge 26 giugno 2014, n. 92 convertito con modificazioni dalla L. 11 agosto 2014, n. 117) in quanto il condannato \'e8 stato scarcerato in data <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/></wr:if>\par
+\lang2057\par
+\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\fs22\par
+\pard\lang1040\par
+\pard\qc\b MANDA\par
+\par
+\pard\b0 alla Segreteria, in sede, perch\'e9 provveda all\rquote invio della presente comunicazione a: \par
+\pard\qj\lang2057 <wr:forEach select="/X/Evento/Notifica"><wr:if select=".[CodTipoNotifica=&apos;E&apos;]/AutoritaEsterna">\lang1040\par
+\pard\fi-360\li720\tx360\f1\'b7\tab\f0 <wr:if select=".[CodTipoNotifica=&apos;E&apos;]/IstDetIdIstitutoDetenzione">all'Istituto di detenzione <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/><wr:else/>a <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/></wr:if>;</wr:if><wr:if select=".[CodTipoNotifica=&apos;C&apos;]/Ufficio">\par
+\pard\fi-360\li720\f1\'b7\tab\f0 <wr:if select="./Ufficio[CodTipoUfficio=&apos;TDS&apos;]">al <wr:else/>all\rquote </wr:if><wr:out select="./Ufficio/DescrTipoUfficio"/> di <wr:out select="./Ufficio/DescrComune"/>;</wr:if></wr:forEach>\par
+\pard\par
+\lang2057\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\lang1040\fs22\par
+\par
+\pard\tqc\tx4819\tqr\tx9638\lang2057 <wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\qj <wr:import inline='true' url="$\{NOTIFICAAVVOCATI\}" />\par
+<wr:set var=\rquote dest\rquote  \highlight2 value=\rquote 2\rquote\highlight0 /><wr:import inline=\rquote true\rquote  url=\rdblquote $\{NOTIFICACOMUNICAZIONE\}\rdblquote />\par
+<wr:if select="/X[WFungibilita=&apos;S&apos;]">\par
+\pard\qc\lang1040\page <wr:import inline='true' url="$\{INTESTAZIONE\}" />\b\par
+\pard\b0\par
+\pard\nowidctlpar\fs24 Destinazione: <wr:out select="/X/FascicoloSiep/LuogoDetenzione/DescrTipoIstituto"/> <wr:out select="/X/FascicoloSiep/LuogoDetenzione/DescrLuogo"/>\par
+\pard\b\fs22\par
+\par
+\b0 <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\par
+\pard\qj <wr:out value="$\{PremessaSentenzaA\}" /><wr:import inline='true' url="$\{SENTENZA\}" />,a carico di\par
+\par
+\pard <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\qj\par
+\par
+\par
+comunica, per quanto eventualmente di competenza, che il condannato indicato in oggetto \'e8 stato scarcerato in data <wr:forEach select="/X/FascicoloSiep/PenaResidua"><wr:if select=".[FlagValidato=&apos;N&apos;]"><wr:out select="./DataFine"/></wr:if></wr:forEach><wr:if select="/X/FascicoloSiep/PenaResidua[FlagValidato=&apos;S&apos;]"> anzich\'e9 in data <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;N&apos;]"><wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/></wr:if></wr:if>, per un totale di <wr:if select="/X/FascicoloSiep/Fungibilita/NumAnni">anni <wr:out select="/X/FascicoloSiep/Fungibilita/NumAnni"/></wr:if> <wr:if select="/X/FascicoloSiep/Fungibilita/NumMesi">mesi <wr:out select="/X/FascicoloSiep/Fungibilita/NumMesi"/></wr:if> <wr:if select="/X/FascicoloSiep/Fungibilita/NumGiorni">giorni <wr:out select="/X/FascicoloSiep/Fungibilita/NumGiorni"/></wr:if> di pena espiata in eccesso.\par
+\par
+Qualora<wr:if select="./.[Sesso=&apos;M&apos;]"> il condannato risultasse detenuto<wr:else/> la condannata risultasse detenuta</wr:if> per altro fatto, codesto ufficio \'e8 pregato di darne immediata comunicazione a questa Procura.\par
+\pard\b\par
+\par
+\lang2057\b0 <wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\qr\par
+\pard\li360\qr\par
+\pard\par
+\pard\qc\b <wr:forEach select="/X/Evento/Notifica"><wr:if select=".[CodTipoNotifica=&apos;C&apos;]">\par
+\lang1040 <wr:if select="./AutoritaEsterna[CodTipoAutorita!=X/FascicoloSiep/LuogoDetenzione/CodTipoIstituto]">\par
+\page\b0 <wr:import inline='true' url="$\{INTESTAZIONE\}" />\b\par
+\pard\b0\par
+\b\par
+\b0\par
+\pard\nowidctlpar\fs24 Destinazione: <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> <wr:out select="./AutoritaEsterna/DescrSede"/>\par
+\pard\b\fs22\par
+\b0 <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\par
+\pard\qj <wr:out value="$\{PremessaSentenzaA\}" /><wr:import inline='true' url="$\{SENTENZA\}" />,a carico di\par
+\par
+\pard\lang2057 <wr:import inline='true' url="\lang1040 $\{SOGGETTO\}\lang2057 " />\par
+\pard\qj\par
+\par
+\pard\par
+<wr:out select="./Note"/>\par
+\par
+\pard\qj\lang1040 Dall\rquote esame della posizione giuridica il condannato risulta detenuto anche per <wr:if select="/X/Sentenza[CodTipoProvvedimento=&apos;01&apos;]"> la <wr:else/> il </wr:if><wr:out select="/X/Sentenza/DescrTipoProvvedimento"/><wr:if select="/X/FascicoloSiep/AltraCausa"> N. <wr:if select="/X/FascicoloSiep/AltraCausa/Numero"><wr:out select="/X/FascicoloSiep/AltraCausa/Numero"/></wr:if>/<wr:if select="/X/FascicoloSiep/AltraCausa/Anno"><wr:out select="/X/FascicoloSiep/AltraCausa/Anno"/></wr:if> del <wr:if select="/X/FascicoloSiep/AltraCausa/Data"><wr:out select="/X/FascicoloSiep/AltraCausa/Data"/></wr:if> da <wr:if select="/X/FascicoloSiep/AltraCausa/DescrAutorita"><wr:out select="/X/FascicoloSiep/AltraCausa/DescrAutorita"/></wr:if> di <wr:if select="/X/FascicoloSiep/AltraCausa/DescrLuogo"><wr:out select="/X/FascicoloSiep/AltraCausa/DescrLuogo"/></wr:if> del <wr:if select="/X/FascicoloSiep/AltraCausa/DataIrrevocabilita"><wr:out select="/X/FascicoloSiep/AltraCausa/DataIrrevocabilita"/></wr:if> </wr:if> , per cui si comunica, per  quanto  eventualmente  di  competenza,  che \'e8 stato scarcerato  in  data <wr:out select="/X/Evento/DataEmissione"/>   anzich\'e8 in  data <wr:if select="/X/FascicoloSiep/PenaResidua/DataFine"><wr:out select="./DataFine"/></wr:if>, <wr:if select="/X/Evento/DataEmissione/Fungibilita"> ( per un totale\par
+\lang2057 di\b  anni \b0 <wr:if select=".[NumAnni!=0]">\b <wr:out select="./ NumAnni"/> \b0 <wr:else/>0\b  \b0 </wr:if>\b  mesi  \b0 <wr:if select=".[NumMesi!=0]">\b <wr:out select="./NumMesi"/> \b0 <wr:else/>0\b  \b0 </wr:if>\b  giorni \b0 <wr:if select=".[NumGiorni!=0]">\b <wr:out select="./NumGiorni"/> \b0 <wr:else/>0\b  \b0 </wr:if>\b  \b0  di periodo fungibile). \lang1040 </wr:if>\par
+\par
+\pard\b Si resta in attesa dell'eventuale provvedimento di fungibilit\'e0.\par
+\par
+\lang2057\b0 <wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\qr\par
+\pard\b </wr:if></wr:if></wr:forEach></wr:if>\b0\par
+\par
+}
+ 

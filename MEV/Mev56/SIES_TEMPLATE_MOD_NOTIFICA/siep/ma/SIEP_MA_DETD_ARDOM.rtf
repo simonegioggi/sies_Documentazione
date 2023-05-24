@@ -1,0 +1,55 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Tahoma;}}
+{\colortbl ;\red0\green0\blue0;}
+{\stylesheet{ Normal;}{\s1 heading 1;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\nowidctlpar\qc\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\pard\nowidctlpar\qj\par
+\pard\qc\b ORDINE DI ESECUZIONE\par
+PER ESPIAZIONE DI PENA DETENTIVA IN REGIME DI\par
+DETENZIONE DOMICILIARE\par
+ex <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Legge"/> Legge 26.7.1975 n. 354\par
+\b0 (<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">\b condannato\b0  <wr:else/>\b condannata\b0 </wr:if> \b in prosecuzione degli Arresti Domiciliari\b0 <wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;02&apos;]"> </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;70&apos;]">  di \b Arresti Domiciliari ex art. 89 dpr 309/90\b0 </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;71&apos;]"> di \b Permanenza in Casa\b0  </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;72&apos;]"> \b Collocamento in Comunit\'e0\b0 </wr:if>\b  ex art. 656 comma 10 c.p.p.)\b0\par
+\pard\sb120\sa120\qc\b <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\pard\qj\b0 <wr:out value="$\{PremessaSentenzaA\}" /><wr:import inline='true' url="$\{SENTENZA\}" />, <wr:out value="$\{PremessaSoggettoA\}" />\par
+\par
+\lang2057\ul\b <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\par
+\ulnone\b0 <wr:import inline='true' url="$\{PENA\}" />\par
+\pard\li708\qj\cf1\b\par
+\pard\nowidctlpar\li567\cf0\b0 <wr:import inline='true' url="$\{STATOESECUZIONE\}" />\par
+\pard\qj\par
+\pard\cf1 <wr:import inline='true' url="$\{PENARESIDUA\}" />\par
+\par
+\pard\nowidctlpar\sb100\qj\cf0 Rilevato che<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato \b\'e8 detenuto\b0  <wr:else/> la condannata \b\'e8 detenuta\b0  </wr:if>\b per questa causa in prosecuzione degli Arresti Domiciliari\b0 <wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;02&apos;]"> </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;70&apos;]">  di \b Arresti Domiciliari ex art. 89 dpr 309/90\b0 </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;71&apos;]"> di \b Permanenza in Casa\b0  </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;72&apos;]"> \b Collocamento in Comunit\'e0\b0 </wr:if> \b ex art. 656 comma 10 c.p.p., con decorrenza <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizio"/> e scadenza pena al <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;N&apos;]"><wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"> (*)</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto">\par
+\pard\qj\lang1040 (*) Scadenza reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"/> - Decorrenza arresto <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"/></wr:if>\b0 ;\par
+\pard\sb120\sa120\cf1\lang2057 <wr:import inline='true' url="$\{AVVOCATI\}" />\par
+\pard\qj\lang1040\fs24 <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa[CodTipoDecisione\cf0 =&apos;03&apos;]\cf1 ">Vista \cf0 l\rquote ordinanza <wr:else/>Visto il decreto</wr:if>\cf1 <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Ufficio[CodTipoUfficio\cf0 =&apos;TDS&apos;]\cf1 "> del\cf0  <wr:else/> del\rquote </wr:if><wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Ufficio/DescrTipoUfficio"/> \cf1 di <\cf0 wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Ufficio/DescrComune"/> N. <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/NumeroRegistro"/>/<wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/AnnoRegistro"/> del <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataDecisione"/> che ha concesso \fs22 <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> al condannato <wr:else/> alla condannata </wr:if> la misura alternativa della detenzione domiciliare  \b ex <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Legge"/> Legge 26.7.1975 n. 354, \b0\fs24 da svolgersi in \b <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrLuogoProva"/>\b0 .\par
+\fs22\par
+Poich\'e9 occorre dare esecuzione, ex art. 659 cpp che occorre dare urgente esecuzione al citato provvedimento e che, per l\rquote effetto, deve essere disposta la sottoposizione agli obblighi della persona in oggetto indicata;\b  \par
+\pard\sb120\sa120\qc ORDINA\b0\par
+\pard\qj che l\rquote espiazione della pena di cui sopra avvenga in regime di \b DETENZIONE DOMICILIARE ex <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Legge"/> Legge 26.7.1975 n. 354\b0  presso <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrLuogoProva"/>, stabilendo, ex art. 656 c. 10 cpp, la \b decorrenza dal\b0  \b <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizio"/> \b0 e la \b scadenza al <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/>\b0 ;\b\par
+\pard\keepn\s1\sb120\sa120\qc DISPONE\par
+\pard\nowidctlpar\qj\b0 all\rquote\b Autorit\'e0 di Polizia \b0 di vigilare sull\rquote osservanza delle prescrizioni, dettate nel verbale di sottoposizione agli obblighi, per il periodo corrispondente alla pena di cui \'e8 stata concessa l\rquote espiazione della pena detentiva presso il domicilio, comunicando prontamente ogni eventuale infrazione, \b fino al <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;N&apos;]"><wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/></wr:if>\b0 , data in cui <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato dovr\'e0 essere posto<wr:else/>la condannata dovr\'e0 essere posta</wr:if> in libert\'e0, se non in espiazione di pena per altra causa; \par
+<wr:import inline='true' url="$\{ESECUZIONEMISURASICUREZZA\}" />\par
+\pard\nowidctlpar\sb120\qj che<wr:forEach select="/X/Evento/Notifica"><wr:if select="./CSSA"><wr:if select="./CSSA[Tipo=&apos;USSM&apos; or Tipo=&apos;USSMSS&apos;]">\b  l\rquote Ufficio Servizi Sociali per i Minorenni \b0 <wr:else/> \b l\rquote Ufficio Esecuzione Penale Esterna\b0 </wr:if></wr:if></wr:forEach>, preposto per gli interventi di sostegno e controllo, segnali al Magistrato di Sorveglianza ogni evento rilevante sull'esecuzione della pena e trasmetta una relazione conclusiva sull\rquote esecuzione della misura;\par
+\par
+\lang2057\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\lang1040\fs22\par
+\pard\keepn\s1\sb120\sa120\qc\b MANDA\par
+\pard\b0 alla Segreteria, in sede, perch\'e9 provveda all\rquote invio del presente provvedimento:\par
+\pard\nowidctlpar\fi-360\li720\qj\tx720\f1\'b7\tab\f0 all\rquote Autorit\'e0 di polizia competente per territorio;\par
+\pard\fi-360\li720\tx720\f1\'b7\tab\f0 all'Ufficio Esecuzione Penale Esterna competente;\par
+\pard\nowidctlpar\fi-360\li720\qj\tx720\f1\'b7\tab\f0 al Magistrato di Sorveglianza preposto alla vigilanza;\par
+\pard\fi-360\li720\tx720\f1\'b7\tab\f0 al Tribunale di Sorveglianza che ha emesso l\rquote ordinanza di concessione della misura;\par
+\pard\nowidctlpar\f1\par
+\lang2057\f0\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\lang1040\fs22\par
+\par
+\pard\lang2057 <wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\nowidctlpar\qj\par
+<wr:set var=\rquote dest\rquote  value=\rquote 2\rquote  />\par
+\par
+\lang1040 <wr:import inline='true' url="$\{NOTIFICACOMUNICAZIONE\}" />\par
+\pard\qj Per l\rquote Autorit\'e0 di polizia  in  indirizzo,  ai  fini  della  notifica  al condannato,  si  allegano  due  ulteriori copie del provvedimento medesimo.\par
+\pard\par
+\pard\nowidctlpar\qj\f2 <wr:import inline='true' url="$\{NOTIFICAAVVOCATI\}" />\par
+\pard\nowidctlpar\par
+}
+ 

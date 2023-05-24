@@ -1,0 +1,23 @@
+In merito alla comunicazione già inviata il 18 marzo da Carla Mastino relative alla MEV su Reginde, vi comunichiamo che è stato deciso il rinvio in produzione al 23 aprile p.v.
+
+Il rilascio su piattaforma di test avverrà il 5 aprile p.v.
+
+Riguardo i wsdl, non sono stati modificati rispetto a quelli inviati nella mail del 18/03/2022 di Carla Mastino e nella mail di Coppari ad Oris Orlando il 29/03/2022.
+
+Valutate se è opportuno adeguare i vostri applicativi affinché utilizzino lo stesso endpoint/wsdl (“interni”) di seguito riportato per la consultazione di Reginde, in quanto è emerso con Oris Orlando che alcuni applicativi del Penale interrogano Reginde con wsdl/endpoint diversi (“esterni”).
+
+INTERNI (ServiziInterrogazioneInterni.wsdl)
+
+http://reginde.processotelematicotest.giustizia.it/ServiziInterrogazioneRegindeExt/ServiziInterrogazioneInterni  	(MODEL OFFICE)
+
+http://reginde.processotelematico.giustizia.it/ServiziInterrogazioneRegindeExt/ServiziInterrogazioneInterni        	(PRODUZIONE)
+
+ESTERNI (ServiziInterrogazioneSoggetto.wsdl , ServiziInterrogazioneEnte.wsdl)
+
+http://reginde.processotelematicotest.giustizia.it/ServiziInterrogazioneRegindeExt/ServiziInterrogazioneSoggetto   	(MODEL OFFICE)
+
+http://reginde.processotelematicotest.giustizia.it/ServiziInterrogazioneRegindeExt/ServiziInterrogazioneEnte  		(MODEL OFFICE)
+
+http://reginde.processotelematico.giustizia.it/ServiziInterrogazioneRegindeExt/ServiziInterrogazioneSoggetto    	(PRODUZIONE)
+
+http://reginde.processotelematico.giustizia.it/ServiziInterrogazioneRegindeExt/ServiziInterrogazioneEnte         	(PRODUZIONE)

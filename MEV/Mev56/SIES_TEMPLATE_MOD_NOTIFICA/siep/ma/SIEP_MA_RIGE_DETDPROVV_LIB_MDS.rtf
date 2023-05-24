@@ -1,0 +1,88 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue0;}
+{\stylesheet{ Normal;}{\s1 heading 1;}{\s2 heading 2;}{\s3 heading 3;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\f0\fs24 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;"/><wr:import inline='true' url="$\{INTESTAZIONE\}"/>\par
+\pard\lang2057\b\fs22\par
+\pard\qc\lang1040 ORDINE DI ESECUZIONE DI ESPIAZIONE DI PENA DETENTIVA\par
+A SEGUITO RIGETTO DELLA DETENZIONE DOMICILIARE\par
+(condannato in espiazione in regime alternativo alla detenzione)\par
+\pard\fi708\par
+\pard\qc\lang2057\fs24 <wr:out select="/X/Firmatario"/>\par
+\b0\fs22\par
+\pard <wr:out value="$\{PremessaSentenzaA\}" /><wr:import inline='true' url="$\{SENTENZA\}" />, <wr:out value="$\{PremessaSoggettoA\}" />\par
+\par
+\pard\qj\ul\b\fs24 <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\par
+\ulnone\b0 <wr:import inline='true' url="$\{PENA\}" />\par
+\pard\li708\qj\cf1\b\par
+\pard\li567\cf0\b0 <wr:import inline='true' url="$\{STATOESECUZIONE\}" />\par
+\pard\qj\par
+\pard\cf1 <wr:import inline='true' url="$\{PENARESIDUA\}" />\par
+\par
+<wr:import inline='true' url="$\{AVVOCATI\}" />\par
+\cf0\fs22\par
+\pard\qj\lang1040\fs24 Vista l\rquote ordinanza del <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrUfficioSorveglianza"/> N. <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/NumeroRegistro"/> / <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/AnnoRegistro"/> del <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataDecisione"/> che ha revocato la misura alternativa alla detenzione in corso (DETENZIONE DOMICILIARE ex <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Legge"/>), per cui <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato <wr:else/> la condannata</wr:if> deve espiare la residua pena di:\par
+\b <wr:if select="/X/FascicoloSiep/PenaResidua/StringaReclusione">Reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/StringaReclusione"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/StringaArresto">\par
+Arresto <wr:out select="/X/FascicoloSiep/PenaResidua/StringaArresto"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">Ergastolo\par
+</wr:if> <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">Ergastolo con isolamento diurno <wr:if select="/X/FascicoloSiep/PenaResidua/StringaIsolamentoDiurno">con <wr:out select="/X/FascicoloSiep/PenaResidua/StringaIsolamentoDiurno"/></wr:if></wr:if><wr:if select="/X/FascicoloSiep/TotalePeriodoLicenzaAnticipata/TotaleGiorniDaConcedere"><wr:if select="/X/FascicoloSiep/TotalePeriodoLicenzaAnticipata/TotaleGiorniDaConcedere!=0">\par
+Da cui vanno detratti giorni <wr:out select="/X/FascicoloSiep/TotalePeriodoLicenzaAnticipata/TotaleGiorniDaConcedere"/> di liberazione anticipata</wr:if></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[ImportoMulta!=0] or /X/FascicoloSiep/PenaResidua[ImportoAmmenda!=0]">\b0\par
+\pard Oltre al recupero della pena pecuniaria:\par
+<wr:if select="/X/FascicoloSiep/PenaResidua[ImportoMulta!=0]">Multa Euro <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoMulta"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[ImportoAmmenda!=0]">Ammenda Euro <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoAmmenda"/> </wr:if></wr:if>\par
+<wr:if select="/X/FascicoloSiep/SanzioneSostitutiva">\par
+sanzione sostitutiva:\par
+<wr:out select="/X/FascicoloSiep/SanzioneSostitutiva/StringaSanzione"/>\par
+</wr:if>\par
+<wr:if select="/X/FascicoloSiep/PenaResidua[ImportoMulta!=0] or /X/FascicoloSiep/PenaResidua[ImportoAmmenda!=0]">\par
+Oltre al recupero della pena pecuniaria:\par
+<wr:if select="/X/FascicoloSiep/PenaResidua[ImportoMulta!=0]">Multa Euro <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoMulta"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[ImportoAmmenda!=0]">Ammenda Euro <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoAmmenda"/> </wr:if> </wr:if>\par
+\par
+<wr:if select="/X/FascicoloSiep/MisuraSicurezza">\par
+Misura di sicurezza :<wr:forEach select="/X/FascicoloSiep/MisuraSicurezza">\par
+<wr:out select="./DescrTipo"/> <wr:if select="./NumAnni">Anni <wr:out select="./NumAnni"/> </wr:if><wr:if select=".[NumMesi!=0]">Mesi <wr:out select="./NumMesi"/> </wr:if><wr:if select=".[NumGiorni!=0]">Giorni <wr:out select="./NumGiorni"/>\par
+\lang2057 </wr:if></wr:forEach></wr:if> \par
+\pard\qj\fs22\par
+\lang1040 -----------------------------------------------------------------------------------------------\par
+\pard\fs24 Pena complessiva con continuazione\par
+<wr:if select="/X/FascicoloSiep/PenaComplessiva/Continuazione"><wr:out select="/X/FascicoloSiep/PenaComplessiva/Continuazione/DescrTipoContinuazione"/> con i reati di cui <wr:forEach select="/X/FascicoloSiep/PenaComplessiva/Continuazione">\par
+alla sentenza <wr:if select="./AnnoSentenza">N. <wr:out select="./NumSentenza"/>/<wr:out select="./AnnoSentenza"/></wr:if> <wr:if select="./AnnoRegeGip">N.R.G. <wr:out select="./NumRegeGip"/>/<wr:out select="./AnnoRegeGip"/></wr:if><wr:if select="./AnnoRegeDib"> N.R.G. <wr:out select="./NumeroRegeDib"/>/<wr:out select="./AnnoRegeDib"/></wr:if><wr:if select="./AnnoRegePm"> N.R.G. <wr:out select="./NumRegePm"/>/<wr:out select="./AnnoRegePm"/></wr:if> del <wr:out select="./DataSentenza"/> di <wr:out select="./DescrTipoAutorita"/> di <wr:out select="./DescrLuogoAutorita"/></wr:forEach>, pena a titolo di continuazione: \par
+</wr:if><wr:if select="/X/FascicoloSiep/PenaComplessiva/StringaReclusione">RECLUSIONE <wr:out select="/X/FascicoloSiep/PenaComplessiva/StringaReclusione"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaComplessiva[ImportoMulta!=0]">MULTA Euro <wr:out select="/X/FascicoloSiep/PenaComplessiva/ImportoMulta"/> \par
+</wr:if><wr:if select="/X/FascicoloSiep/PenaComplessiva/StringaArresto">ARRESTO <wr:out select="/X/FascicoloSiep/PenaComplessiva/StringaArresto"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaComplessiva[ImportoAmmenda!=0]"> AMMENDA Euro <wr:out select="/X/FascicoloSiep/PenaComplessiva/ImportoAmmenda"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaComplessiva[CodTipoPenaDetentiva=&apos;03&apos;]">Ergastolo</wr:if><wr:if select="/X/FascicoloSiep/PenaComplessiva[CodTipoPenaDetentiva=&apos;04&apos;]">Ergastolo con isolamento diurno\par
+</wr:if>\par
+\par
+Poich\'e9 occorre dare esecuzione, ex art. 659 cpp, al citato provvedimento;\par
+\par
+\pard\qc\lang2057\b\par
+\pard\keepn\s3\qc\lang1040 ORDINA\par
+\pard\b0\fs22\par
+\pard\qj\fs24 agli Ufficiali ed Agenti di polizia giudiziaria di tradurre il condannato, assicurandosi della sua identit\'e0 e previa consegna di copia del presente provvedimento, presso l\rquote Istituto di detenzione pi\'f9 vicino;\par
+\fs22\par
+\pard\qc\b\fs24 DISPONE\b0\par
+\pard\par
+\pard\fi-360\li648\tx648\f1\'b7\tab\f0 di consegnare all\rquote Istituto in cui il condannato sar\'e0 ristretto, copia del presente provvedimento;\par
+\pard\fi-360\li648\f1\'b7\tab\f0 che la pena di cui sopra, gia' in corso di espiazione, decorrente dal <wr:out select="X/FascicoloSiep/PenaResidua/DataInizio"/>, avra' termine, il <wr:out select="X/FascicoloSiep/PenaResidua/DataFine"/> data in cui dovr\'e0 essere scarcerato se non detenuto per altra causa;\par
+\pard\par
+<wr:import inline='true' url="$\{ESECUZIONEMISURASICUREZZA\}" />\par
+\fs22\par
+\lang2057\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\par
+\lang1040\fs22\par
+\pard\qc\b\fs24 MANDA\b0\par
+\pard\fs22\par
+\fs24 alla Segreteria, in sede, perch\'e9 provveda all\rquote invio del presente provvedimento: \par
+\lang2057 <wr:forEach select="/X/Evento/Notifica"><wr:if select=".[CodTipoNotifica=&apos;E&apos;]">\par
+\pard\fi-360\li504\f1\'b7\tab\f0 a <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/>, per l\rquote esecuzione, con facolt\'e0 di subdelega;</wr:if>\lang1040 <wr:if select=".[CodTipoNotifica=&apos;C&apos;]">\par
+\f1\'b7\tab\f0 al <wr:if select="./CSSA"><wr:out select="./CSSA/Tipo"/> di <wr:out select="./CSSA/Comune"/> <wr:out select="./CSSA/Indirizzo"/><wr:else/><wr:out select="./Ufficio/DescrTipoUfficio"/> di <wr:out select="./Ufficio/DescrComune"/></wr:if> che ha emesso l\rquote ordinanza di revoca della misura alternativa;</wr:if>\par
+\lang2057\f1\'b7\tab\f0 </wr:forEach>\par
+\pard\qr\fs22\par
+\pard\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\par
+\par
+<wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\qj\par
+<wr:set var=\rquote dest\rquote  value=\rquote 2\rquote  />\par
+\par
+\lang1040 <wr:import inline='true' url="$\{NOTIFICACOMUNICAZIONE\}" />\par
+\pard\par
+\pard\qj <wr:import inline='true' url="$\{NOTIFICAAVVOCATI\}" />\par
+\pard\par
+\par
+}
+ 

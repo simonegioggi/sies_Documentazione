@@ -1,0 +1,69 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fswiss\fprq2\fcharset0 Arial;}{\f2\froman\fprq2\fcharset2 Symbol;}{\f3\fswiss\fprq2\fcharset0 Tahoma;}}
+{\colortbl ;\red0\green0\blue0;}
+{\stylesheet{ Normal;}{\s1 heading 1;}{\s2 heading 2;}{\s3 heading 3;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\keepn\nowidctlpar\s3\sb240\sa60\qc\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;"/><wr:import inline='true' url="$\{INTESTAZIONE\}"/>\par
+\pard\nowidctlpar\f1\par
+\pard\qc\cf1\b ORDINE DI ESECUZIONE PER LA CARCERAZIONE ex art. 656 c. 1 cpp\par
+(con rideterminazione della pena da espiare)<wr:if \cf0 select="/X/FascicoloSiep/PenaResidua/DataInizio">\par
+\cf1 E ORDINE DI SCARCERAZIONE</wr:if>\par
+condannato detenuto per altra causa\par
+\b0\par
+\b <wr:out select="/X/Firmatario"/>\par
+\pard\b0\par
+\pard\nowidctlpar\qj\cf0 <wr:out value="$\{PremessaSentenzaA\}"/><wr:import inline='true' url="$\{SENTENZA\}"/><wr:out value="$\{PremessaSoggettoA\}"/>\par
+\pard\nowidctlpar\sb120\qj\lang2057 <wr:import inline='true' url="$\{SOGGETTO\}"/>\par
+\pard\nowidctlpar <wr:import inline='true' url="$\{PENA\}"/>\par
+\pard\nowidctlpar\li708\par
+\par
+\lang1040 <wr:import inline='true' url="$\{STATOESECUZIONE\}"/>\par
+\pard\nowidctlpar\par
+\pard\nowidctlpar\qj\cf1 per cui \'e8 in corso di espiazione la pena di <wr:import inline='true' url="$\{PENAPRECEDENTE\}"/>\par
+\pard\qj <wr:import inline='true' url="$\{MISURASICUREZZA\}"/><wr:if select="contains(/X/FascicoloSiep/PosizioneGiuridica/DescrPosizioneGiuridica, &quot;Espiazione Pena&quot;)"><wr:out select="substring-after(/X/FascicoloSiep/PosizioneGiuridica/DescrPosizioneGiuridica,\rquote Espiazione Pena\rquote )\rdblquote /><wr:else/> in regime di <wr:out select="/X/FascicoloSiep/PosizioneGiuridica/DescrPosizioneGiuridica\rdblquote /></wr:if>, con decorrenza <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizio"/>\lang3082 <wr:if select="/X/Evento[EventoCorrente=&apos;S&apos;]/Evento/CampoNota/Descr" >\par
+\par
+<wr:out select="/X/Evento[EventoCorrente=&apos;S&apos;]/Evento/CampoNota/Descr" /></wr:if>\par
+\pard\b\par
+\lang1040 LA PENA DA ESPIARE DEVE ESSERE RIDETERMINATA IN\par
+\pard\nowidctlpar\cf0 <wr:if select="/X/FascicoloSiep/PenaResidua/StringaReclusione">Reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/StringaReclusione"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[ImportoMulta!=0]">Multa Euro <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoMulta"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/StringaArresto">\par
+Arresto <wr:out select="/X/FascicoloSiep/PenaResidua/StringaArresto"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[ImportoAmmenda!=0]">Ammenda Euro <wr:out select="/X/FascicoloSiep/PenaResidua/ImportoAmmenda"/> </wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">Ergastolo</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">Ergastolo con isolamento diurno <wr:if select="/X/FascicoloSiep/PenaResidua/StringaIsolamentoDiurno">con <wr:out select="/X/FascicoloSiep/PenaResidua/StringaIsolamentoDiurno"/></wr:if></wr:if>\par
+\pard\cf1\b0\par
+\pard\nowidctlpar\qj rilevato che<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato risulta assistito <wr:else/> la condannata risulta assistita </wr:if>dal difensore <wr:forEach select="/X/FascicoloSiep/Avvocato">\par
+Avvocato <wr:if select="./AvvocatoFascicoloSiep[CodTipoAvvocato=&apos;01&apos;]">di ufficio </wr:if><wr:if select="./AvvocatoFascicoloSiep[CodTipoAvvocato=&apos;02&apos;]">di fiducia </wr:if><wr:out select="./Cognome"/> <wr:out select="./Nome"/> del Foro di <wr:out select="./Foro"/><wr:if select="./AvvocatoFascicoloSiep[CodTipoAvvocato=&apos;03&apos;]"> che<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> lo ha assistito <wr:else/> la ha assistita </wr:if>nella fase di giudizio </wr:if> </wr:forEach>\par
+\pard\par
+\pard\nowidctlpar rilevato che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato \b\'e8 attualmente detenuto\b0  <wr:else/> la condannata \b\'e8 attualmente detenuta\b0  </wr:if>\b per altra causa \b0 presso \b <wr:out select="/X/FascicoloSiep/AltraCausa/DescrTipoIstituto"/> <wr:out select="/X/FascicoloSiep/ AltraCausa/DescrLuogo"/>\par
+\pard\b0\par
+\pard\keepn\s1\qc\b DISPONE\par
+\pard\nowidctlpar\cf0\b0\par
+\pard\qj\cf1 <wr:if select="/X/FascicoloSiep/PenaResidua/DataInizio">che la pena di cui sopra, gia' in corso di espiazione e\b  decorrente dal <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizio"/>\b0 , \b termini il <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;N&apos;]"><wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/></wr:if>(*), \b0 data in cui dovr\'e0 essere <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> scarcerato se non detenuto <wr:else/> scarcerata se non detenuta </wr:if> per altra causa <wr:if select="/X/FascicoloSiep/MisuraSicurezza">\par
+, in pari data dovra' inoltre trovare applicazione la misura di sicurezza :<wr:forEach select="/X/FascicoloSiep/MisuraSicurezza">\par
+\lang2057 <wr:out select="./DescrTipo"/> <wr:if select="./NumAnni"> Anni <wr:out select="./NumAnni"/> </wr:if> <wr:if select=".[NumMesi!=0]"> Mesi <wr:out select="./NumMesi"/> </wr:if> <wr:if select=".[NumGiorni!=0]"> Giorni <wr:out select="./NumGiorni"/>\par
+\lang1040 </wr:if></wr:forEach> (previo accertamento della persistenza della pericolosita' da parte del Magistrato di Sorveglianza competente, se non gia' accertato);</wr:if>\par
+\b <wr:if select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"> (*) Scadenza reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"/> - Decorrenza arresto <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"/></wr:if>\b0 <wr:else/>l\rquote esecuzione della pena sopra indicata di :\par
+\pard\nowidctlpar\qj\b <wr:if select="/X/FascicoloSiep/PenaResidua/StringaReclusione">Reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/StringaReclusione"/></wr:if> <wr:if select="/X/FascicoloSiep/PenaResidua/StringaArresto">Arresto <wr:out select="/X/FascicoloSiep/PenaResidua/StringaArresto"/></wr:if>\par
+\pard\nowidctlpar\cf0 <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">Ergastolo</wr:if> <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">Ergastolo con isolamento diurno <wr:if select="/X/FascicoloSiep/PenaComplessiva/StringaIsolamentoDiurno"><wr:out select="/X/FascicoloSiep/PenaComplessiva/StringaIsolamentoDiurno"/></wr:if></wr:if>\par
+\cf1 <wr:if select="/X/FascicoloSiep/MisuraSicurezza">\par
+Misura di sicurezza :<wr:forEach select="/X/FascicoloSiep/MisuraSicurezza">\par
+\lang2057 <wr:out select="./DescrTipo"/><wr:if select="./NumAnni"> Anni <wr:out select="./NumAnni"/></wr:if><wr:if select=".[NumMesi!=0]"> Mesi <wr:out select="./NumMesi"/></wr:if><wr:if select=".[NumGiorni!=0]"> Giorni <wr:out select="./NumGiorni"/>\par
+</wr:if></wr:forEach>\par
+</wr:if></wr:if>\par
+\pard\b0\par
+\lang1040 <wr:if select="/X/Evento/Notifica[CodTipoNotifica=\rquote R\rquote ]">\par
+\pard\keepn\s1\qc\b RICHIEDE\par
+\pard\nowidctlpar\cf0\b0\par
+\pard\cf1 L\rquote immediata restituzione dell\rquote ordine di esecuzione emesso in data <wr:out select="/X/Evento/Notifica[CodTipoNotifica=\rquote R\rquote ]/DataInvio"/> in quanto non pi\'f9 eseguibile.</wr:if>\par
+\par
+\cf0\lang2057\f0\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\par
+\cf1\lang1040\f1\fs22\par
+\pard\keepn\s1\qc\b MANDA\par
+\pard\b0\par
+\f0 alla Segreteria, in sede, perch\'e9 provveda all\rquote invio del presente provvedimento:\par
+\pard\fi-360\li360\tx360\f2\'b7\tab\f3 all'Istituto in cui <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato \'e8 ristretto<wr:else/>la condannata \'e8 ristretta</wr:if> (che dovr\'e0 trasmettere a questo Ufficio la posizione giuridica <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">del condannato<wr:else/>della condannata</wr:if> e comunicare la data di decorrenza della pena);\par
+\par
+\cf0\lang2057\f0\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\cf1\lang1040\fs22\par
+\pard\qr\par
+\pard\nowidctlpar\cf0\lang2057\f3 <wr:import inline='true' url="$\{FIRMA\}"/>\par
+\par
+\pard\nowidctlpar\qj <wr:import inline='true' url="$\{NOTIFICAAVVOCATI\}"/>\par
+<wr:set var=\rquote dest\rquote  value=\rquote 2\rquote />\par
+\lang1040 <wr:import inline='true' url="$\{NOTIFICACOMUNICAZIONE\}"/>\par
+}
+ 

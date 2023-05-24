@@ -1,0 +1,50 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}}
+{\colortbl ;\red0\green255\blue0;\red255\green255\blue0;\red0\green0\blue0;}
+{\stylesheet{ Normal;}{\s1 heading 1;}{\s2 heading 2;}{\s3 heading 3;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\keepn\s3\qc\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\b\fs16\par
+\fs22 ORDINE DI ESECUZIONE PER LA CARCERAZIONE\par
+\pard\qc\b0 <wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;02&apos; or CodPosizioneGiuridica=&apos;70&apos; or CodPosizioneGiuridica=&apos;71&apos; or CodPosizioneGiuridica=&apos;72&apos;]">\b e ordine di scarcerazione\b0\par
+</wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;02&apos;]"> \b (condannato e in custodia cautelare agli arresti domiciliari per questa causa)\b0  </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;70&apos;]">\b  (condannato in custodia cautelare Regime di Arresti Domiciliari ex art. 89 dpr 309/90 per questa causa)\b0  </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;71&apos;]"> \b (condannato e in custodia cautelare in permanenza in casa per questa causa)\b0  </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;72&apos;]">\b  (condannato in custodia cautelare in collocamento in comunit\'e0 per questa causa)\b0  </wr:if><wr:if select="/X/FascicoloSiep/AltraCausa[CodTipoPosGiuridica=&apos;78&apos; or CodTipoPosGiuridica=&apos;79&apos; or CodTipoPosGiuridica=&apos;80&apos; or CodTipoPosGiuridica=&apos;81&apos;]">\b CONDANNATO IN \kerning1 CUSTODIA CAUTELARE PER ALTRA CAUSA\kerning0\b0 </wr:if>\par
+<wr:if select="/X/FascicoloSiep/AltraCausa[CodTipoPosGiuridica=&apos;78&apos;]">\b in Regime di Arresti Domiciliari\b0 </wr:if><wr:if select="/X/FascicoloSiep/AltraCausa[CodTipoPosGiuridica=&apos;79&apos;]">\b in Regime Permanenza in Casa\b0 </wr:if><wr:if select="/X/FascicoloSiep/AltraCausa[CodTipoPosGiuridica=&apos;80&apos;]">\b in Regime di Collocamento in comunita'\b0 </wr:if><wr:if select="/X/FascicoloSiep/AltraCausa[CodTipoPosGiuridica=&apos;81&apos;]">\b in Regime di Arresti Domiciliari ex art 89 dpr 309/90\b0 </wr:if>\par
+\b\par
+<wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\par
+\pard\qj\b0 <wr:out value="$\{PremessaSentenzaA\}" /> <wr:import inline='true' url="$\{SENTENZA\}" /> <wr:out value="$\{PremessaSoggettoA\}" />\par
+\pard\sb120\qj\lang2057 <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\sb120 <wr:import inline='true' url="$\{PENA\}" />\par
+\pard\lang3082 <wr:if select="/X/Evento[EventoCorrente!=&apos;S&apos;]">\b\par
+\pard\fi708\qj\b0 <wr:import inline='true' url="$\{STATOESECUZIONE\}" /></wr:if> \par
+\pard\sb160 <wr:import inline='true' url="$\{PENARESIDUA\}" />\par
+\pard\sb120 <wr:import inline='true' url="$\{AVVOCATI\}" />\par
+\pard\qj\lang2057\par
+\lang1040 Rilevato che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato <wr:else/>la condannata </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;02&apos; or CodPosizioneGiuridica=&apos;70&apos; or CodPosizioneGiuridica=&apos;71&apos; or CodPosizioneGiuridica=&apos;72&apos;]">\b risulta <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> detenuto <wr:else/>detenuta </wr:if>per questa causa \b0 </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;02&apos;]">\b in Regime\b0  \b di Arresti Domiciliari\b0 </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;70&apos;]">\b  in Regime di Arresti Domiciliari ex art. 89 dpr 309/90\b0 </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;71&apos;]">\b in Regime di Permanenza in Casa\b0 </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;72&apos;]">\b  in Regime di Collocamento in Comunit\'e0\b0 </wr:if><wr:if select="/X/FascicoloSiep/AltraCausa[CodTipoPosGiuridica=&apos;78&apos; or CodTipoPosGiuridica=&apos;79&apos; or CodTipoPosGiuridica=&apos;80&apos; or CodTipoPosGiuridica=&apos;81&apos;]">\b risulta attualmente in \kerning1 custodia cautelare per altra causa \kerning0\b0 </wr:if><wr:if select="/X/FascicoloSiep/AltraCausa[CodTipoPosGiuridica=&apos;78&apos;]">\b in Regime di Arresti Domiciliari\b0 </wr:if><wr:if select="/X/FascicoloSiep/AltraCausa[CodTipoPosGiuridica=&apos;79&apos;]">\b in Regime Permanenza in Casa\b0 </wr:if><wr:if select="/X/FascicoloSiep/AltraCausa[CodTipoPosGiuridica=&apos;80&apos;]">\b in Regime di Collocamento in comunita'\b0 </wr:if><wr:if select="/X/FascicoloSiep/AltraCausa[CodTipoPosGiuridica=&apos;81&apos;]">\b in Regime di Arresti Domiciliari ex art 89 dpr 309/90\b0 </wr:if>\b <wr:if select="/X/FascicoloSiep/LuogoDetenzione/AltroLuogo"> presso la sua residenza in <wr:out select="/X/FascicoloSiep/LuogoDetenzione/AltroLuogo"/>\b0 <wr:else/>\b <wr:if select="/X/FascicoloSiep/PosizioneGiuridica/LuogoEspiazione"> presso la sua residenza in <wr:out select="/X/FascicoloSiep/PosizioneGiuridica/LuogoEspiazione"/></wr:if></wr:if>\par
+\pard\par
+\pard\keepn\s1\sb120\sa120\qc ORDINA\par
+\pard\qj\b0 agli Ufficiali ed Agenti di Polizia giudiziaria di \b tradurre\b0 <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato<wr:else/> la condannata</wr:if>, assicurandosi della sua identit\'e0 e previa consegna di copia del presente ordine, dal suo domicilio al pi\'f9 vicino <wr:if select="$\{path0\}Soggetto[StatoMinorMagg=&apos;MAGGIORENNE&apos;]\rdblquote >Istituto di Detenzione<wr:else/>Istituto Penale per i Minorenni</wr:if>, per ivi continuare l\rquote espiazione della pena inflittagli con la sentenza suindicata;\par
+\highlight1 <wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;02&apos; or CodPosizioneGiuridica=&apos;70&apos; or CodPosizioneGiuridica=&apos;71&apos; or CodPosizioneGiuridica=&apos;72&apos;]">\highlight0\b\par
+\pard\keepn\s3\sb120\sa120\qc DISPONE\par
+\pard\qj\b0 che la pena di cui sopra, gia' in corso di espiazione \b con decorrenza dal <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizio"/>, termini <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">Mai,</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">Mai,</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;N&apos;]">il <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"> (*)</wr:if>,\b0  data in cui dovr\'e0 essere<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> scarcerato se non detenuto <wr:else/> scarcerata se non detenuta </wr:if>per altra causa; \b <wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto">(*) Scadenza reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"/> - Decorrenza arresto <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"/></wr:if>\par
+\b0 <wr:import inline='true' url="$\{ESECUZIONEMISURASICUREZZA\}" />\b\par
+\highlight1\b0 </wr:if>\highlight2 <wr:if select="/X/FascicoloSiep/AltraCausa[CodTipoPosGiuridica=&apos;78&apos; or CodTipoPosGiuridica=&apos;79&apos; or CodTipoPosGiuridica=&apos;80&apos; or CodTipoPosGiuridica=&apos;81&apos;]">\highlight0\b\par
+\pard\keepn\s3\sb120\sa120\qc DISPONE\par
+\pard\qj\b0 di consegnare copia del presente provvedimento all\rquote Istituto di Detenzione nel quale  il condannato sar\'e0 ristretto perch\'e9 provveda all\rquote annotazione in matricola, dandone quindi sollecita assicurazione a questo Ufficio con l\rquote indicazione della data di avvenuta notifica e copia della posizione giuridica;\highlight2 </wr:if>\par
+\highlight0\lang2057\fs24\par
+<wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\lang1040\fs22\par
+\pard\keepn\s1\sb120\sa200\qc\b MANDA\par
+\pard\qj\b0 alla Segreteria in sede, perch\'e9 provveda all\rquote invio del presente provvedimento: <wr:forEach select="/X/Evento/Notifica"><wr:if select=".[CodTipoNotifica=&apos;E&apos;]">\par
+\pard\fi-340\li340\qj\tx360\f1\'b7\tab\f0 a <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/>\cf3  di \cf0 <wr:out select="./AutoritaEsterna/DescrSede"/>, per l\rquote immediata esecuzione; \lang2057 </wr:if>\lang1040 </wr:forEach>\par
+\pard\f1\par
+\lang2057\f0\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\fs22\par
+\par
+<wr:import inline='true' url="$\{FIRMA\}" />\par
+\par
+\pard\qj <wr:import inline='true' url="$\{NOTIFICAAVVOCATI\}" />\par
+<wr:set var=\rquote dest\rquote  value=\rquote 1\rquote  />\par
+<wr:set var=\rquote numcopie\rquote  value=\rquote 3\rquote  />\par
+\par
+\lang1040 <wr:import inline='true' url="$\{NOTIFICAESECUZIONERP\}" />\par
+\par
+\par
+}
+ 

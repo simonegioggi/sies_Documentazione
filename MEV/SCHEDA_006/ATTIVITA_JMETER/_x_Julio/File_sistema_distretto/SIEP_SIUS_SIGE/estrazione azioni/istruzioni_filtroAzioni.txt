@@ -1,0 +1,5 @@
+
+togliere le navigazioni disabilitate dallo script jmx
+copiare il jmx sul sito https://www.freeformatter.com/xpath-tester.html
+usare la seguente espressione xpath //elementProp[@name="Action"]/stringProp[@name="Argument.value"]/text()
+elaborare il file ottenuto con lo script R

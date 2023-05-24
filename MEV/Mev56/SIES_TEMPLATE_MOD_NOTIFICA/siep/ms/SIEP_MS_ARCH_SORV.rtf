@@ -1,0 +1,67 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset0 CG Times;}}
+{\colortbl ;\red0\green0\blue0;\red255\green255\blue0;\red0\green255\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\f0\fs24 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /><wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\pard\fs22\par
+\pard\qc\b\fs24 MISURE DI SICUREZZA\b0\fs22\par
+\b\f1\fs24 DEFINIZIONE PROCEDIMENTO\b0\par
+\b\f0\fs22\par
+\cf1 <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\cf0\b0 <wr:set var=\rdblquote esito\rdblquote  value='0'/>\par
+\pard\b\fs24\par
+\pard\sl360\slmult1\qj\b0\fs22 Comunica che in data <wr:forEach select="/X/Evento[EventoCorrente=\rquote S\rquote ]"><wr:out select=\rdblquote ./DataEmissione\rdblquote /></wr:forEach> ha disposto l\rquote archiviazione del procedimento\cf1  a seguito di\cf0  \b <wr:forEach select="/X/Evento\cf1\b0 [(\cf0 CodEsito=&apos;0052&apos; or CodEsito=&apos;0193&apos; or CodEsito=&apos;0194&apos; or CodEsito=&apos;0195&apos; or CodEsito=&apos;0350&apos; or CodEsito=&apos;0351&apos; or CodEsito=&apos;0387&apos;) and EventoCorrente=&apos;S&apos;]" varStatus="count"\cf1 >\cf0\b <wr:if\b0  test=\rdblquote $\{count.last\}\rdblquote ><wr:set var=\rdblquote esito\rdblquote  evaluate="$\{esito\}+1"/>ordinanza N. \cf1 <wr:out select="./EventoSorveglianza/NumeroRegistro"/>\cf0 /\cf1 <wr:out select="./EventoSorveglianza/AnnoRegistro"/>, emessa in data <wr:out select="./EventoSorveglianza/Data"/> con la quale il Magistrato di Sorveglianza \cf0 di \cf1 <wr:out select="./EventoSorveglianza/DescrLuogoEmittente"/> <wr:if select=".[\cf0 CodEsito=&apos;0052&apos;]\rdblquote >\cf1 dichiara cessata la pericolosit\'e0 sociale e dispone la revoca della misura di sicurezza\cf0 </wr:if>\cf1 <wr:if select=".[\cf0 CodEsito=&apos;0193&apos;]\cf1 "\cf0 >dichiara cessata la pericolosit\'e0 sociale e la dichiarazione di delinquenza abituale e dispone la revoca della misura di sicurezza</wr:if>\cf1 <wr:if select=".[\cf0 CodEsito=&apos;0194&apos;]\cf1 "\cf0 >dichiara cessata la pericolosit\'e0 sociale e la dichiarazione di delinquenza professionale e dispone la revoca della misura di sicurezza</wr:if>\cf1 <wr:if select=".[\cf0 CodEsito=&apos;0195&apos;]\cf1 "\cf0 >dichiara cessata la pericolosit\'e0 sociale e la dichiarazione di delinquenza per tendenza e dispone la revoca della misura di sicurezza</wr:if>\cf1 <wr:if select=".[\cf0 CodEsito=&apos;0351&apos;]\cf1  "\cf0 >\cf1 dichiara cessata la pericolosit\'e0 sociale e la dichiarazione di abitualit\'e0 nelle contravvenzioni e dispone la revoca della misura di sicurezza\cf0 </wr:if>\cf1 <wr:if select=".[\cf0 CodEsito=&apos;0350&apos;]\rdblquote >\cf1 dichiara non doversi  procedere all\rquote applicazione della misura di sicurezza\cf0 </wr:if>\cf1 <wr:if select=".[\cf0 CodEsito=&apos;0387&apos;]\rdblquote >\cf1 Unifica e dispone di non doversi procedere all\rquote applicazione delle misure di sicurezza\cf0 </wr:if>\b </wr:if></wr:forEach>\b0 <wr:if test="$\{esito\} == \lquote 0\rdblquote >\b <wr:forEach select="/X/Evento\cf1\b0 [\cf0 CodEsito=&apos;-&apos; and EventoCorrente=&apos;S&apos;]" varStatus="count"\cf1 >\cf0\b <wr:if\b0  test=\rdblquote $\{count.last\}\rdblquote >\cf1 <wr:if select="./Archiviazione[\cf0 CodTipoProvvedimentoArc =&apos;03&apos;]\cf1 "\cf0 >ordinanza N. <wr:else/>decreto N. </wr:if>\cf1 <wr:out select="./Archiviazione/NumProvvedimento"/>\cf0 /\cf1 <wr:out select="./Archiviazione/AnnoProvvedimento"/>,\cf0 <wr:if\cf1  select="./Archiviazione[\cf0 CodTipoProvvedimentoArc =&apos;03&apos;]\cf1 "\cf0 > \cf1 emessa in data <wr:out select="./Archiviazione/DataEmissione"/>, con la quale  \cf0 <wr:else/>\cf1  emesso in data <wr:out select="./Archiviazione/DataEmissione"/>, con il quale \cf0 </wr:if><wr:if select="./Archiviazione[CodTipoAutoritaEmittente=&apos;UDS&apos;]">l\rquote <wr:else/>il </wr:if>\cf1 <wr:out select="./Archiviazione/DescrTipoAutoritaEmittente"/> di <wr:out select="./Archiviazione/DescrLuogoEmittente"/>\cf0 <wr:if\cf1  select=".[\cf0 CodMotivo=&apos;2777&apos;]\rdblquote > \cf1 dichiara cessata la pericolosit\'e0 sociale e dispone la revoca della misura di sicurezza\cf0 </wr:if>\cf1 <wr:if select=".[\cf0 CodMotivo=&apos;2761&apos;]\cf1 "\cf0 > dichiara cessata la pericolosit\'e0 sociale e la dichiarazione di delinquenza abituale e dispone la revoca della misura di sicurezza</wr:if>\cf1 <wr:if select=".[\cf0 CodMotivo=&apos;\highlight2 2762\highlight0 &apos;]\cf1 "\cf0 > dichiara cessata la pericolosit\'e0 sociale e la dichiarazione di delinquenza professionale e dispone la revoca della misura di sicurezza</wr:if>\cf1 <wr:if select=".[\cf0 CodMotivo=&apos;\highlight2 2763\highlight0 &apos;]\cf1 "\cf0 > dichiara cessata la pericolosit\'e0 sociale e la dichiarazione di delinquenza per tendenza e dispone la revoca della misura di sicurezza</wr:if>\cf1 <wr:if select=".[\cf0 CodMotivo=&apos;\highlight2 2764\highlight0 &apos;]\cf1  "\cf0 > \cf1 dichiara cessata la pericolosit\'e0 sociale e la dichiarazione di abitualit\'e0 nelle contravvenzioni e dispone la revoca della misura di sicurezza\cf0 </wr:if>\cf1 <wr:if select=".[\cf0 CodMotivo=&apos;\highlight2 2760\highlight0 &apos;]\rdblquote > \cf1 dichiara non doversi procedere all\rquote applicazione della misura di sicurezza\cf0 </wr:if>\cf1 <wr:if select=".[\cf0 CodMotivo=&apos;\highlight2 2765\highlight0 &apos;]\rdblquote > \cf1 Unifica e dispone il Non Procedersi all\rquote applicazione delle misure di sicurezza\cf0 </wr:if>\cf1 <wr:if select=".[\cf0 CodMotivo=&apos;\highlight2 2768\highlight0 &apos;]\cf1  "\cf0 > \cf1 dispone l\rquote Archiviazione per Sospensione dell' Esecuzione della Pena Detentiva (ex art. 90 dpr 309/90) della misura di sicurezza\cf0 </wr:if><wr:if\cf1  select=".[\cf0 CodMotivo=&apos;\highlight3 2767\highlight0 &apos;]\rdblquote > \cf1 dispone la revoca, per Estinzione della Pena per Esito Positivo dell'Affidamento in Prova al Servizio Sociale, della misura di sicurezza\cf0 </wr:if><wr:if\cf1  select=".[\cf0 CodMotivo=&apos;\highlight3 2766\highlight0 &apos;]\rdblquote > \cf1 dispone la revoca, per Inammissibilit\'e0 della Richiesta Accertamento Pericolosit\'e0 Sociale, della misura di sicurezza\cf0 </wr:if><wr:if\cf1  select=".[\cf0 CodMotivo=&apos;\highlight3 2770\highlight0 &apos;]\rdblquote > \cf1 dispone la revoca per Inapplicabilit\'e0, per Estinzione del Reato, della misura di sicurezza\cf0 </wr:if><wr:if\cf1  select=".[\cf0 CodMotivo=&apos;\highlight3 2769\highlight0 &apos;]\rdblquote > \cf1 dispone la revoca per Inapplicabilit\'e0, per Estinzione della Pena, della misura di sicurezza\cf0 </wr:if><wr:if\cf1  select=".[\cf0 CodMotivo=&apos;\highlight3 2773\highlight0 &apos;]\rdblquote > \cf1 dispone la revoca, per morte del reo, della misura di sicurezza\cf0 </wr:if><wr:if\cf1  select=".[\cf0 CodMotivo=&apos;\highlight3 2772\highlight0 &apos;]\rdblquote > \cf1 dispone la revoca, per Sospensione Condizionale della Pena (ex art. 163 c.p.), della misura di sicurezza\cf0 </wr:if><wr:if\cf1  select=".[\cf0 CodMotivo=&apos;\highlight3 2670\highlight0 &apos;]\rdblquote > \cf1 dispone la Cessazione della Misura di Sicurezza\cf0 </wr:if>\b </wr:if></wr:forEach>\b0 </wr:if>:\b <wr:forEach select="/X/FascicoloSiep/MisuraSicurezza[not(FlagAnnullaMisura) and not(DataFineValidita)]">\par
+\pard\fi-360\li720\sl360\slmult1\qj\b0 -\tab\b <wr:out select="./DescrTipo"/> per la durata di<wr:if select="./NumAnni"> Anni <wr:out select="./NumAnni"/></wr:if><wr:if select="./NumMesi"> Mesi <wr:out select="./NumMesi"/></wr:if><wr:if select="./NumGiorni"> Giorni <wr:out select="./NumGiorni"/></wr:if></wr:forEach> \b0  \par
+\pard\sl360\slmult1\qj\fs24 <wr:if select="count(/X/FascicoloSiep/MisuraSicurezza[not(FlagAnnullaMisura) and not(DataFineValidita)])&gt;1">\fs22 applicate\fs24 <wr:else/>\fs22 applicata</wr:if> in sentenza nei confronti di:\par
+\pard\qj\par
+\pard <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+<wr:if select="/X/\cf1 FascicoloSiep/LuogoDetenzione/\cf0 DescrTipoIstituto">attualmente detenuto presso <wr:out select="/X/\cf1 FascicoloSiep/LuogoDetenzione\cf0 /DescrTipoIstituto"/><wr:if select="/X/\cf1 FascicoloSiep/LuogoDetenzione\cf0 /Descr"> di <wr:out select="/X/\cf1 FascicoloSiep/LuogoDetenzione\cf0 /Descr"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">, con scadenza della pena MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">, con scadenza della pena MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataFine">, con scadenza della pena al <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/>;</wr:if></wr:if>\par
+\par
+\lang2057\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\lang1040\fs22\par
+\pard\qc\b\par
+MANDA\par
+\par
+\pard\qj\b0 alla segreteria in sede per la trasmissione di copia del presente provvedimento, unitamente all\rquote ordinanza di applicazione della misura, per quanto di rispettiva competenza a:\par
+\pard\sb20 <wr:forEach select="/X/Evento/Notifica"><wr:if select="./IstDetIdIstitutoDetenzione">\par
+- <wr:out select=\rdblquote ./AutoritaEsterna/DescrTipoAutorita\rdblquote /> di <wr:out select=\rdblquote ./AutoritaEsterna/DescrSede\rdblquote />, per l\rquote esecuzione;</wr:if></wr:forEach>\par
+<wr:forEach select="/X/Evento/Notifica"><wr:if select="./AutEstIdAutoritaEsterna"><wr:if select=".[CodTipoNotifica!=&apos;ND&apos;]">\par
+- <wr:out select=\rdblquote ./AutoritaEsterna/DescrTipoAutorita\rdblquote /> di <wr:out select=\rdblquote ./AutoritaEsterna/DescrSede\rdblquote /></wr:if></wr:if></wr:forEach>\par
+<wr:forEach select="/X/Evento/Notifica"><wr:if select="./Ufficio">\par
+- <wr:out select=\rdblquote ./Ufficio/DescrTipoUfficio\rdblquote /> di <wr:out select=\rdblquote ./Ufficio/DescrComune\rdblquote />;</wr:if></wr:forEach>\par
+\pard\fi-360\li360\par
+\pard\lang2057\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\lang1040\fs22\par
+\par
+<wr:import inline='true' url="$\{FIRMA\}"/>\par
+\b <wr:if select="/X/Evento/Notifica">\b0\par
+\pard\qr\fs24\page\b\fs22\par
+\pard\qj\b0\par
+\pard\qc <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\par
+\pard\qr\b <wr:forEach select="/X/Evento/Notifica">\par
+<wr:if select=".[CodTipoNotifica!=&apos;ND&apos;]">\par
+<wr:if select="./Ufficio">\par
+<wr:out select="./Ufficio/DescrTipoUfficio"/> di <wr:out select="./Ufficio/DescrComune"/></wr:if><wr:if select="./IstitutoDetenzione/DescrTipoIstituto">\par
+\par
+\par
+<wr:out select="./IstitutoDetenzione/DescrTipoIstituto"/> di <wr:out select="./IstitutoDetenzione/DescrComune"/></wr:if><wr:if select="./AutoritaEsterna">\par
+\par
+\par
+<wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/></wr:if> <wr:if select="./Note"> <wr:out select="./Note"/></wr:if><wr:if select="./CSSA">\par
+\par
+\par
+Ufficio Esecuzione Penale Esterna di <wr:out select="./CSSA/Comune"/>, <wr:out select="./CSSA/Indirizzo"/></wr:if></wr:if>\par
+</wr:forEach>\par
+\b0\par
+\pard\nowidctlpar\qr\par
+\pard\qj\b\par
+\pard\b0 Oggetto: Esecuzione della misura di sicurezza nei confronti di:\par
+\par
+\ul\b <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\ulnone\b0\par
+Si trasmette, per quanto di competenza copia dell\rquote ordine di liberazione di persona sottoposta a misura di sicurezza emesso in data <wr:forEach select="/X/Evento[EventoCorrente=\rquote S\rquote ]"><wr:out select=\rdblquote ./DataEmissione\rdblquote /> </wr:forEach>\par
+\par
+\pard\qj <wr:out select="/X/Ufficio"/>, <wr:out select="/X/Evento/DataEmissione"/>\par
+\pard\par
+\pard\qj <wr:import inline='true' url="$\{NOTIFICAAVVOCATIMS\}" />\par
+\fs24\par
+</wr:if>\par
+}
+ 

@@ -1,0 +1,65 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fswiss\fprq2\fcharset0 Arial;}}
+{\colortbl ;\red0\green0\blue0;\red255\green255\blue0;\red0\green255\blue255;}
+{\stylesheet{ Normal;}{\s1 heading 1;}{\s2 heading 2;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\cf1\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\fs16\par
+\cf0\b\fs22 ORDINE DI ESECUZIONE \par
+PER ESPIAZIONE DI PENA DETENTIVA\par
+A SEGUITO CESSAZIONE DELL\rquote AFFIDAMENTO IN PROVA\par
+<\highlight2 wr:if\highlight0  \b0 select="/X/\cf1 FascicoloSiep/PenaResidua/MisuraAlternativa\cf0 [Is51Bis=&apos;S&apos;]"\b >\par
+PER SOPRAVVENIENZA NUOVO TITOLO ESECUTIVO\par
+ex art. 51 bis Legge 22 dicembre 1975, n. 685 \par
+\pard\nowidctlpar\qc modificato con Decreto-Legge 23 dicembre 2013, n. 146\par
+\pard\qc convertito in Legge 21 febbraio 2014, n. 10\b0 </\highlight2 wr:if\highlight0 >\par
+\pard\sb80\qc (<wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataIngressoIstituto"><wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">Condannato detenuto per <wr:else/>Condannata detenuta per </wr:if><wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrTipoDecisione"/> del Magistrato di Sorveglianza<wr:else/>Condannato libero</wr:if>)\par
+\pard\qc\b\fs18\par
+\fs22 <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\pard\sb100\qj\b0 <\highlight3 wr:if select\highlight0 ="/X/Evento[CodTipoProvvedimento=&apos;12&apos;]">\par
+\pard\qj <wr:out value="$\{PremessaSoggettoB\}" />\par
+\pard\sb120\qj\b <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\sb100\qj\b0 <wr:import inline='true' url="$\{PremessaSentenzaB\}"/> <wr:import inline='true' url="$\{SENTENZA\}"/>,\par
+<\highlight3 wr:else/>\highlight0\b\par
+\b0 <wr:out value="$\{PremessaSentenzaA\}"/> <wr:import inline='true' url="$\{SENTENZA\}"/>, <wr:out value="$\{PremessaSoggettoA\}"/>\par
+\pard\sb120\qj\lang2057\b <wr:import inline='true' url="$\{SOGGETTO\}" />\b0\par
+\pard\sb40\sa40\qj <\highlight3 /wr:if\highlight0 >\par
+\pard\li284\sb100\qj\cf1\lang1040 <wr:import inline='true' url="$\{STATOESECUZIONE\}" />\par
+\pard\sb160\qj\cf0 Per cui risultano da espiare:\par
+\pard\sb80\qj\b <wr:import inline='true' url="$\{SOLOPENARESIDUADETENTIVA\}" />\cf1\b0\par
+\pard\sb160\sa160\qc\cf0 <wr:if select="/X/\cf1 FascicoloSiep/PenaResidua/MisuraAlternativa\cf0 [CodTipoDecisione=&apos;03&apos;]"  >\b\caps Vista\b0\caps0 <wr:else/>\b\caps  VistO\b0\caps0 </wr:if>\b\caps\par
+\pard\qj\b0\caps0 <wr:if select="/X/\cf1 FascicoloSiep/PenaResidua/MisuraAlternativa\cf0 [CodTipoDecisione=&apos;03&apos;]"  >l\rquote ordinanza dell\rquote <wr:else/>il decreto dell\rquote </wr:if> \cf1 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrUfficioSorveglianza"/> \cf0 N. \cf1 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/NumeroRegistro"/>\cf0 /\cf1 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/AnnoRegistro"/> \cf0 del \cf1 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataDecisione"/> \cf0 che ha dichiarato cessata la misura alternativa dell\rquote affidamento in prova al Servizio Sociale <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Legge"> ex <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Legge"/></wr:if>, <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa[Is51Bis=&apos;S&apos;]">\b per sopravvenienza nuovo titolo esecutivo ex art. 51 bis Legge 22 dicembre 1975, n. 685 e successive modificazioni\b0 ,</wr:if> <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataInizioRevoca"> con decorrenza \cf1 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataInizioRevoca"/></wr:if>\cf0  per cui <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato <wr:else/> la condannata </wr:if>deve espiare la residua pena di:\par
+<wr:if select="/X/FascicoloSiep/PenaResidua/StringaReclusione">\b Reclusione<wr:out select="/X/FascicoloSiep/PenaResidua/StringaReclusione"/></wr:if> <wr:if select="/X/FascicoloSiep/PenaResidua/StringaArresto">\par
+Arresto <wr:out select="/X/FascicoloSiep/PenaResidua/StringaArresto"/></wr:if> \b0 in regime di detenzione;\par
+\pard\sb120\qj Poich\'e9 occorre dare urgente esecuzione, ex art. 659 c.p.p., al citato provvedimento che per effetto dello stesso deve essere disposta la carcerazione<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">del condannato;<wr:else/>della condannata;</wr:if>\par
+\pard\qj\cf1\lang2057\par
+<wr:import inline='true' url="$\{AVVOCATI\}"/>\par
+\pard\keepn\s2\sb160\sa160\qc\cf0\lang1040\b DISPONE\par
+\pard <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataIngressoIstituto">\par
+\pard\qj\b0 che la residua pena espianda di cui sopra, \b decorrente dal <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizio"/>,\b0  \b avra' termine il <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"> (*)</wr:if>\b0 , data in cui dovr\'e0 essere <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">scarcerato<wr:else/>scarcerata</wr:if> se non <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">detenuto<wr:else/>detenuta</wr:if> per altra causa;\cf1 <wr:import inline='true' url="$\{ESECUZIONEMISURASICUREZZA\}" />\cf0 <wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto">\par
+(*) Scadenza reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"/> - Decorrenza arresto <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"/></wr:if><wr:else/>\par
+La carcerazione <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">del condannato<wr:else/>della condannata</wr:if> per l\rquote espiazione sopra indicata di:\par
+\b <wr:if select="\cf1 /X/FascicoloSiep/PenaResidua/StringaReclusione">Reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/StringaReclusione"/>\cf0 </wr:if>\cf1   <wr:if select="/X/FascicoloSiep/PenaResidua/StringaArresto">\cf0\par
+Arresto <wr:out select="/X/FascicoloSiep/PenaResidua/StringaArresto"/></wr:if>\par
+\pard\sb160\sa160\qc ORDINA\par
+\pard\qj\b0 agli Ufficiali ed Agenti di Polizia Giudiziaria di procedere all\rquote arresto e alla traduzione <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">del condannato,<wr:else/>della condannata,</wr:if> assicurandosi della sua identit\'e0 e previa consegna di copia del presente ordine, presso l\rquote Istituto di Detenzione pi\'f9 vicino al luogo dell\rquote arresto, per l\rquote espiazione della pena di cui sopra;\b </wr:if>\par
+\par
+\lang2057\b0\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\lang1040\b\fs22\par
+\pard\keepn\s2\sb160\sa160\qc MANDA\par
+\pard\qj\b0 alla Segreteria in sede, perch\'e9 provveda all\rquote invio del presente provvedimento: \highlight2 <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataIngressoIstituto">\highlight0\par
+\pard\fi-360\li360\qj\tx473\f1 -\tab\f0 all\rquote Istituto in cui <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato \'e8 ristretto; <wr:else/>la condannata \'e8 ristretta;</wr:if><\highlight2 wr:else/\highlight0 ><wr:forEach select="/X/Evento/Notifica"> <wr:if select=".[CodTipoNotifica=&apos;E&apos;]">\par
+\pard\fi-360\li360\qj\f1 -\tab\f0 a <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/> per l\rquote esecuzione, con facolt\'e0 di subdelega;</wr:if></wr:forEach>\highlight2 </wr:if>\highlight0\par
+\pard\keepn\s1\fi-360\li360\qj\tx473\f1 -\tab\f0 a \cf1 <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrUfficioSorveglianza"/>\cf0 ;\par
+\par
+\lang2057\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\lang1040\fs22  \par
+\pard\qj\par
+\pard\par
+\lang2057 <wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\qj\par
+\b <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataIngressoIstituto">\b0 <wr:set var=\rquote dest\rquote  value=\rquote 7\rquote  />\par
+\par
+<wr:import inline='true' url="$\{NOTIFICACOMUNICAZIONEISTDET\}" />\par
+\par
+<wr:else/><wr:set var=\rquote dest\rquote  value=\rquote 1\rquote  /><wr:set var=\rquote numcopie\rquote  value=\rquote 3\rquote  /><wr:import inline='true' url="$\{NOTIFICAESECUZIONERP\}" />\b </wr:if>\cf1\b0\par
+\par
+\cf0 <wr:import inline='true' url="$\{NOTIFICAAVVOCATICOMU\}" />\lang1040\par
+}
+ 

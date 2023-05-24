@@ -1,0 +1,2 @@
+update codici_sies_nsc set co_val3 = TO_CHAR( (select data_fine_validita_comune from comune where cod_comune = co_sies and data_fine_validita_comune is not null), 'YYYY-MM-DD') WHERE co_domain = 'COMUNE';
+commit;

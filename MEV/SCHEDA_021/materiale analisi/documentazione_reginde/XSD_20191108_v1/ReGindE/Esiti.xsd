@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tb="TipiBaseReginde" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:import namespace="TipiBaseReginde" schemaLocation="TipiBaseReGIndE_1.2.xsd"/>
+  <xs:attribute name="codiceFiscale" type="tb:CodiceFiscaleType"/>
+  <xs:simpleType name="EsitoComunicazioneType">
+    <xs:annotation>
+      <xs:documentation>Codifica i codici di esito anteponendo il prefisso "F" ad un codice numerico</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="F001">
+        <xs:annotation>
+          <xs:documentation>Firmatario non autorizzato</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="F002">
+        <xs:annotation>
+          <xs:documentation>Indirizzo mittente di PEC non autorizzato</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="F003">
+        <xs:annotation>
+          <xs:documentation>Errore file non conforme allo schema</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="F004">
+        <xs:annotation>
+          <xs:documentation>Ente non autorizzato all'invio dell'intero albo</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="F005">
+        <xs:annotation>
+          <xs:documentation>Formato messaggio non conforme</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="F006">
+        <xs:annotation>
+          <xs:documentation>Dominio PEC non autorizzato</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="F007">
+        <xs:annotation>
+          <xs:documentation>Impossibile inserire il soggetto nell'ente fittizio in quanto diverso da altro professionista</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="F008">
+        <xs:annotation>
+          <xs:documentation>Soggetto iscritto a piu' enti</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="F999">
+        <xs:annotation>
+          <xs:documentation>Errore generico del sistema</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="EsitoSoggettoType">
+    <xs:annotation>
+      <xs:documentation>Codifica i codici di esito positivo con il prefisso "S", quelli di warning con il prefisso "W", quelli di esito negativo con il prefisso "E"</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="S000">
+        <xs:annotation>
+          <xs:documentation>Operazione eseguita correttamente</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="W001">
+        <xs:annotation>
+          <xs:documentation>Inserimento soggetto gia' presente in altro ente, il soggetto e' stato legato anche al nuovo ente ma il suo profilo anagrafico non e' stato modificato, per quest'ultima operazione e' necessaria una richiesta esplicita di modifica</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E001">
+        <xs:annotation>
+          <xs:documentation>PEC soggetto non valida</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E002">
+        <xs:annotation>
+          <xs:documentation>Dati anagrafici del soggetto non validi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E003">
+        <xs:annotation>
+          <xs:documentation>Impossibile inserire il soggetto in quanto gia' presente nell'ente mittente</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E004">
+        <xs:annotation>
+          <xs:documentation>Impossibile cancellare il soggetto in quanto non presente nell'ente mittente</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E005">
+        <xs:annotation>
+          <xs:documentation>Impossibile modificare i dati del soggetto in quanto non presente nell'ente mittente</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E006">
+        <xs:annotation>
+          <xs:documentation>Dominio PEC soggetto non autorizzato</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E007">
+        <xs:annotation>
+          <xs:documentation>Impossibile inserire il soggetto nell'ente fittizio in quanto diverso da altro professionista</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E008">
+        <xs:annotation>
+          <xs:documentation>Avvocato iscritto a piu' enti/ordini</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E999">
+        <xs:annotation>
+          <xs:documentation>Errore generico durante l'operazione</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="IdMessaggioMittente">
+    <xs:annotation>
+      <xs:documentation>Contiente l'identificativo del messaggio di PEC che contiene la comunicazione a cui si riferisce l'esito corrente</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="Esiti">
+    <xs:annotation>
+      <xs:documentation>Elemento root</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="IdMessaggioMittente"/>
+        <xs:element ref="EnteDestinatario">
+          <xs:annotation>
+            <xs:documentation>Ente destinatario dell'esito</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:choice>
+          <xs:element name="EsitoComunicazione" type="EsitoComunicazioneType">
+            <xs:annotation>
+              <xs:documentation>Consente di comunicare l'esito (solo negativo) dell'elaborazione di una CIN. Permette di notificare al mittente il caso in cui una intera CIN non è stata elaborata (es: firmatario non autorizzato, problemi tecnici del server)</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element ref="EsitiSoggetti">
+            <xs:annotation>
+              <xs:documentation>Consente di specificare per ogni soggetto della CIN l'esito della comuncazione</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EsitiSoggetti">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="EsitoSoggetto" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Soggetto">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Nome" type="xs:string" minOccurs="0"/>
+                    <xs:element name="Cognome" type="xs:string" minOccurs="0"/>
+                  </xs:sequence>
+                  <xs:attribute ref="codiceFiscale" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:choice>
+                <xs:element name="Esito" type="EsitoSoggettoType"/>
+              </xs:choice>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnteDestinatario" type="tb:EnteType"/>
+</xs:schema>
+

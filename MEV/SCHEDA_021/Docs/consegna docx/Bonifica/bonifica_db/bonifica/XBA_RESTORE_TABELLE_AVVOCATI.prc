@@ -1,0 +1,78 @@
+CREATE OR REPLACE PROCEDURE XBA_RESTORE_TABELLE_AVVOCATI IS
+    BEGIN
+    
+        -- AVVOCATO
+    
+    --    UPDATE AVVOCATO
+    --        SET PEC = NULL, 
+    --            FLAG_REGINDE = NULL,
+    --            DESCR_COMUNE_STUDIO = NULL,
+    --            COD_STATO_NASCITA_AVV = NULL,
+    --            DESC_LUOGO_NAS_REGINDE = NULL,
+    --            ID_AVVOCATO_BONIFICATO = NULL;
+    
+         EXECUTE IMMEDIATE 'ALTER TABLE AVVOCATO DROP (PEC,
+                                                     FLAG_REGINDE, 
+                                                     DESCR_COMUNE_STUDIO, 
+                                                     COD_STATO_NASCITA_AVV, 
+                                                     DESC_LUOGO_NAS_REGINDE, 
+                                                     ID_AVVOCATO_BONIFICATO)';
+ 
+        -- AVVOCATO
+        MERGE INTO AVVOCATO avv
+             USING AVVOCATO_SXBA avvs
+                ON (avv.ID_AVVOCATO = avvs.ID_AVVOCATO )
+                WHEN MATCHED THEN
+             UPDATE SET avv.FLAG_CANCELLATO = avvs.FLAG_CANCELLATO, avv.COD_OPERATORE_AGGIORNAMENTO=avvs.COD_OPERATORE_AGGIORNAMENTO, avv.DATA_AGGIORNAMENTO=avvs.DATA_AGGIORNAMENTO,
+                                avv.COD_UFFICIO_APPARTENENZA=avvs.COD_UFFICIO_APPARTENENZA;
+                   
+        -- AVVOCATO_FASCICOLO_SIEP
+        MERGE INTO AVVOCATO_FASCICOLO_SIEP afs
+             USING AVVOCATO_FASCICOLO_SIEP_SXBA afss
+                ON (afs.ID_AVVOCATO_FASCICOLO_SIEP = afss.ID_AVVOCATO_FASCICOLO_SIEP )
+                WHEN MATCHED THEN
+            UPDATE SET afs.AVV_ID_AVVOCATO = afss.AVV_ID_AVVOCATO;
+        
+        -- AVVOCATO_FASCICOLO_SIUS
+        MERGE INTO AVVOCATO_FASCICOLO_SIUS afs
+             USING AVVOCATO_FASCICOLO_SIUS_SXBA afss
+                ON (afs.ID_AVVOCATO_FASCICOLO_SIUS = afss.ID_AVVOCATO_FASCICOLO_SIUS )
+                WHEN MATCHED THEN
+            UPDATE SET afs.AVV_ID_AVVOCATO = afss.AVV_ID_AVVOCATO;
+        
+        -- AVVOCATO_FASCICOLO_SIGE
+        MERGE INTO AVVOCATO_FASCICOLO_SIGE afs
+             USING AVVOCATO_FASCICOLO_SIGE_SXBA afss
+                ON (afs.ID_AVVOCATO_FASCICOLO_SIGE = afss.ID_AVVOCATO_FASCICOLO_SIGE )
+                WHEN MATCHED THEN
+            UPDATE SET afs.AVV_ID_AVVOCATO = afss.AVV_ID_AVVOCATO;
+    
+        -- PARTI_UDIENZA_DIFENSORE
+        MERGE INTO PARTI_UDIENZA_DIFENSORE pud
+             USING PARTI_UDIENZA_DIFENSORE_SXBA puds
+                ON (pud.ID_AVVOCATO_PARTE_UDIENZA = puds.ID_AVVOCATO_PARTE_UDIENZA )
+                WHEN MATCHED THEN
+            UPDATE SET pud.AVV_ID_AVVOCATO = puds.AVV_ID_AVVOCATO;
+    
+        -- STORICO_AVVOCATO
+        MERGE INTO STORICO_AVVOCATO sa
+             USING STORICO_AVVOCATO_SXBA sas
+                ON (sa.ID_STORICO_AVVOCATO = sas.ID_STORICO_AVVOCATO )
+                WHEN MATCHED THEN
+            UPDATE SET sa.AVV_ID_AVVOCATO = sas.AVV_ID_AVVOCATO;
+    
+        -- AVVISI_AVVOCATO
+        MERGE INTO AVVISI_AVVOCATO aa
+             USING AVVISI_AVVOCATO_SXBA aas
+                ON (aa.ID_AVVISO = aas.ID_AVVISO )
+                WHEN MATCHED THEN
+            UPDATE SET aa.ID_AVVOCATO = aas.ID_AVVOCATO;
+    
+        -- NUOVA_ISTANZA
+        MERGE INTO NUOVA_ISTANZA ni
+             USING NUOVA_ISTANZA_SXBA nis
+                ON (ni.ID_NUOVA_ISTANZA = nis.ID_NUOVA_ISTANZA )
+                WHEN MATCHED THEN
+            UPDATE SET ni.AVV_ID_AVVOCATO = nis.AVV_ID_AVVOCATO;
+    
+    END XBA_RESTORE_TABELLE_AVVOCATI;

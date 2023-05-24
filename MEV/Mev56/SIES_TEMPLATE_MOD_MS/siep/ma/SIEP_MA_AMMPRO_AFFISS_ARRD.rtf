@@ -1,0 +1,62 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fnil\fprq2\fcharset2 Wingdings;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\nowidctlpar\qc\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\par
+\pard\keepn\nowidctlpar\qc\b AMMISSIONE PROVVISORIA \par
+ALL\rquote AFFIDAMENTO IN PROVA AL SERVIZIO SOCIALE\par
+ex art. 47, comma 4, Legge 26 luglio 1975 n. 354\par
+\pard\nowidctlpar\qc modificato con Decreto-Legge 23 dicembre 2013, n. 146\par
+convertito in Legge 21 febbraio 2014, n. 10 \par
+\pard\nowidctlpar\sb100\qc\caps c\caps0 omunicazione \caps d\caps0 ecorrenza e \caps s\caps0 cadenza pena\par
+\pard\li2552\ri2552\sb60\qc\b0\fs20 (\fs22 <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">\fs20 condannato \fs22 <wr:else/>condannata </wr:if> \fs20 in \fs22 <wr:import inline='true' url="$\{POSIZIONEGIURIDICATITOLO\}" />\fs20 )\par
+\pard\sb40\qc\fs18\par
+\pard\qc\b\fs22 <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\pard\nowidctlpar\qj\b0\par
+<wr:out value="$\{PremessaSentenzaA\}" /><wr:import inline='true' url="$\{SENTENZA\}"/>, <wr:out value="$\{PremessaSoggettoA\}" />\par
+\pard\nowidctlpar\sb120\qj\lang2057 <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\nowidctlpar\sb100\qj <wr:import inline='true' url="$\{PENA\}" />\b\par
+\pard\nowidctlpar\tx708\tqc\tx4819\tqr\tx9638\lang3082\b0 <wr:if select="/X/Evento[EventoCorrente!=&apos;S&apos;]">\b\par
+\pard\nowidctlpar\fi709\sb120\qj\b0 <wr:import inline='true' url="$\{STATOESECUZIONE\}" /></wr:if>\par
+\pard\nowidctlpar\sb200\qj\b <wr:import inline='true' url="$\{PENARESIDUA\}" />\cf1\b0\par
+\pard\sb100\qj\cf0\lang1040 <wr:if select="/X/Evento/Notifica/Avvocato">\cf1 <wr:import inline='true' url="$\{AVVOCATI\}" /></wr:if>\cf0\b\par
+\pard\nowidctlpar\sb160\sa160\qc RILEVATO \par
+\pard\nowidctlpar\qj\b0 che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato<wr:else/>la condannata </wr:if> attualmente si trova in <wr:import inline='true' url="$\{POSIZIONEGIURIDICATITOLO\}" /> con \b decorrenza dal <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizio"/> e scadenza pena al <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataFine"><wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"> (*)</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/DataInizioArresto">\par
+(*) Scadenza reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/DataFineReclusione"/> - Decorrenza arresto <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizioArresto"/></wr:if>;\par
+\pard\nowidctlpar\sb120\sa120\qc\cf1\b0 <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa[CodTipoDecisione\cf0 =&apos;03&apos;]\cf1 ">\cf0\b VISTA\b0 <wr:else/>\b VISTO</wr:if>\par
+\pard\qj\cf1\b0 <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa[CodTipoDecisione\cf0 =&apos;03&apos;]\cf1 ">\cf0 l\rquote ordinanza<wr:else/>il decreto</wr:if>\cf1 <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/Ufficio[CodTipoUfficio\cf0 =&apos;TDS&apos;]\cf1 ">del\cf0  <wr:else/> dell\rquote </wr:if><wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrUfficioSorveglianza"/> N. <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/NumeroRegistro"/>/<wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/AnnoRegistro"/> del <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DataDecisione"/> che ha disposto \b l\rquote ammissione provvisoria all\rquote affidamento in prova al servizio sociale ex art. 47, comma 4, legge 26 luglio 1975, n. 354 e successive modificazioni, \b0 da svolgersi in \b <wr:out select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa/DescrLuogoProva"/>\b0 ,\par
+\pard\nowidctlpar\sb160\sa160\qc\b RITENUTO\par
+\pard\qj\b0 che occorre dare urgente esecuzione al citato provvedimento ex art. 659 c.p.p., che per l\rquote effetto deve essere disposta la scarcerazione della persona in oggetto indicata\par
+\pard\nowidctlpar\sb160\sa160\qc\b DISPONE\par
+\pard\fi-227\li227\qj\tx227\b0\f1\'a7\tab\f0 la scarcerazione <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">del condannato<wr:else/>della condannata</wr:if>\b  \b0 se non in espiazione di pena per altra causa;\par
+\pard\fi-227\li227\sb60\qj\tx227\f1\'a7\tab\f0 che<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato<wr:else/> la condannata</wr:if> dovr\'e0 concordare, nei tempi stabiliti \cf1 <wr:if select="/X/FascicoloSiep/PenaResidua/MisuraAlternativa[CodTipoDecisione\cf0 =&apos;03&apos;]\cf1 ">nel\cf0 l\rquote ordinanza,<wr:else/>nel decreto,</wr:if> il giorno in cui si recher\'e0 davanti al Direttore del competente Ufficio Esecuzione Penale Esterna per la sottoscrizione del verbale contenente le prescrizioni, \b sino a quel giorno dovr\'e0 proseguire il regime di detenzione in corso\b0 .\par
+\pard\nowidctlpar\sb160\sa160\qc\b COMUNICA\par
+\pard\qj\b0 che il provvedimento, \ul adottato in via provvisoria\ulnone  dal Magistrato di Sorveglianza\b , conserva i suoi effetti fino alla decisione definitiva del Tribunale di Sorveglianza\b0 ;\par
+\pard\nowidctlpar\sb160\sa160\qc\b DISPONE\par
+\pard\qj\b0 che le Autorit\'e0 preposte al controllo vigilino sull\rquote osservanza delle prescrizioni dettate nel verbale di sottoposizione agli obblighi \b fino al <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;N&apos;]"><wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/></wr:if>,\b0  data in cui <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato<wr:else/> la condannata</wr:if> dovr\'e0 essere <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">posto<wr:else/>posta</wr:if> in libert\'e0 per fine pena, se non in espiazione di pena per altra causa.\par
+\par
+<wr:import inline='true' url="$\{ESECUZIONEMISURASICUREZZA\}" />\par
+\par
+\lang2057\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\par
+\lang1040\fs22\par
+\pard\sb120\sa120\qc\b MANDA\par
+\pard\qj\b0 alla Segreteria in sede, perch\'e9 provveda all\rquote invio del presente ordine:\par
+\pard\sb40\lang1033 <wr:forEach select="/X/Evento/Notifica"><wr:if select=".[CodTipoNotifica!=&apos;N&apos;]"><wr:if select="./CSSA"><wr:if select="./CSSA[Tipo=&apos;USSM&apos; or Tipo=&apos;USSMSS&apos;]">\par
+\pard\fi-360\li360\sb40\qj\tx284\tx567\lang1040 -\tab all\rquote Ufficio Servizi Sociali per i Minorenni di <wr:else/>- all\rquote Ufficio Esecuzione Penale Esterna di\cf1  \cf0 </wr:if>\cf1 <wr:out select="./CSSA/Comune"/></wr:if></wr:if>\cf0 <wr:if select=".[CodTipoNotifica=&apos;C&apos;]"><wr:if select="\b .\b0 /Ufficio[CodTipoUfficio=&apos;UDS&apos; or CodTipoUfficio=&apos;UDSM&apos;]">\par
+\pard\fi-360\li360\sb40\tx284 -\tab al <wr:out select="./Ufficio/DescrTipoUfficio"/> preposto alla vigilanza</wr:if></wr:if><wr:if select=".[CodTipoNotifica=&apos;C&apos;]"><wr:if select="\b .\b0 /Ufficio[CodTipoUfficio=&apos;TDS&apos; or CodTipoUfficio=&apos;TDSM&apos;]">\par
+\pard\fi-360\li360\sb40\qj\tx284\tx567 -\tab al <wr:out select="./Ufficio/DescrTipoUfficio"/> competente a decidere</wr:if></wr:if><wr:if select=".[CodTipoNotifica=&apos;E&apos;]">\par
+\pard\fi-360\li360\sb40\tx284 -\tab all\rquote Autorit\'e0 di Polizia competente per territorio</wr:if><wr:if select=\rdblquote .[CodTipoNotifica=&apos;N&apos;]\rdblquote >\par
+\pard\sb40\qj\cf1\lang1033 </wr:if>\cf0 </wr:forEach>\par
+\par
+\lang2057\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\lang1040\par
+\pard\lang2057\fs22\par
+\par
+<wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\nowidctlpar\qj\par
+<wr:set var=\rquote dest\rquote  value=\rquote 2\rquote  />\par
+\par
+\lang1040 <wr:import inline='true' url="$\{NOTIFICACOMUNICAZIONE\}" />\par
+\par
+<wr:import inline='true' url="$\{NOTIFICAAVVOCATICOMU\}" />\par
+\par
+}
+ 

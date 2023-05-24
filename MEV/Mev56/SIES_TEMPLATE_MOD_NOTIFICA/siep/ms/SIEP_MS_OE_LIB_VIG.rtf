@@ -1,0 +1,87 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset0 CG Times;}}
+{\colortbl ;\red0\green0\blue0;\red255\green102\blue204;\red0\green112\blue192;\red255\green0\blue0;\red0\green176\blue80;}
+{\stylesheet{ Normal;}{\s1 heading 1;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\nowidctlpar\lang2057\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\pard\nowidctlpar\qc <wr:forEach select="/X/Evento[EventoCorrente=\rquote S\rquote ]"><wr:if select=".[CodMotivo=&apos;1126&apos;]"\b >\b0\par
+\lang1040\b\f1 ORDINE DI CONSEGNA PER L\rquote ESECUZIONE\par
+DI MISURE DI SICUREZZA DETENTIVE\par
+\lang1033 (art. 659 comma 2 c.p.p.)\par
+\lang1040\b0 <wr:else/>\par
+\pard\keepn\s1\qc\b COMUNICAZIONE PER L\rquote ESECUZIONE\par
+\pard\nowidctlpar\qc DI MISURE DI SICUREZZA DETENTIVE\par
+\lang1033 (art. 659 comma 2 c.p.p.)\par
+\lang2057\b0\f0 </wr:if></wr:forEach>\lang1033\f1\par
+\lang2057\f0\par
+\pard\qc\b <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\pard\nowidctlpar\lang1040 <wr:forEach select="/X/Evento\cf1\b0 [\cf0 CodEsito=&apos;0055&apos; or CodEsito=&apos;0056&apos; or CodEsito=&apos;0057&apos;or CodEsito=&apos;0058&apos; or CodEsito=&apos;0059&apos; or CodEsito=&apos;0134&apos;]" varStatus="count"\cf1 >\cf0 <\cf2\b wr:if\cf0\b0  test=\rdblquote $\{count.last\}\rdblquote ><wr:if s\cf1 elect=".[\cf0 CodMotivo=&apos;2430&apos;]\rdblquote >Proposta di aggravamento per trasgressione obblighi misura di sicurezza (art. 231 cp) </wr:if><wr:if \cf1 select=".[\cf0 CodMotivo=&apos;2694&apos;]\rdblquote >Proposta di aggravamento della Libert\'e0 Vigilata per persona in stato d'infermit\'e0 psichica (ex art. 232 cp) </wr:if>\par
+\pard\nowidctlpar\qj\fs24\par
+\fs22 Vista l\rquote ordinanza N. \cf1 <wr:out select="./EventoSorveglianza/NumeroRegistro"/>\cf0 /\cf1 <wr:out select="./EventoSorveglianza/AnnoRegistro"/>, emessa in data <wr:out select="./EventoSorveglianza/Data"/> con la quale\cf0  il \cf1 Magistrato di Sorveglianza \cf0 di \cf1 <wr:out select="./EventoSorveglianza/DescrLuogoEmittente"/><\cf3 wr:if\cf1  select=".[CodEsito=&apos;0057&apos; or CodEsito=&apos;0134&apos;]"> ha trasformato la \cf0\b Libert\'e0 Vigilata\b0  <wr:else/> ha sostituito la \b Libert\'e0 Vigilata\b0  </\cf3 wr:if\cf0 >\cf4 <wr:if\cf0  s\cf1 elect=".[\cf0 CodMotivo=&apos;2430&apos;]\rdblquote >\cf1  \cf0 per trasgressione obblighi misura di sicurezza (art. 231 cp) \cf4 </wr:if><wr:if\cf0  \cf1 select=".[\cf0 CodMotivo=&apos;2694&apos;]\rdblquote >\cf1  \cf0 (ex art. 232 cp - persona in stato d\rquote infermit\'e0 psichica) \cf4 </wr:if>\cf0  \cf1 disponendo l\rquote applicazione della misura di sicurezza personale Detentiva\cf0  di:\b  <wr:forEach select="/X/FascicoloSiep/MisuraSicurezza[not(FlagAnnullaMisura) and not(DataFineValidita)]"> <wr:if select=".[CodNatura=&apos;01&apos;]">\par
+<wr:out select="./DescrTipo"/> per <wr:if select=".[NumAnni!=0]"> Anni <wr:out select="./NumAnni"/></wr:if><wr:if select=".[NumMesi!=0]"> Mesi <wr:out select="./NumMesi"/></wr:if><wr:if select=".[NumGiorni!=0]"> Giorni <wr:out select="./NumGiorni"/></wr:if></wr:if></wr:forEach></\cf2 wr:if\cf0 ></wr:forEach>\par
+\pard\nowidctlpar\sb80\qj\b0 nei confronti di:\b\par
+\pard\qj\ul <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\nowidctlpar\sb120\sa120\qc\ulnone RILEVATO\par
+\pard\nowidctlpar\qj\b0 che il soggetto si trova attualmente in espiazione della \ul misura di sicurezza della Libert\'e0 Vigilata;\par
+\ulnone che occorre dare esecuzione al citato provvedimento e che, per l\rquote effetto, deve essere disposta la consegna del soggetto sopra generalizzato, alla competente Autorit\'e0 designata per l\rquote esecuzione della misura di sicurezza;\par
+\pard\nowidctlpar\sb160\qj <wr:if select="/X/\cf1 Evento[EventoCorrente=&apos;S&apos;]/Notifica/Avvocato\cf0 " ><wr:import inline='true' url="$\{AVVOCATI\}"/></wr:if>\par
+\pard\nowidctlpar\sb120\sa120\qj Visto l\rquote art. 659 comma e c.p.p.;\par
+\pard\nowidctlpar\sb120\sa120\qc\lang2057\b ORDINA \par
+\pard\nowidctlpar\qj\b0 <wr:set var=\rdblquote contatore\rdblquote  value='0'/>\cf4\lang1033 <wr:forEach\cf0  select="/X/Evento[EventoCorrente=\rquote N\rquote  and CodMotivo=\rquote 1130\rquote ]"\cf1 >\cf0\lang2057 <wr:set var=\rdblquote contatore\rdblquote  evaluate="$\{contatore\}+1"/>\cf4\lang1033 </wr:forEach>\cf3\lang2057 <wr:if\cf0  test="$\{contatore\} ==0\rdblquote >\cf3\par
+\cf0\lang1040 agli Ufficiali ed Agenti di Polizia giudiziaria di procedere al fermo <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">del predetto<wr:else/>della predetta</wr:if>, assicurandosi della sua identit\'e0, previa consegna di copia del presente provvedimento unitamente all\rquote ordinanza di applicazione della misura.\par
+Sar\'e0 cura di questo Ufficio comunicare la sede dell\rquote istituto penitenziario nel quale il predetto dovr\'e0 sottostare alla misura di sicurezza suindicata, previa designazione da parte del ministero al quale \'e8 gi\'e0 stata inoltrata la richiesta; <wr:else/>\par
+agli Ufficiali ed Agenti di Polizia giudiziaria di procedere al fermo <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">del predetto<wr:else/>della predetta</wr:if> e, previa notifica del presente ordine, all\rquote accompagnamento <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">dello stesso<wr:else/>della stessa</wr:if> presso: (*)\par
+\b <wr:forEach\b0  select="/X/Evento[EventoCorrente=\rquote N\rquote  and CodMotivo=\rquote 1130\rquote ]" \cf1 varStatus=\rdblquote status\rdblquote >\cf5 <wr:if\cf1  test=\rdblquote $\{status.\cf4 last\cf1\}\rdblquote >- \cf0 <wr:out select="./Verbale/IstitutoDetenzione/DescrTipoIstituto"/> <wr:out select="./Verbale/IstitutoDetenzione/Descrizione"/>\par
+Istituto designato dal Ministero della Giustizia - Dipartimento dell\rquote Amministrazione Penitenziaria - Direzione Generale dei Detenuti e del Trattamento (con nota N.<wr:out select=\rdblquote ./Verbale/NumeroProtocollo\rdblquote />  del <wr:out select=\rdblquote ./Verbale/DataEmissione\rdblquote />) per la espiazione della misura di sicurezza detentiva sopra indicata\par
+\pard\nowidctlpar\sb80\qj <wr:forEach select="/X/FascicoloSiep/MisuraSicurezza[not(FlagAnnullaMisura) and not(DataFineValidita)]">\par
+\pard\nowidctlpar\qj <wr:if select=".[CodTipo=\rquote 04\rquote  or \lquote 06\rquote ]"> (*) Precisando \ul che l\rquote internando non pu\'f2 fare ingresso in istituti penitenziari ordinari\ulnone , in quanto non attrezzati per ricevere soggetti riconosciuti parzialmente e/o totalmente infermi di mente;</wr:if> </wr:forEach> </wr:if>\b </wr:forEach>\b0 </wr:if>\par
+\par
+\lang2057\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\lang1040\fs22\par
+\pard\keepn\nowidctlpar\sb120\sa120\qc\b\fs24 MANDA\par
+\pard\nowidctlpar\qj\b0\fs22 alla segreteria in sede per la trasmissione di copia del presente provvedimento, unitamente all\rquote ordinanza di applicazione della misura, per quanto di rispettiva competenza, in ordine alla notifica all'interessato e all'esecuzione a:\par
+ \cf4 <wr:forEach\cf0  select="/X/Evento/Notifica"><wr:if select="./IstDetIdIstitutoDetenzione">\par
+-<wr:out select=\rdblquote ./AutoritaEsterna/DescrTipoAutorita\rdblquote /> di <wr:out select=\rdblquote . /AutoritaEsterna/DescrSede\rdblquote />, per conoscenza;</wr:if>\cf4 </wr:forEach>\cf0\par
+\pard\nowidctlpar\cf4\lang2057 <wr:forEach\cf0  select="/X/Evento/Notifica"><wr:if select="./CSSA">\par
+- Ufficio Esecuzione Penale Esterna, <wr:out select=\rdblquote ./CSSA/Indirizzo\rdblquote />, <wr:out select=\rdblquote . /CSSA/Comune\rdblquote /></wr:if>\par
+\pard\nowidctlpar\sb20 <wr:if select="./Ufficio">\par
+- <wr:out select=\rdblquote ./Ufficio/DescrTipoUfficio\rdblquote /> di <wr:out select=\rdblquote ./Ufficio/DescrComune\rdblquote />; </wr:if><wr:if select="./AutEstIdAutoritaEsterna"><wr:if select=".[CodTipoNotifica!=&apos;ND&apos;]">\par
+\pard\nowidctlpar\lang1040 - <wr:out select=\rdblquote ./AutoritaEsterna/DescrTipoAutorita\rdblquote /> di <wr:out select=\rdblquote ./AutoritaEsterna/DescrSede\rdblquote />\fs24 , \ul con facolt\'e0 di sub-delega;\ulnone\fs22  </wr:if></wr:if>\cf4 </wr:forEach>\cf0\par
+\pard\nowidctlpar\sb20 - Magistrato di Sorveglianza che ha emesso l\rquote ordinanza.\par
+\par
+\pard\nowidctlpar\lang2057\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\lang1040\fs22\par
+\par
+\lang2057 <wr:import inline='true' url="$\{FIRMA\}"/>\par
+\par
+\pard\nowidctlpar\qc\page <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /> <wr:import inline='true' url="$\{INTESTAZIONE\}"/>\par
+\par
+\pard\nowidctlpar\par
+\pard\keepn\s1\li3540\b <wr:forEach select="/X/Evento/Notifica">\par
+\pard\nowidctlpar\li3540 <wr:if select=".[CodTipoNotifica!=&apos;ND&apos;]">\par
+\pard\keepn\s1\li3540\lang1040 <wr:if select="./Ufficio">\par
+\pard\nowidctlpar\li2832\b0\par
+\par
+\pard\keepn\s1\li3540\b <wr:out select="./Ufficio/DescrTipoUfficio"/> di <wr:out select="./Ufficio/DescrComune"/></wr:if><wr:if select="./IstitutoDetenzione/DescrTipoIstituto">\par
+\pard\nowidctlpar\li2832\b0\par
+\par
+\pard\keepn\s1\li3540\lang2057\b <wr:out select="./IstitutoDetenzione/DescrTipoIstituto"/> di <wr:out select="./IstitutoDetenzione/DescrComune"/></wr:if><wr:if select="./AutoritaEsterna">\par
+\par
+\par
+<wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/></wr:if> <wr:if select="./Note"> <wr:out select="./Note"/></wr:if><wr:if select="./CSSA">\par
+\pard\nowidctlpar\li2832\b0\par
+\par
+\pard\nowidctlpar\li3540\lang1040\b Ufficio Esecuzione Penale Esterna di <wr:out select="./CSSA/Comune"/>, <wr:out select="./CSSA/Indirizzo"/></wr:if></wr:if>\par
+\pard\nowidctlpar\qc\b0 </wr:forEach>\fs24\par
+\pard\nowidctlpar\qj\b\par
+\pard\nowidctlpar\fi-1416\li1416\qj\b0\fs22 Oggetto:\tab Esecuzione della misura di sicurezza detentiva nei confronti di:\par
+\pard\nowidctlpar\par
+\pard\ul\b <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\nowidctlpar\ulnone\b0\par
+\par
+\pard\nowidctlpar\sl360\slmult1\qj\fs24 Si trasmette, per quanto di rispettiva competenza, unitamente alla ordinanza \cf1\fs22 emessa in data <wr:out select="/X/Evento/EventoSorveglianza/Data"/> \cf0 dal \cf1 Magistrato di Sorveglianza \cf0 di \cf1 <wr:out select="/X/Evento/EventoSorveglianza/DescrLuogoEmittente"/>\cf0\fs24 , l\rquote allegato ordine di consegna emesso da questo Ufficio in data odierna, per la esecuzione della misura di sicurezza ai sensi dell\rquote art. 659 C.P.P.,\par
+\par
+\pard\nowidctlpar\qj Si resta in attesa dei relativi verbali di notifica e di esecuzione del provvedimento.\par
+\par
+\lang2057\fs22 <wr:out select="/X/Ufficio"/>, <wr:out select="/X/Evento/DataEmissione"/>\fs24\par
+\pard\nowidctlpar\fs22\par
+\pard\nowidctlpar\qj <wr:import inline='true' url="$\{NOTIFICAAVVOCATIMS\}"/>\par
+\pard\nowidctlpar\qj\tx360\par
+}
+ 

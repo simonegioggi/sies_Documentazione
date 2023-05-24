@@ -1,0 +1,130 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040\deftab708{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue0;\red255\green255\blue0;}
+{\stylesheet{ Normal;}{\s1 heading 1;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\nowidctlpar\qc\f0\fs22 <wr:import inline='true' url="&apos;/var/SIES/template/import/Variabili.rtf&apos;" /><wr:import inline='true' url="$\{INTESTAZIONE\}" />\par
+\pard\b\par
+\pard\nowidctlpar\qc TRASMISSIONE ATTI AL MAGISTRATO DI SORVEGLIANZA\par
+ ex  art. 656  comma 4 bis c.p.p. decreto legge 01 luglio 2013 n. 78\par
+convertito in Legge 9 Agosto 2013, n. 94\par
+\pard\ri140\sb60\qc\tx1134\b0  (<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">condannato<wr:else/>condannata</wr:if> in <wr:import inline='true'url="$\{POSIZIONEGIURIDICATITOLO\}" />)\par
+\pard\qc\b\par
+\lang2057 <wr:import inline='true' url="$\{FIRMATARIO\}" />\par
+\pard\nowidctlpar\qc\par
+\pard\nowidctlpar\qj\b0 <wr:out value="$\{PremessaSoggettoB\}" />\par
+\pard\nowidctlpar\sb140\qj\ul\b <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\sb120\qj\ulnone\b0\fs24 <wr:import inline='true' url="$\{PremessaSentenzaB\}" /><wr:import inline='true' url="$\{SENTENZA\}" /> \lang3082 <wr:if select="/X/FascicoloSiep[FlagCumulante=&apos;S&apos;]">\lang2057 <wr:import inline='true' url="$\{PENACCUMULO\}"/><wr:else/>\par
+\pard\sb100\qj <wr:import inline='true' url="$\{REATI\}" /> \par
+\pard\lang1031 <wr:import inline='true' url="$\{PENASCUMULO\}"/></wr:if> \par
+\pard\fi709\sb100\sa120 <wr:import inline='true' url="$\{STATOESECUZIONE\}" /> \par
+\pard\nowidctlpar\sb100\b\fs22 <wr:import inline='true' url="$\{PENARESIDUA\}" />\par
+\pard\nowidctlpar\lang1040\b0\par
+<wr:if select="/X/Evento/Notifica/Avvocato">\par
+\pard\sb60\qj\cf1 Rilevato che\cf0  il condannato risulta assistito \cf1 dal difensore: \cf0  \par
+\pard\nowidctlpar\lang2057 <wr:forEach select="/X/Evento/Notifica/Avvocato">\par
+\pard\nowidctlpar\sb80 Avvocato\b  <wr:out select="./Cognome"/> <wr:out select="./Nome"/> \b0 del Foro di\b  <wr:out select="./Foro"/> <wr:out select="./DescrTipo"/> \par
+\pard\nowidctlpar\qj\lang1040\b0 </wr:forEach></wr:if>\par
+\par
+Rilevato che <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">il condannato trovasi tuttora\b  \b0 <wr:else/>la condannata trovasi tuttora </wr:if> in espiazione di pena per questa causa\b  in regime di\b0  <\b wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;02&apos;]">Arresti Domociliari\b0 </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;70&apos;]">\b  Arresti Domociliari\b0 </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;71&apos;]">\b Permanenza in Casa\b0 </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;72&apos;]">\b Collocamento in Comunit\'e0</wr:if>, con decorrenza <wr:out select="/X/FascicoloSiep/PenaResidua/DataInizio"/> e fine pena, ad oggi al <wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/>\b0 ;\par
+\pard\nowidctlpar\sb120\sa120\qc\b CONSIDERATO\par
+\pard\nowidctlpar\qj\tx142\b0 che, alla data odierna, la pena residua risulta essere pari a: \par
+\pard\nowidctlpar\qj\b <wr:if select="/X/FascicoloSiep/PenaResidua/StringaReclusione">\b0 Reclusione <wr:out select="/X/FascicoloSiep/PenaResidua/StringaReclusione"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua/StringaArresto">Arresto <wr:out select="/X/FascicoloSiep/PenaResidua/StringaArresto"/></wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">Ergastolo</wr:if> <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">Ergastolo con isolamento diurno</wr:if><wr:if select="/X/FascicoloSiep/TotalePeriodoLicenzaAnticipata[TotaleGiorniDaConcedere!=0] or /X/FascicoloSiep/TotalePeriodoLicenzaAnticipata[TotaleGiorniConcessi!=0]">\par
+\pard\nowidctlpar\sb40\qj Da cui vanno detratti giorni \b <wr:if select="/X/FascicoloSiep/TotalePeriodoLicenzaAnticipata [TotaleGiorniDaConcedere!=0]\rdblquote ><wr:out select="/X/FascicoloSiep/TotalePeriodoLicenzaAnticipata/TotaleGiorniDaConcedere"/> da concedere </wr:if><wr:if select="/X/FascicoloSiep/TotalePeriodoLicenzaAnticipata[TotaleGiorniConcessi!=0]\rdblquote >\par
+\pard\qj <wr:out select="/X/FascicoloSiep/TotalePeriodoLicenzaAnticipata/TotaleGiorniConcessi"/> concessi </wr:if>di liberazione anticipata</wr:if>\par
+\pard\nowidctlpar\sb120\sa120\qj\b0 che, calcolata la sopraindicata custodia cautelare sofferta e le eventuali detrazioni previste dall\rquote articolo 54 della legge 26 luglio 1975 n. 354, la pena residua non supera i limiti indicati dall\rquote art. 656 comma 5 c.p.p. del decreto legge 1 luglio 2013 n. 78, convertito in Legge 9 Agosto 2013, n. 94;\par
+che non ricorrono i presupposti  per l\rquote applicazione dell\rquote art. 656, comma 9 c.p.p.;\par
+\pard\nowidctlpar\sb120\sa120\qc\b ORDINA\par
+\pard\sa80\qj\tx142\b0 che l\rquote espiazione della residua pena prosegua \ul\b in regime di\ulnone\b0  <wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;02&apos;]">\ul\b Arresti Domiciliari\ulnone\b0 </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;70&apos;]"> \ul\b Arresti Domiciliari\ulnone\b0 </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;71&apos;]">\ul\b Permanenza in Casa \ulnone\b0 </wr:if><wr:if select="/X/FascicoloSiep/PosizioneGiuridica[CodPosizioneGiuridica=&apos;72&apos;]">\ul\b Collocamento in Comunit\'e0\ulnone\b0 </wr:if>\par
+\pard\sa80\qj che il provvedimento conservi i suoi effetti fino alla decisione del Magistrato di Sorveglianza;\par
+\pard\nowidctlpar\qj\par
+Visto l\rquote art. 656 comma 4 bis e 4 quater c.p.p. decreto legge 1 luglio 2013 n. 78, \cf1 convertito in Legge 9 Agosto 2013, n. 94\cf0 ;\b\par
+\pard\sb120\sa120\qc DISPONE\par
+\pard\qj\b0 che le autorit\'e0 preposte al controllo vigilino sull\rquote osservanza delle prescrizioni dettate nel verbale di sottoposizione agli obblighi fino al\b  <wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;S&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;D&apos;]">MAI</wr:if><wr:if select="/X/FascicoloSiep/PenaResidua[FlagErgastolo=&apos;N&apos;]"><wr:out select="/X/FascicoloSiep/PenaResidua/DataFine"/></wr:if>,\b0  data in cui<wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> il condannato dovr\'e0 essere posto in libert\'e0 <wr:else/> la condannata dovr\'e0 essere posta in libert\'e0 </wr:if> per fine pena, se non in espiazione di pena per altra causa;<wr:import inline='true' url="$\{ESECUZIONEMISURASICUREZZA\}" />\par
+\pard\nowidctlpar\sb120\sa120\qc\b TRASMETTE\par
+\pard\nowidctlpar\qj\b0 gli atti al  Magistrato di Sorveglianza competente affinch\'e9 provveda all\rquote eventuale applicazione della liberazione anticipata. \par
+\pard\nowidctlpar\sb120\sa120\qc\b RISERVA\par
+\pard\nowidctlpar\qj\b0 L\rquote emissione di successivi provvedimenti dopo la decisione del Magistrato di Sorveglianza.\par
+\par
+\pard\keepn\s1\sb120\sa200\lang2057\fs24 <wr:import inline='true' url="$\{TESTO_NOTIFICA_EX_ART_148\}" />\lang1040\b\fs22\par
+\pard\keepn\s1\sb120\sa200\qc MANDA\par
+\pard\qj\b0 alla Segreteria in sede, perch\'e9 provveda all\rquote invio del presente provvedimento a: \par
+\pard\fi-360\li360\tx360\f1\fs16 -\tab\f0\fs22 Magistrato di Sorveglianza competente a decidere;\par
+\pard\fi-360\li360\lang2057\f1\fs16 -\tab\f0\fs22 <wr:forEach select="./X/Evento/Notifica"><wr:if select=".[CodTipoNotifica=&apos;E&apos;]">\par
+\f1\fs16 -\tab\f0\fs22 <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/> <wr:if select="./Note"><wr:out select="./Note"/> </wr:if> per la notifica, <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]">al condannato;<wr:else/>alla condannata;</wr:if></wr:if><wr:if select=".[CodTipoNotifica=&apos;PC&apos;]">\par
+\lang1040\f1\fs16 -\tab\f0\fs22 <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/>, quale autorit\'e0 preposta al controllo;\par
+\lang2057\f1\fs16 -\tab\f0\fs22 </wr:if></wr:forEach>\par
+\par
+\fs24 <wr:import inline='true' url="$\{NOTIFICA_DEST_AVVOCATO\}" />\par
+\pard\qj\tx720\lang1040\fs22\par
+\pard\lang1033 <wr:import inline='true' url="$\{FIRMA\}" />\par
+\pard\nowidctlpar\qj\par
+\lang2057\par
+\pard\nowidctlpar\qc\b\page <wr:forEach select="/X/Evento/Notifica">\par
+\pard\nowidctlpar\qj <wr:if select=".[CodTipoNotifica=&apos;E&apos;]">\b0\par
+\pard\nowidctlpar\li4248\qr\b\par
+\pard\nowidctlpar\qc\b0 <wr:import inline='true' url="\lang1040 $\{INTESTAZIONE\}\lang2057 " />\b\par
+\pard\nowidctlpar\par
+\pard\nowidctlpar\li4248\qr\par
+<wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/><wr:if select="./Note">, <wr:out select="./Note"/> </wr:if>\par
+\pard\nowidctlpar\qr\par
+\pard\nowidctlpar\par
+\par
+\lang1040\b0 Oggetto: esecuzione penale a carico di\par
+\pard\nowidctlpar\sb120\qj <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\nowidctlpar\par
+\pard\nowidctlpar\sa120\qj\fs16\par
+\fs22 Si trasmette copia del  provvedimento emesso in data  <wr:out select="/X/Evento/DataEmissione"/> nei confronti <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> del nominato <wr:else/> della nominata </wr:if>in oggetto, per la notifica.\par
+\pard\nowidctlpar\par
+\lang2057 <wr:out select="/X/Ufficio"/>, <wr:out select="/X/Evento/DataEmissione"/>\par
+\par
+\b\par
+\pard\nowidctlpar\qj </wr:if></wr:forEach>\b0\par
+\pard\nowidctlpar\fi708\li5664\qr\par
+\par
+\highlight2\b\par
+\pard\nowidctlpar\qj\highlight0\b0 <wr:import inline='true' url="$\{NOTIFICAAVVOCATI\}" />\par
+\pard\nowidctlpar\highlight2\b\par
+\pard\nowidctlpar\qj\highlight0\b0\par
+\pard\nowidctlpar\qc\highlight2\b\page\par
+\highlight0 <wr:forEach select="/X/Evento/Notifica">\par
+\pard\nowidctlpar\qj <wr:if select=".[CodTipoNotifica=&apos;PC&apos;]">\b0\par
+\pard\nowidctlpar\li4248\qr\b\par
+\pard\nowidctlpar\qc\lang1040\b0 <wr:import inline='true' url="$\{INTESTAZIONE\}" />\b\par
+\pard\nowidctlpar\par
+\pard\nowidctlpar\li4248\qr\par
+\lang2057 <wr:out select="./AutoritaEsterna/DescrTipoAutorita"/> di <wr:out select="./AutoritaEsterna/DescrSede"/><wr:if select="./Note">, <wr:out select="./Note"/> </wr:if>\par
+\pard\nowidctlpar\qr\par
+\pard\nowidctlpar\par
+\par
+\lang1040\b0 Oggetto: esecuzione penale a carico di\par
+\pard\nowidctlpar\sb120\qj <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\nowidctlpar\par
+\pard\nowidctlpar\sa120\qj\fs16\par
+\fs22 Si trasmette copia del  provvedimento emesso in data  <wr:out select="/X/Evento/DataEmissione"/> nei confronti <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> del nominato <wr:else/> della nominata </wr:if>in oggetto, per la notifica.\par
+\pard\nowidctlpar\par
+\lang2057 <wr:out select="/X/Ufficio"/>, <wr:out select="/X/Evento/DataEmissione"/>\par
+\par
+\pard\nowidctlpar\qj\b </wr:if></wr:forEach>\b0\par
+\par
+\pard\nowidctlpar\qc\highlight2\b\page\highlight0 <wr:forEach select="/X/Evento/Notifica">\par
+\pard\nowidctlpar\qj <wr:if select=".[CodTipoNotifica=&apos;MS&apos;]">\b0\par
+\pard\nowidctlpar\li4248\qr\b\par
+\pard\nowidctlpar\qc\lang1040\b0 <wr:import inline='true' url="$\{INTESTAZIONE\}" />\b\par
+\pard\nowidctlpar\par
+\pard\nowidctlpar\li4248\qr\par
+\pard\nowidctlpar\fi708\li3540 <wr:if select="./Ufficio">\par
+\pard\nowidctlpar\li4248\qr <wr:out select="./Ufficio/DescrTipoUfficio"/> di <wr:out select="./Ufficio/DescrComune"/></wr:if>\par
+\pard\nowidctlpar\qr\par
+\pard\nowidctlpar\par
+\par
+\b0 Oggetto: esecuzione penale a carico di\par
+\pard\nowidctlpar\sb120\qj <wr:import inline='true' url="$\{SOGGETTO\}" />\par
+\pard\nowidctlpar\par
+\pard\nowidctlpar\sa120\qj\fs16\par
+\fs22 Si trasmette copia del  provvedimento emesso in data  <wr:out select="/X/Evento/DataEmissione"/> nei confronti <wr:if select="/X/Soggetto[Sesso=&apos;M&apos;]"> del nominato <wr:else/> della nominata </wr:if>in oggetto, per la notifica.\par
+\pard\nowidctlpar\par
+\lang2057 <wr:out select="/X/Ufficio"/>, <wr:out select="/X/Evento/DataEmissione"/>\par
+\par
+\pard\nowidctlpar\qj\b </wr:if></wr:forEach>\b0\par
+\par
+}
+ 

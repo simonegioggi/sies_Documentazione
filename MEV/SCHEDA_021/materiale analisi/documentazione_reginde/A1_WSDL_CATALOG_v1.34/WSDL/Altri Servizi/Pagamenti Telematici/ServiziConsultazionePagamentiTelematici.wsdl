@@ -1,0 +1,182 @@
+<definitions name='ServiziConsultazionePagamentiTelematiciBeanService' targetNamespace='http://www.giustizia.it/serviziTelematici/serviziGenerici' xmlns='http://schemas.xmlsoap.org/wsdl/' xmlns:ns1='http://www.giustizia.it/serviziTelematici/Pagamenti' xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/' xmlns:tns='http://www.giustizia.it/serviziTelematici/serviziGenerici' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+ <types>
+  <xs:schema targetNamespace='http://www.giustizia.it/serviziTelematici/Pagamenti' version='1.0' xmlns:ns1='http://www.giustizia.it/serviziTelematici/serviziGenerici' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+   <xs:import namespace='http://www.giustizia.it/serviziTelematici/serviziGenerici'/>
+   <xs:complexType name='dettaglioCRS'>
+    <xs:sequence>
+     <xs:element minOccurs='0' name='CRS' type='xs:string'/>
+     <xs:element minOccurs='0' name='dataCreazione' type='xs:dateTime'/>
+     <xs:element minOccurs='0' name='pagatore' type='xs:string'/>
+     <xs:element minOccurs='0' name='denominazionePagatore' type='xs:string'/>
+     <xs:element minOccurs='0' name='versante' type='xs:string'/>
+     <xs:element minOccurs='0' name='denominazioneVersante' type='xs:string'/>
+     <xs:element minOccurs='0' name='causale' type='xs:string'/>
+     <xs:element name='importo' type='xs:float'/>
+     <xs:element name='esitoPagamento' type='xs:int'/>
+     <xs:element minOccurs='0' name='tipoAllegato' type='xs:string'/>
+     <xs:element minOccurs='0' name='contenutoAllegato' type='xs:base64Binary'/>
+     <xs:element minOccurs='0' name='codiceSistemaRT' type='xs:string'/>
+     <xs:element minOccurs='0' name='contesto' type='ns1:datiContesto'/>
+    </xs:sequence>
+   </xs:complexType>
+  </xs:schema>
+  <xs:schema targetNamespace='http://www.giustizia.it/serviziTelematici/serviziGenerici' version='1.0' xmlns:tns='http://www.giustizia.it/serviziTelematici/serviziGenerici' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+   <xs:element name='downloadRicevuta' type='tns:downloadRicevuta'/>
+   <xs:element name='downloadRicevutaResponse' type='tns:downloadRicevutaResponse'/>
+   <xs:element name='downloadRichiesta' type='tns:downloadRichiesta'/>
+   <xs:element name='downloadRichiestaResponse' type='tns:downloadRichiestaResponse'/>
+   <xs:element name='elencoPagamenti' type='tns:elencoPagamenti'/>
+   <xs:element name='elencoPagamentiResponse' type='tns:elencoPagamentiResponse'/>
+   <xs:complexType name='downloadRicevuta'>
+    <xs:sequence>
+     <xs:element minOccurs='0' name='codiceCRS' type='xs:string'/>
+     <xs:element name='originale' type='xs:boolean'/>
+    </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name='downloadRicevutaResponse'>
+    <xs:sequence>
+     <xs:element minOccurs='0' name='content' type='xs:base64Binary'/>
+    </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name='downloadRichiesta'>
+    <xs:sequence>
+     <xs:element minOccurs='0' name='codiceCRS' type='xs:string'/>
+    </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name='downloadRichiestaResponse'>
+    <xs:sequence>
+     <xs:element minOccurs='0' name='content' type='xs:base64Binary'/>
+    </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name='elencoPagamenti'>
+    <xs:sequence>
+     <xs:element minOccurs='0' name='codiceCRS' type='xs:string'/>
+     <xs:element minOccurs='0' name='tipologia' type='xs:string'/>
+     <xs:element minOccurs='0' name='codiceFiscale' type='xs:string'/>
+     <xs:element minOccurs='0' name='codiceDistretto' type='xs:string'/>
+     <xs:element minOccurs='0' name='causale' type='xs:string'/>
+     <xs:element minOccurs='0' name='stato' type='xs:string'/>
+     <xs:element minOccurs='0' name='dataRichiestaDa' type='xs:dateTime'/>
+     <xs:element minOccurs='0' name='dataRichiestaA' type='xs:dateTime'/>
+     <xs:element name='dimensionePagina' type='xs:int'/>
+     <xs:element name='numeroPagina' type='xs:int'/>
+    </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name='elencoPagamentiResponse'>
+    <xs:sequence>
+     <xs:element minOccurs='0' name='return' type='tns:risultatoRicerca'/>
+    </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name='risultatoRicerca'>
+    <xs:sequence>
+     <xs:element name='count' type='xs:int'/>
+     <xs:element name='dimensionePagina' type='xs:int'/>
+     <xs:element maxOccurs='unbounded' minOccurs='0' name='items' type='xs:anyType'/>
+     <xs:element name='numeroPagina' type='xs:int'/>
+    </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name='statoRichiestaPagamento'>
+    <xs:sequence>
+     <xs:element minOccurs='0' name='causale' type='xs:string'/>
+     <xs:element minOccurs='0' name='codiceCRS' type='xs:string'/>
+     <xs:element minOccurs='0' name='codiceDistretto' type='xs:string'/>
+     <xs:element minOccurs='0' name='dataRicevuta' type='xs:dateTime'/>
+     <xs:element minOccurs='0' name='dataRichiesta' type='xs:dateTime'/>
+     <xs:element minOccurs='0' name='denominazionePagatore' type='xs:string'/>
+     <xs:element minOccurs='0' name='denominazioneVersante' type='xs:string'/>
+     <xs:element minOccurs='0' name='descrizioneDistretto' type='xs:string'/>
+     <xs:element minOccurs='0' name='descrizioneTipologia' type='xs:string'/>
+     <xs:element minOccurs='0' name='destinazione' type='xs:string'/>
+     <xs:element minOccurs='0' name='errore' type='xs:string'/>
+     <xs:element minOccurs='0' name='id' type='xs:string'/>
+     <xs:element name='importo' type='xs:float'/>
+     <xs:element minOccurs='0' name='pagatore' type='xs:string'/>
+     <xs:element minOccurs='0' name='ruolo' type='xs:string'/>
+     <xs:element minOccurs='0' name='stato' type='xs:string'/>
+     <xs:element minOccurs='0' name='statoNodoPA' type='xs:string'/>
+     <xs:element minOccurs='0' name='tipologia' type='xs:string'/>
+     <xs:element minOccurs='0' name='versante' type='xs:string'/>
+    </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name='datiContesto'>
+    <xs:sequence>
+     <xs:element name='codiceServizio' type='xs:string'/>
+     <xs:element name='datiServizio' type='xs:string'/>
+     <xs:element name='dominio' type='xs:string'/>
+     <xs:element name='gruppo' type='xs:string'/>
+     <xs:element minOccurs='0' name='stato' type='xs:string'/>
+     <xs:element minOccurs='0' name='dataModifica' type='xs:dateTime'/>
+     <xs:element minOccurs='0' name='dataInvalidazione' type='xs:dateTime'/>
+     <xs:element minOccurs='0' name='utilizzatore' type='xs:string'/>
+    </xs:sequence>
+   </xs:complexType>
+  </xs:schema>
+ </types>
+ <message name='ServiziConsultazionePagamentiTelematici_downloadRicevuta'>
+  <part element='tns:downloadRicevuta' name='downloadRicevuta'></part>
+ </message>
+ <message name='ServiziConsultazionePagamentiTelematici_downloadRichiesta'>
+  <part element='tns:downloadRichiesta' name='downloadRichiesta'></part>
+ </message>
+ <message name='ServiziConsultazionePagamentiTelematici_downloadRichiestaResponse'>
+  <part element='tns:downloadRichiestaResponse' name='downloadRichiestaResponse'></part>
+ </message>
+ <message name='ServiziConsultazionePagamentiTelematici_downloadRicevutaResponse'>
+  <part element='tns:downloadRicevutaResponse' name='downloadRicevutaResponse'></part>
+ </message>
+ <message name='ServiziConsultazionePagamentiTelematici_elencoPagamentiResponse'>
+  <part element='tns:elencoPagamentiResponse' name='elencoPagamentiResponse'></part>
+ </message>
+ <message name='ServiziConsultazionePagamentiTelematici_elencoPagamenti'>
+  <part element='tns:elencoPagamenti' name='elencoPagamenti'></part>
+ </message>
+ <portType name='ServiziConsultazionePagamentiTelematici'>
+  <operation name='downloadRicevuta' parameterOrder='downloadRicevuta'>
+   <input message='tns:ServiziConsultazionePagamentiTelematici_downloadRicevuta'></input>
+   <output message='tns:ServiziConsultazionePagamentiTelematici_downloadRicevutaResponse'></output>
+  </operation>
+  <operation name='downloadRichiesta' parameterOrder='downloadRichiesta'>
+   <input message='tns:ServiziConsultazionePagamentiTelematici_downloadRichiesta'></input>
+   <output message='tns:ServiziConsultazionePagamentiTelematici_downloadRichiestaResponse'></output>
+  </operation>
+  <operation name='elencoPagamenti' parameterOrder='elencoPagamenti'>
+   <input message='tns:ServiziConsultazionePagamentiTelematici_elencoPagamenti'></input>
+   <output message='tns:ServiziConsultazionePagamentiTelematici_elencoPagamentiResponse'></output>
+  </operation>
+ </portType>
+ <binding name='ServiziConsultazionePagamentiTelematiciBinding' type='tns:ServiziConsultazionePagamentiTelematici'>
+  <soap:binding style='document' transport='http://schemas.xmlsoap.org/soap/http'/>
+  <operation name='downloadRicevuta'>
+   <soap:operation soapAction=''/>
+   <input>
+    <soap:body use='literal'/>
+   </input>
+   <output>
+    <soap:body use='literal'/>
+   </output>
+  </operation>
+  <operation name='downloadRichiesta'>
+   <soap:operation soapAction=''/>
+   <input>
+    <soap:body use='literal'/>
+   </input>
+   <output>
+    <soap:body use='literal'/>
+   </output>
+  </operation>
+  <operation name='elencoPagamenti'>
+   <soap:operation soapAction=''/>
+   <input>
+    <soap:body use='literal'/>
+   </input>
+   <output>
+    <soap:body use='literal'/>
+   </output>
+  </operation>
+ </binding>
+ <service name='ServiziConsultazionePagamentiTelematiciBeanService'>
+  <port binding='tns:ServiziConsultazionePagamentiTelematiciBinding' name='ServiziConsultazionePagamentiTelematiciSOAPPort'>
+   <soap:address location='http://test-pst/servizi/ServiziConsultazionePagamentiTelematici'/>
+  </port>
+ </service>
+</definitions>

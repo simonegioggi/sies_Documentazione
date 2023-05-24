@@ -1,0 +1,358 @@
+Received: from VE1PR01MB5792.eurprd01.prod.exchangelabs.com
+ (2603:10a6:803:127::12) by DB9PR01MB7244.eurprd01.prod.exchangelabs.com with
+ HTTPS; Tue, 29 Mar 2022 14:52:51 +0000
+Received: from AS9PR06CA0357.eurprd06.prod.outlook.com (2603:10a6:20b:466::25)
+ by VE1PR01MB5792.eurprd01.prod.exchangelabs.com (2603:10a6:803:127::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5102.18; Tue, 29 Mar
+ 2022 14:52:50 +0000
+Received: from VE1EUR01FT038.eop-EUR01.prod.protection.outlook.com
+ (2603:10a6:20b:466:cafe::64) by AS9PR06CA0357.outlook.office365.com
+ (2603:10a6:20b:466::25) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5102.17 via Frontend
+ Transport; Tue, 29 Mar 2022 14:52:50 +0000
+Received: from mx08-00612d01.pphosted.com (185.183.28.254) by
+ VE1EUR01FT038.mail.protection.outlook.com (10.152.3.18) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5102.17 via Frontend Transport; Tue, 29 Mar 2022 14:52:48 +0000
+Received: from pps.filterd (m0240438.ppops.net [127.0.0.1])
+	by mx07-00612d01.pphosted.com (8.16.1.2/8.16.1.2) with ESMTP id 22TD8hWV021373;
+	Tue, 29 Mar 2022 16:52:47 +0200
+Received: from eur05-vi1-obe.outbound.protection.outlook.com (mail-vi1eur05on2110.outbound.protection.outlook.com [40.107.21.110])
+	by mx07-00612d01.pphosted.com (PPS) with ESMTPS id 3f1rkc31ja-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT);
+	Tue, 29 Mar 2022 16:52:47 +0200
+Received: from AM6P195CA0023.EURP195.PROD.OUTLOOK.COM (2603:10a6:209:81::36)
+ by AS8PR08MB7207.eurprd08.prod.outlook.com (2603:10a6:20b:406::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5102.16; Tue, 29 Mar
+ 2022 14:52:46 +0000
+Received: from AM5EUR03FT004.eop-EUR03.prod.protection.outlook.com
+ (2603:10a6:209:81:cafe::3e) by AM6P195CA0023.outlook.office365.com
+ (2603:10a6:209:81::36) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5102.17 via Frontend
+ Transport; Tue, 29 Mar 2022 14:52:46 +0000
+Received: from postaweb.giustizia.it (156.54.89.52) by
+ AM5EUR03FT004.mail.protection.outlook.com (10.152.16.163) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.5102.18 via Frontend Transport; Tue, 29 Mar 2022 14:52:44 +0000
+Received: from UCA-EXCD11N01.giustizia.rupa.int (2002:9c36:569e::9c36:569e) by
+ UCA-EXCD11N01.giustizia.rupa.int (2002:9c36:569e::9c36:569e) with Microsoft
+ SMTP Server (TLS) id 15.0.1497.28; Tue, 29 Mar 2022 16:52:44 +0200
+Received: from UCA-EXCD11N01.giustizia.rupa.int ([fe80::7f:2f48:78a8:13b5]) by
+ UCA-EXCD11N01.giustizia.rupa.int ([fe80::7f:2f48:78a8:13b5%17]) with mapi id
+ 15.00.1497.028; Tue, 29 Mar 2022 16:52:44 +0200
+From: Annamaria Palmieri <annamaria.palmieri@giustizia.it>
+To: Paolo Ceccanti <Paolo.Ceccanti@eng.it>, Vito Nicola Bufi
+	<Vito.Bufi@eng.it>, Castorino Andrea <andrea.castorino@sirfinpa.it>,
+	Mazzocchi Fabio <fabio.mazzocchi@sirfinpa.it>
+Subject: Modifiche reginde 
+Thread-Topic: Modifiche reginde 
+Thread-Index: AdhDfIE8NLQLgAQFRBeV7ZoLtUnksQ==
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Tue, 29 Mar 2022 14:52:44 +0000
+Message-ID:
+	<fab46f80b2a9402d964bda1c1f51f4c7@UCA-EXCD11N01.giustizia.rupa.int>
+Accept-Language: it-IT, en-US
+Content-Language: it-IT
+X-MS-Exchange-Organization-AuthSource:
+	VE1EUR01FT038.eop-EUR01.prod.protection.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	cd069c46-1c77-44f1-7a8b-08da1193caed
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+received-spf: Pass (protection.outlook.com: domain of giustizia.it designates
+ 156.54.89.52 as permitted sender) receiver=protection.outlook.com;
+ client-ip=156.54.89.52; helo=postaweb.giustizia.it;
+authentication-results: spf=softfail (sender IP is 185.183.28.254)
+ smtp.mailfrom=giustizia.it; dkim=timeout (key query timeout)
+ header.d=giustizia.it;dmarc=temperror action=none
+ header.from=giustizia.it;compauth=softpass reason=201
+x-originating-ip: [89.119.250.145]
+x-ms-office365-filtering-correlation-id: cd069c46-1c77-44f1-7a8b-08da1193caed
+x-ms-traffictypediagnostic:
+	AS8PR08MB7207:EE_|VE1EUR01FT038:EE_|VE1PR01MB5792:EE_
+x-microsoft-antispam: BCL:0;
+x-forefront-antispam-report:
+	CIP:185.183.28.254;CTRY:NL;LANG:it;SCL:-1;SRV:;IPV:CAL;SFV:SFE;H:mx08-00612d01.pphosted.com;PTR:mx08-00612d01.pphosted.com;CAT:NONE;SFS:;DIR:INB;
+x-ms-exchange-crosstenant-originalarrivaltime: 29 Mar 2022 14:52:48.7794 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Internet
+x-ms-exchange-crosstenant-id: f2d7d6c5-1bee-41ff-9e79-b372a5cce71d
+x-ms-exchange-crosstenant-network-message-id:
+	cd069c46-1c77-44f1-7a8b-08da1193caed
+x-ms-exchange-transport-crosstenantheadersstamped: VE1PR01MB5792
+dkim-signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=giustizia.it;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=LfCHXfSPgW8gvj8tx5Wc1tq4gBPPcNQiwaft2SMOu6U=;
+ b=rfGSnwd3isBh0+K0EzDSq03UycZgyZJQ0A/X981Rw46s4LDi+MG5JxLkVpr5GiUwsayylUF1BrkNhsSt90H3WxxvwRbmhl/E0S4iFsSXSGO3F9eKisQKmUppo1qvaHLIB1z6CCgBFT3F145toA1e2wSnOL9OEipSydhnkXSU4EU=
+x-ld-processed: 792bc8b1-9088-4858-b830-2aad443e9f3f,ExtAddr
+x-ms-exchange-crosstenant-authas: Anonymous
+x-ms-exchange-crosstenant-authsource:
+	VE1EUR01FT038.eop-EUR01.prod.protection.outlook.com
+x-eopattributedmessage: 1
+x-ms-exchange-transport-endtoendlatency: 00:00:03.0967091
+x-ms-exchange-processed-by-bccfoldering: 15.20.5102.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(810001)(250001)(410001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?windows-1256?Q?QJzelWad1rfA59hqMNKSEvyO7eeQu1ZCkCBC/iujKzyHL1PzvewsYZRx?=
+ =?windows-1256?Q?u4XMkeyRd0PEE+scc+SKZ1mAnz2aRUQK1TW+nonNUhLsxJC5M6K78lw2?=
+ =?windows-1256?Q?45RzBSPSf63swrdG7oGFZXQ1VZvLD+qk6H2kw4A3NsdBlP5ozVzGRcXu?=
+ =?windows-1256?Q?C3P6IiWDSDSWizt7kSUtfsTb6rRaOpqvlwPa6lAlQt4N/CfGn+ZWldZB?=
+ =?windows-1256?Q?2BDTiVckTZ2qS8k2ZJ2+MP3AiORkNxHjBKL+J4eSnVW1NUyRztF8G+hZ?=
+ =?windows-1256?Q?6Bci/RrlOF53Ht6VAWPcdpHAllygyA4p3SSxBULKVLBnlPhqamydCfKe?=
+ =?windows-1256?Q?+3PZ0VxuyDAEFauC4A2ZIxlet9SYAQYL6+UbjgyByKdlv+qO3PP/O8Ib?=
+ =?windows-1256?Q?Dh994BwoJBw2da7DMM9fj8e0TLOjtpSIP4LHAB1yXeinrGOiHvLZV2Vp?=
+ =?windows-1256?Q?x5hfie+S10qmN958kmZWA9K9T5esZx1XUiNZaKmucT6veUqspIVgwHdt?=
+ =?windows-1256?Q?DnnFIndumF5czvKdF4NC6AXx8S7VoB2OqcIHn1rzEJiiM+62+My8F+8b?=
+ =?windows-1256?Q?NWUaUQgayEGgUE80iEjY/2kjd9q55Zudl2T8XXGapMx+tKFjdhmCg3v2?=
+ =?windows-1256?Q?R9DZC8nCOT6zYSJDMTkho0X26KNsvioLLWT4TiA1s8HKTXTptCQIHnBp?=
+ =?windows-1256?Q?1zFW5ffZGd96Bora6VZpNIaA/Ebo7a2TD/vXicKgTX+7jAyENmlCdf7a?=
+ =?windows-1256?Q?hAK2N5TStJauIBIU/TXFfjLHzY4kvHgfmE7xV37ecny0cjXUk1tdvVwa?=
+ =?windows-1256?Q?nhNbeXOMwqry8PoWC2sA3qUAX1bjMJPVGfQa5s0FACU92j1zgi4kQuP8?=
+ =?windows-1256?Q?RG20dud+bOCSf1Ut/l+TxT1v7K+fn+BxBHxYihzalnRBz+2qTx8KH+Bi?=
+ =?windows-1256?Q?aJ+rJOmDDfha3znCr5/jsqUuwYj7PcznqzlVOC/rTGjZ6IXkcP7kAd+C?=
+ =?windows-1256?Q?eafQsmYHehszmmOmTi/AWHunT7vjWpIMg+rS+Lb9ZiRc0P6m7nDJQgdR?=
+ =?windows-1256?Q?RT8ybmcYEnpi5PGey7FrSXrGea/VkMQ0SQP7fnWepn4xYSZiOwBRRJRG?=
+ =?windows-1256?Q?iQ5Nr9f7hqhc3UHytXB4GnnjdNDWbiEtpWSMi8mHwgLOhcm5DXL+UoZu?=
+ =?windows-1256?Q?al8GP3PmC+YgpznjtThYLh2avCtkvX14VJ0nruqrZp5Sr8PNzAYdtg+3?=
+ =?windows-1256?Q?7rubXDXrhazqbKUUziFYxGEHKUyg8Hvyah5YFTFcGGubqd3De50MwIhS?=
+ =?windows-1256?Q?kesaGgGp63krsV92f+OK1wblu2IA1HqvM0DXRWWmtbUlRgkZ4bMpWF4r?=
+ =?windows-1256?Q?ek66fTMWaXven+UJZH3TY4ndC/isXIWaN00SMB5lTfmSiHMRyqZS25h5?=
+ =?windows-1256?Q?xG41rCAAuHCJf9KcMsUMgRyJIvkMaPLcPZnnMjJ7o6Od2lT7VmBYWtlt?=
+ =?windows-1256?Q?LpsAKrz1LZURUT6MAu5wgJ4daOPeXSIrgAaKxPM9lM5Yy3LYjtO5Zpem?=
+ =?windows-1256?Q?6WkzGsasejOJ5jrjgUt5S9l2FFEla7cH2QDOV8OF9j5NHkuj42dat7iB?=
+ =?windows-1256?Q?VMwpy8eQ6r9qtN0F4TTV9yvV5OjoDQ7O7+S0wPZCiNmNH9jSzwHgIbTz?=
+ =?windows-1256?Q?/UJKpYQowfvRJbggE0UXJJ6F4CjvzgxASc53j+jg6TAvt+ZDa9k3FQk5?=
+ =?windows-1256?Q?bxCHJ+iD/PRvmukvxN78H3o1xX3YDtLtLoNuLQmo95TTDpRRt2oTwWVj?=
+ =?windows-1256?Q?UtYIywfku5iUV3Rm22Ycno5FjvkSFqNZZDemoFW+UAbWxbaGyCJZWeaM?=
+ =?windows-1256?Q?8muZQGbX2V1kV3bLI60Beyef9Mn+YsNvDvd8XwBnpbzmv7Ke5EwShe48?=
+ =?windows-1256?Q?NNds24U/KtLfudkbSpsvJa2ezZgGNTaJhq7pioirK/qCuef2mT52DAG4?=
+ =?windows-1256?Q?xgB+31+4GFwyFHxeUu+IVinFkdendqP+JDEJ2nsQAXxR3AimJNHPK5L7?=
+ =?windows-1256?Q?ofscjZJddM7mYpUD?=
+Content-Type: multipart/alternative;
+	boundary="_000_fab46f80b2a9402d964bda1c1f51f4c7UCAEXCD11N01giustiziaru_"
+MIME-Version: 1.0
+
+--_000_fab46f80b2a9402d964bda1c1f51f4c7UCAEXCD11N01giustiziaru_
+Content-Type: text/plain; charset="windows-1256"
+Content-Transfer-Encoding: quoted-printable
+
+Nella nota ho dimenticato di inserire SIUS non so si collega al reginde Men=
+tre c=92era la scheda per SIES e reginde che va modificata ed integrata La =
+presente mail vale come integrazione Saluti =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E ZjQcmQRYFpfptBa=
+nnerStart
+CAUTION: This email might originate from outside the organization.
+ZjQcmQRYFpfptBannerEnd
+
+Nella nota ho dimenticato di inserire SIUS non so si collega al reginde
+
+Mentre c=92era la scheda per SIES e reginde che va modificata ed integrata
+
+La presente mail vale come integrazione
+
+Saluti
+
+
+--_000_fab46f80b2a9402d964bda1c1f51f4c7UCAEXCD11N01giustiziaru_
+Content-Type: text/html; charset="windows-1256"
+Content-ID: <A0C7C1B174EF1D4FA4321D83979F80F8@eurprd01.prod.exchangelabs.com>
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<!-- BaNnErBlUrFlE-HeAdEr-start -->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
+256">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<style>
+      .pfptBannerTableMSO { padding: 0px 12px 5px 12px; width: 100%;border-=
+radius:4px;border-top:4px solid #90a4ae;background-color:#D0D8DC; }
+      .pfptTitleMSO { color:#000000 !important;font-family: 'Arial', sans-s=
+erif !important;font-weight:bold !important;font-size:14px !important; }
+      .pfptSubtitleMSO { font-size:12px !important; font-family: 'Arial', s=
+ans-serif !important; }
+      .pfptButtonMSO { mso-padding-alt: 7.5px; padding: 7.5px; text-decorat=
+ion: none; font-family: 'Arial', sans-serif !important; font-size: 14px; li=
+ne-height: 40px; border-radius:2px; }
+      .pfptPrimaryButtonMSO {
+	border: 1.5px solid #666666; color: #000000;
+      }
+     .pfptBanner {
+	margin: 15px 14px 30px 14px;
+	padding: 8px 16px 8px 16px;
+	border-radius: 4px;
+	min-width: 200px;
+	background-color: #D0D8DC;
+	border-top: 4px solid #90a4ae;
+      }
+      .pfptBannerTitle {
+	color: #000000;
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+	display: block;
+      }
+      .pfptBannerSubtitle {
+	color: #000000;
+	font-weight: normal;
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	margin-top: 2px;
+	display: block;
+      }
+      .pfptButton {
+	display: inline-block;
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	border-radius: 2px;
+	padding: 7.5px 16px;
+	margin: 3px 0 3px 16px;
+	white-space: nowrap;
+	width: fit-content;
+      }
+      .pfptPrimaryButton {
+	border: 1px solid #666666;
+      }
+      .pfptPrimaryButton:hover, .pfptPrimaryButton:focus {
+	background-color: #b4c1c7;
+      }
+      .pfptPrimaryButton:active {
+	background-color: #90a4ae;
+      }
+      .pfptMessageContainer {
+	display: inline-block;
+	margin: 0px 0px 1px 0px;
+	max-width: 600px;
+      }
+      .pfptButtonGroup {
+	float: right;
+	margin: 0px 0px 0px 16px;
+	text-align: right;
+	width: fit-content;
+      }
+      .pfptPreheader { display:none !important; visibility:hidden; mso-hide=
+:all; font-size:1px; line-height:1px; max-height:0px; max-width:0px; opacit=
+y:0; overflow:hidden; }
+    </style><!-- BaNnErBlUrFlE-HeAdEr-end -->
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+span.StileMessaggioDiPostaElettronica17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"IT" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:bre=
+ak-word">
+<!-- BaNnErBlUrFlE-BoDy-start --><!-- Preheader Text : BEGIN --><span class=
+=3D"pfptPreheader" style=3D"display:none !important;visibility:hidden;mso-h=
+ide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-widt=
+h:0px;opacity:0;overflow:hidden;">Nella
+ nota ho dimenticato di inserire SIUS non so si collega al reginde Mentre c=
+=92era la scheda per SIES e reginde che va modificata ed integrata La prese=
+nte mail vale come integrazione Saluti =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E
+ =9E =9E =9E =9E =9E =9E </span><!-- Preheader Text : END --><!-- Email Ban=
+ner : BEGIN --><span style=3D"display:none !important;visibility:hidden;mso=
+-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-wi=
+dth:0px;opacity:0;overflow:hidden;">ZjQcmQRYFpfptBannerStart</span><!--[if =
+((ie)|(mso))]>
+  <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" st=
+yle=3D"padding: 3px 0px 16px 0px; direction: ltr" lang=3D"en"><tr><td>
+    <table class=3D"pfptBannerTableMSO" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" style=3D"padding: 0px 10px 5px 6px; width: 100%;border-radius=
+:4px;border-top:4px solid #90a4ae;background-color:#D0D8DC;"><tr><td valign=
+=3D"top">
+      <table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" style=3D"padding: 4px 8px 4px 8px">
+	<tr><td><span class=3D"pfptTitleMSO" style=3D"color:#000000 !important;fon=
+t-family: 'Arial', sans-serif;font-weight:bold !important;font-size:14px !i=
+mportant; direction: ltr">
+	  CAUTION: This email might originate from outside the organization.
+	</span></td></tr>
+	<tr><td><span class=3D"pfptSubtitleMSO" style=3D"color:#000000 !important;=
+font-weight:normal !important;font-family: 'Arial', sans-serif; font-size:1=
+2px !important; direction: ltr">
+         =20
+	</span></td></tr>
+
+      </table>
+
+    </td></tr></table>
+  </td></tr></table>
+<![endif]--><![if !((ie)|(mso))]>
+<div dir=3D"ltr" lang=3D"en" class=3D"pfptBanner" style=3D"margin:16px 0px =
+16px 0px; padding:8px 16px 8px 16px; border-radius: 4px; min-width: 200px;b=
+ackground-color: #D0D8DC; border-top: 4px solid #90a4ae;">
+<div class=3D"pfptMessageContainer" style=3D"display: inline-block; margin:=
+ 0px 0px 1px 0px; max-width: 600px;">
+<div class=3D"pfptBannerTitle" style=3D"color:#000000 !important;font-famil=
+y: 'Arial', sans-serif !important;font-weight:bold !important;font-size:14p=
+x !important;line-height:18px;display:block;">
+CAUTION: This email might originate from outside the organization. </div>
+<div class=3D"pfptBannerSubtitle" style=3D"color:#000000 !important;font-we=
+ight:normal !important;font-family: 'Arial', sans-serif !important;font-siz=
+e:12px !important;line-height:18px;margin-top:2px;display:block">
+</div>
+</div>
+</div>
+<![endif]>
+<div style=3D"display:none !important;visibility:hidden;mso-hide:all;font-s=
+ize:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:=
+0;overflow:hidden;">
+ZjQcmQRYFpfptBannerEnd</div>
+<!-- Email Banner : END --><!-- BaNnErBlUrFlE-BoDy-end -->
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Nella nota ho dimenticato di inserire SIUS non so si=
+ collega al reginde<o:p></o:p></p>
+<p class=3D"MsoNormal">Mentre c=92era la scheda per SIES e reginde che va m=
+odificata ed integrata<o:p></o:p></p>
+<p class=3D"MsoNormal">La presente mail vale come integrazione<o:p></o:p></=
+p>
+<p class=3D"MsoNormal">Saluti <o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_fab46f80b2a9402d964bda1c1f51f4c7UCAEXCD11N01giustiziaru_--
