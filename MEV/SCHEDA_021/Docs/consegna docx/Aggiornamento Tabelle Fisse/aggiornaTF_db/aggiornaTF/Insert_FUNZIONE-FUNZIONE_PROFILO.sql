@@ -6,6 +6,8 @@ insert into FUNZIONE values (90111943, 'Prepara Ricerca Comune di Nascita', 'R',
 insert into FUNZIONE values (90111944, 'Visualizzazione Lista Comuni di Nascita', 'A', 'siap.sico.decodifiche.action.ActVisualizzaComuniNascita');
 insert into FUNZIONE values (90111945, 'Visualizzazione Lista Province con storico comuni', 'A', 'siap.sico.decodifiche.action.ActLoadListaProvNascita');
 insert into FUNZIONE values (90111946, 'Visualizzazione Provincia con storico comuni', 'A', 'siap.sico.decodifiche.action.ActLoadProvinciaComuneNascita');
+insert into FUNZIONE values (90111947, 'Prepara Ricerca bis Avvocato RegInde', 'R', 'siap.siep.avvocato.action.ActLoadRicercaInsAvvRegInde');
+insert into FUNZIONE values (90111948, 'Filtra Ricerca bis Avvocato RegInde', 'R', 'siap.siep.avvocato.action.ActFiltraInsAvvRegInde');
 
 -- FUNZIONE_PROFILO
 INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111940, 4,  NULL, NULL, NULL, NULL, 'S');
@@ -123,6 +125,16 @@ INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111946, 16, NULL, NU
 INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111946, 36, NULL, NULL, NULL, NULL, 'S');
 INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111946, 46, NULL, NULL, NULL, NULL, 'S');
 INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111946, 56, '', NULL, NULL, NULL, 'S');
+
+INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111947, 4,  NULL, NULL, NULL, NULL, 'S');
+INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111947, 30, NULL, NULL, NULL, NULL, 'S');
+INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111947, 40, NULL, NULL, NULL, NULL, 'S');
+INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111947, 50, NULL, NULL, NULL, NULL, 'S');
+
+INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111948, 4,  NULL, NULL, NULL, NULL, 'S');
+INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111948, 30, NULL, NULL, NULL, NULL, 'S');
+INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111948, 40, NULL, NULL, NULL, NULL, 'S');
+INSERT INTO FUNZIONE_PROFILO VALUES(trunc(sysdate), NULL, 90111948, 50, NULL, NULL, NULL, NULL, 'S');
 
 INSERT INTO FUNZIONE VALUES(90111100, 'Prepara Ricerca Avvocato RegInde', 'R', 'siap.sius.avvocato.action.ActLoadRicercaAvvocatoRegInde');
 
